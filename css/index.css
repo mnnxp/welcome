@@ -2,20 +2,25 @@ body {
   background-color: #fafafa;
 }
 
-.hero {
-  background-image: linear-gradient(rgba(24, 114, 240), rgb(250, 250, 250));
+a,i {
+  color: #3273dc;
 }
 
-.header-logo {
-  margin-left: 10px;
+.navbar {
+  background-color:#fafafa
+}
+.navbar-menu>.buttons {
+  margin-right:12px
 }
 
+.logo-bookmark {
+  top: -2vh;
+}
 
 .footer {
   background-color: #fff;
   margin-top: 1.5rem;
 }
-
 
 .has-same-height .card {
   height: 320px;
