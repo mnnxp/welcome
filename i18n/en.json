@@ -1,0 +1,55 @@
+{
+    "cadbase": {
+        "title": "CADBase - Welcome",
+        "short-description": "The platform for publishing and sharing information about drawings and manufacturers.",
+        "slogan": "Making the present better"
+    },
+    "platform": "Platform",
+    "api": "API",
+    "about-us": {
+        "title": "About us",
+        "subtitle": "Jack of all trades, master of \"some\"",
+        "text": "Web developer with more than 4 years of well-rounded experience with a degree in the field of Computer Science, extensive knowledge of modern Web techniques and love for Coffee. Looking for an opportunity to work and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community."
+    },
+    "cad-integrations": {
+        "title": "CAD Integrations",
+        "content": "A description of how we diligently do integrations to CAD systems"
+    },
+    "3d-viewer": "3D Viewer",
+    "api-content": "Access to API without additional conditions",
+    "features": {
+        "title": "Features",
+        "subtitle": "What can CADBase platforma do for you?",
+        "item": [
+            {
+                "title": "Front End Web Development",
+                "content": "Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and Vue.js."
+            },
+            {
+                "title": "Back End Web Development",
+                "content": "Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases."
+            }
+        ]
+    },
+    "resume": {
+        "title": "Platform Application",
+        "subtitle": "The platform is implemented on WebAssembly (abbreviated Wasm) technology, JavaScript is used for some functions. Please make sure that your browser supports these solutions."
+    },
+    "btn-open-platform": "Open CADBase Platform",
+    "overviews": {
+        "title": "Overviews",
+        "subtitle": "Training manuals and articles"
+    },
+    "nothing": "Nothing",
+    "terms": {
+        "title": "Terms",
+        "subtitle": "We're really happy you're here",
+        "content": "Please read this Terms of Service agreement carefully before accessing or using CADBase. Because it is such an important contract between us and our users, we need to make it as clear as possible:",
+        "body": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "api-reference": "API reference",
+    "language": {
+        "english": "English",
+        "russian": "Russian"
+    }
+}

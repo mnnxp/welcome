@@ -6,14 +6,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CADBase - Welcome</title>
-  <meta property="og:title" content="CADBase - Welcome" />
+  <title>{{cadbase.title}}</title>
+  <meta property="og:title" content="{{cadbase.title}}" />
   <meta property="og:url" content="https://cadbase.rs" />
   <meta property="og:image" content="./images/full_logo.svg" />
   <meta property="og:description"
-    content="The platform for publishing and sharing information about drawings and manufacturers." />
+    content="{{cadbase.short-description}}" />
   <meta name="description"
-    content="The platform for publishing and sharing information about drawings and manufacturers." />
+    content="{{cadbase.short-description}}" />
   <link rel="canonical" href="https://cadbase.rs/">
   <link rel="icon" href="./images/favicon.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -53,25 +53,25 @@
           <span class="icon">
             <i class="fas fa-info"></i>
           </span>
-          <span>About us</span>
+          <span>{{about-us.title}}</span>
         </a>
         <a class="navbar-item" href="#features">
           <span class="icon">
             <i class="fas fa-fire"></i>
           </span>
-          <span>Features</span>
+          <span>{{features.title}}</span>
         </a>
         <a class="navbar-item" href="#overviews">
           <span class="icon">
             <i class="far fa-newspaper"></i>
           </span>
-          <span>Overviews</span>
+          <span>{{overviews.title}}</span>
         </a>
         <a class="navbar-item" href="#terms">
           <span class="icon">
             <i class="fas fa-handshake"></i>
           </span>
-          <span>Terms</span>
+          <span>{{terms.title}}</span>
         </a>
       </div>
       <div class="buttons">
@@ -79,13 +79,13 @@
           <span class="icon">
             <i class="fas fa-door-open"></i>
           </span>
-          <span>Platform</span>
+          <span>{{platform}}</span>
         </a>
         <a class="button" href="https://docs.cadbase.rs" target="_blank">
           <span class="icon">
             <i class="fas fa-book"></i>
           </span>
-          <span>API</span>
+          <span>{{api}}</span>
         </a>
       </div>
     </div>
@@ -101,7 +101,7 @@
         </h1>
         <!-- <br/> -->
         <h2 class="subtitle is-3">
-          Making the present better
+          {{cadbase.slogan}}
         </h2>
       </div>
     </div>
@@ -111,10 +111,10 @@
   <section class="section" id="about">
     <!-- Title -->
     <div class="section-heading">
-      <h3 class="title is-2">About us</h3>
-      <h4 class="subtitle is-5">Jack of all trades, master of &quot;some&quot;</h4>
+      <h3 class="title is-2">{{about-us.title}}</h3>
+      <h4 class="subtitle is-5">{{about-us.subtitle}}</h4>
       <div class="container">
-        <p>Web developer with more than 4 years of well-rounded experience with a degree in the field of Computer Science, extensive knowledge of modern Web techniques and love for Coffee. Looking for an opportunity to work and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community.</p>
+        <p>{{about-us.text}}</p>
       </div>
     </div>
 
@@ -123,9 +123,9 @@
         <!-- Profile -->
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-4">CAD Integrations</h3>
+            <h3 class="title is-4">{{cad-integrations.title}}</h3>
             <div class="content">
-              A description of how we diligently do integrations to CAD systems
+              {{cad-integrations.content}}
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
         <!-- Profile picture -->
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-4">3D Viewer</h3>
+            <h3 class="title is-4">{{3d-viewer}}</h3>
             <figure class="image is-4by3">
               <img src="https://bulmatemplates.github.io/bulma-templates/images/first-post.png" alt="Placeholder image">
             </figure>
@@ -145,9 +145,9 @@
         <!-- Skills -->
         <div class="card">
           <div class="card-content skills-content">
-            <h3 class="title is-4">API</h3>
+            <h3 class="title is-4">{{api}}</h3>
             <div class="content">
-              Access to API without additional conditions
+              {{api-content}}
             </div>
           </div>
         </div>
@@ -170,47 +170,35 @@
   <!-- Services -->
   <section class="section" id="features">
     <div class="section-heading">
-      <h3 class="title is-2">Features</h3>
-      <h4 class="subtitle is-5">What can CADBase platforma do for you?</h4>
+      <h3 class="title is-2">{{features.title}}</h3>
+      <h4 class="subtitle is-5">{{features.subtitle}}</h4>
     </div>
     <div class="container">
       <div class="columns">
+        {{#features.item}}
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and Vue.js.
+              <h4 class="title is-5">{{title}}</h4>
+              {{content}}
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-            </div>
-          </div>
-        </div>
+        {{/features.item}}
       </div>
     </div>
     <div class="container">
       <div class="columns">
+        {{#features.item}}
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">Front End Web Development</h4>
-              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and Vue.js.
+              <h4 class="title is-5">{{title}}</h4>
+              {{content}}
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-5">Back End Web Development</h4>
-              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
-            </div>
-          </div>
-        </div>
+        {{/features.item}}
       </div>
     </div>
   </section>
@@ -218,13 +206,13 @@
   <!-- Resume -->
   <section class="section" id="resume">
     <div class="section-heading">
-      <h3 class="title is-2">Platform Application</h3>
-      <h4 class="subtitle is-5">The platform is implemented on WebAssembly (abbreviated Wasm) technology, JavaScript is used for some functions. Please make sure that your browser supports these solutions.</h4>
+      <h3 class="title is-2">{{resume.title}}</h3>
+      <h4 class="subtitle is-5">{{resume.subtitle}}</h4>
       <a href="https://cadbase.rs/#/login" target="_blank" class="button is-success is-large">
         <span class="icon">
           <i class="fas fa-door-open" style="color: #fff;"></i>
         </span>
-        <span>Open CADBase Platform</span>
+        <span>{{btn-open-platform}}</span>
       </a>
     </div>
   </section>
@@ -233,12 +221,12 @@
   <section class="section" id="overviews">
     <div class="container">
       <div class="section-heading">
-        <h3 class="title is-2">Overviews</h3>
-        <h4 class="subtitle is-5">Training manuals and articles</h4>
+        <h3 class="title is-2">{{overviews.title}}</h3>
+        <h4 class="subtitle is-5">{{overviews.subtitle}}</h4>
       </div>
       <br>
 
-      Nothing
+      {{nothing}}
 
       <!-- <div class="container portfolio-container">
         <div class="columns is-multiline is-variable is-2-mobile is-1-tablet is-3-desktop is-8-widescreen is-1-fullhd">
@@ -278,13 +266,13 @@
   <!-- Terms -->
   <section class="section" id="terms">
     <div class="section-heading">
-      <h3 class="title is-2">Terms</h3>
-      <h4 class="subtitle is-5">We&#x27;re really happy you&#x27;re here</h4>
+      <h3 class="title is-2">{{terms.title}}</h3>
+      <h4 class="subtitle is-5">{{terms.subtitle}}</h4>
     </div>
     <div class="content">
-      Please read this Terms of Service agreement carefully before accessing or using CADBase. Because it is such an important contract between us and our users, we need to make it as clear as possible:
+      {{terms.content}}
       <br>
-      <blockquote>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</blockquote>
+      <blockquote>{{terms.body}}</blockquote>
     </div>
   </section>
 
@@ -311,10 +299,10 @@
             </div>
             <div class="buttons">
                 <a class="button is-info" onclick=onclick_lang_en>
-                    English
+                    {{language.english}}
                 </a>
                 <a class="button" onclick=onclick_lang_ru>
-                    Russian
+                    {{language.russian}}
                 </a>
             </div>
         </div>
@@ -322,15 +310,15 @@
         </div>
         <div class="column">
             <a href="#about" >
-              About us
+              {{about-us.title}}
             </a>
             <br/>
             <a href="#terms" >
-              Terms
+              {{terms.title}}
             </a>
             <br/>
             <a href="https://docs.cadbase.rs/" >
-              API reference
+              {{api-reference}}
             </a>
         </div>
         <div class="column">
