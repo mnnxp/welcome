@@ -7,33 +7,43 @@
     "platform": "Platform",
     "api": "API",
     "about-us": {
-        "title": "About us",
-        "subtitle": "Jack of all trades, master of \"some\"",
-        "text": "Web developer with more than 4 years of well-rounded experience with a degree in the field of Computer Science, extensive knowledge of modern Web techniques and love for Coffee. Looking for an opportunity to work and upgrade, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community."
+        "title": "Platform",
+        "subtitle": "for engineers and suppliers",
+        "text": "When organising collaborative engineering work, a platform that supports CAD file versioning, differentiated data access, verified supplier catalogues with 3D models and supporting documentation is a useful solution."
     },
     "cad-integrations": {
         "title": "CAD Integrations",
-        "content": "A description of how we diligently do integrations to CAD systems"
+        "content": "One valuable feature is the capability to access and refresh parts on the platform through computer-aided design systems utilised by engineers and designers."
     },
     "3d-viewer": "3D Viewer",
-    "api-content": "Access to API without additional conditions",
+    "api-content": "The engineering platform's API, accessible to all users, enables them to create bespoke solutions for automating business processes and presenting data.",
     "features": {
         "title": "Features",
-        "subtitle": "What can CADBase platforma do for you?",
-        "item": [
+        "subtitle": "What is the advantage of an engineering data sharing platform?",
+        "item-first": [
             {
-                "title": "Front End Web Development",
-                "content": "Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and Vue.js."
+                "title": "For engineering companies",
+                "content": "Access to verified supplier catalogues with 3D models and documentation, and information on suppliers of basic components. Search for alternative suppliers and match components by characteristics."
             },
             {
-                "title": "Back End Web Development",
-                "content": "Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases."
+                "title": "For component suppliers",
+                "content": "Publish manufacturer catalogues containing drawings, 3D models and materials required by customers, enabling timely delivery of catalogue updates and product release information to customers."
+            }
+        ],
+        "item-second": [
+            {
+                "title": "For engineers and constructors",
+                "content": "Integration of CADBase with CAD simplifies the use of 3D models and drawings from supplier catalogues, allowing parts to be added to the CAD workspace, reducing routine work."
+            },
+            {
+                "title": "For designers and creators",
+                "content": "The platform offers storage for engineering projects, CAD files and associated data, along with a thorough version control system. CAD integration enables users to upload data promptly to the platform's storage and retrieve it through CAD."
             }
         ]
     },
     "resume": {
         "title": "Platform Application",
-        "subtitle": "The platform is implemented on WebAssembly (abbreviated Wasm) technology, JavaScript is used for some functions. Please make sure that your browser supports these solutions."
+        "subtitle": "Your browser must support WebAssembly (Wasm) and JavaScript (importmap is used) for it to function properly. Please check if your browser has these features."
     },
     "btn-open-platform": "Open CADBase Platform",
     "overviews": {

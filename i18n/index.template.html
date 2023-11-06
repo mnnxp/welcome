@@ -7,15 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{cadbase.title}}</title>
+  <meta name="description" content="{{cadbase.short-description}}" />
+  <link rel="canonical" href="https://cadbase.rs/">
+  <link rel="icon" href="./images/favicon.png">
+  <link rel="alternate" hreflang="ru" href="/ru">
+
+  <!-- Open Graph Card -->
   <meta property="og:title" content="{{cadbase.title}}" />
   <meta property="og:url" content="https://cadbase.rs" />
   <meta property="og:image" content="./images/full_logo.svg" />
-  <meta property="og:description"
-    content="{{cadbase.short-description}}" />
-  <meta name="description"
-    content="{{cadbase.short-description}}" />
-  <link rel="canonical" href="https://cadbase.rs/">
-  <link rel="icon" href="./images/favicon.png">
+  <meta property="og:description" content="{{cadbase.short-description}}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="{{cadbase.title}}">
+  <meta name="twitter:description" content="{{cadbase.short-description}}">
+  <meta name="twitter:image" content="./images/full_logo.svg">
+  <meta name="twitter:site" content="@cadbase_rs">
+  <meta name="twitter:url" content="https://cadbase.rs">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <!-- Bulma Version 0.9.x-->
@@ -61,12 +70,12 @@
           </span>
           <span>{{features.title}}</span>
         </a>
-        <a class="navbar-item" href="#overviews">
+        <!-- <a class="navbar-item" href="#overviews">
           <span class="icon">
             <i class="far fa-newspaper"></i>
           </span>
           <span>{{overviews.title}}</span>
-        </a>
+        </a> -->
         <a class="navbar-item" href="#terms">
           <span class="icon">
             <i class="fas fa-handshake"></i>
@@ -75,7 +84,7 @@
         </a>
       </div>
       <div class="buttons">
-        <a class="button" href="https://cadbase.rs/#/login" target="_blank">
+        <a class="button" href="https://app.cadbase.rs/#/login" target="_blank">
           <span class="icon">
             <i class="fas fa-door-open"></i>
           </span>
@@ -120,7 +129,7 @@
 
     <div class="columns has-same-height is-gapless">
       <div class="column">
-        <!-- Profile -->
+        <!-- CAD Integrations -->
         <div class="card">
           <div class="card-content">
             <h3 class="title is-4">{{cad-integrations.title}}</h3>
@@ -131,20 +140,20 @@
         </div>
       </div>
       <div class="column">
-        <!-- Profile picture -->
+        <!-- 3D Viewer -->
         <div class="card">
           <div class="card-content">
             <h3 class="title is-4">{{3d-viewer}}</h3>
             <figure class="image is-4by3">
-              <img src="https://bulmatemplates.github.io/bulma-templates/images/first-post.png" alt="Placeholder image">
+              <img src="./images/cube.svg" alt="3D Viewer">
             </figure>
           </div>
         </div>
       </div>
       <div class="column">
-        <!-- Skills -->
+        <!-- API content -->
         <div class="card">
-          <div class="card-content skills-content">
+          <div class="card-content">
             <h3 class="title is-4">{{api}}</h3>
             <div class="content">
               {{api-content}}
@@ -167,7 +176,7 @@
             class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
         </div> -->
 
-  <!-- Services -->
+  <!-- Features -->
   <section class="section" id="features">
     <div class="section-heading">
       <h3 class="title is-2">{{features.title}}</h3>
@@ -175,7 +184,7 @@
     </div>
     <div class="container">
       <div class="columns">
-        {{#features.item}}
+        {{#each features.item-first}}
         <div class="column">
           <div class="box">
             <div class="content">
@@ -184,12 +193,12 @@
             </div>
           </div>
         </div>
-        {{/features.item}}
+        {{/each}}
       </div>
     </div>
     <div class="container">
       <div class="columns">
-        {{#features.item}}
+        {{#each features.item-second}}
         <div class="column">
           <div class="box">
             <div class="content">
@@ -198,7 +207,7 @@
             </div>
           </div>
         </div>
-        {{/features.item}}
+        {{/each}}
       </div>
     </div>
   </section>
@@ -208,7 +217,7 @@
     <div class="section-heading">
       <h3 class="title is-2">{{resume.title}}</h3>
       <h4 class="subtitle is-5">{{resume.subtitle}}</h4>
-      <a href="https://cadbase.rs/#/login" target="_blank" class="button is-success is-large">
+      <a href="https://app.cadbase.rs/#/login" target="_blank" class="button is-success is-large">
         <span class="icon">
           <i class="fas fa-door-open" style="color: #fff;"></i>
         </span>
@@ -217,8 +226,8 @@
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section class="section" id="overviews">
+  <!-- Overviews -->
+  <!-- <section class="section" id="overviews">
     <div class="container">
       <div class="section-heading">
         <h3 class="title is-2">{{overviews.title}}</h3>
@@ -228,7 +237,7 @@
 
       {{nothing}}
 
-      <!-- <div class="container portfolio-container">
+      <div class="container portfolio-container">
         <div class="columns is-multiline is-variable is-2-mobile is-1-tablet is-3-desktop is-8-widescreen is-1-fullhd">
 
           <div class="column is-half">
@@ -258,9 +267,9 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- Terms -->
