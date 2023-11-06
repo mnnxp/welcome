@@ -22,5 +22,5 @@
 <!-- ABOUT -->
 ## About
 
-This repository hosts a static site for the first introduction to the CADBase platform.
+This repository hosts a static site for the first introduction to the CADBase platform.  
 Gradually tutorials and articles about the platform will be published here.
