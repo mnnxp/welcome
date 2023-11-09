@@ -94,7 +94,7 @@
           <span class="icon">
             <i class="fas fa-book"></i>
           </span>
-          <span>{{api}}</span>
+          <span>{{api.title}}</span>
         </a>
       </div>
     </div>
@@ -136,6 +136,10 @@
             <div class="content">
               {{cad-integrations.content}}
             </div>
+            <div class="content">
+              {{cad-integrations.example}}
+              <a href="https://youtu.be/e_OGffAgRPo" target="_blank" rel="noopener noreferrer"> YouTube</a>
+            </div>
           </div>
         </div>
       </div>
@@ -154,9 +158,13 @@
         <!-- API content -->
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-4">{{api}}</h3>
+            <h3 class="title is-4">{{api.title}}</h3>
             <div class="content">
-              {{api-content}}
+              {{api.content}}
+            </div>
+            <div class="content">
+              {{api.example}}
+              <a href="https://docs.cadbase.rs/#mutation-registerUser" target="_blank"> GraphQL API</a>
             </div>
           </div>
         </div>
@@ -296,12 +304,12 @@
                     </a>
                 </div>
                 <div class="tag is-white is-medium">
-                    <a class="social-network" href="https://www.youtube.com/channel/UC-dHiTHBGV88ScxFKSC3srw" title="Youtube Channel" rel="noreferrer">
+                    <a class="social-network" href="https://www.youtube.com/channel/UC-dHiTHBGV88ScxFKSC3srw" title="Youtube Channel" rel="noopener noreferrer">
                         <i class="fab fa-lg fa-youtube"></i>
                     </a>
                 </div>
                 <div class="tag is-white is-medium">
-                    <a class="social-network" href="https://gitlab.com/cadbase" title="CADBase Source Codes" rel="noreferrer">
+                    <a class="social-network" href="https://gitlab.com/cadbase" title="CADBase Source Codes" rel="noopener noreferrer">
                         <i class="fab fa-lg fa-brands fa-gitlab"></i>
                     </a>
                 </div>

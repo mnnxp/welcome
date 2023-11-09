@@ -5,7 +5,6 @@
         "slogan": "Making the present better"
     },
     "platform": "Platform",
-    "api": "API",
     "about-us": {
         "title": "Platform",
         "subtitle": "for engineers and suppliers",
@@ -13,10 +12,15 @@
     },
     "cad-integrations": {
         "title": "CAD Integrations",
-        "content": "One valuable feature is the capability to access and refresh parts on the platform through computer-aided design systems utilised by engineers and designers."
+        "content": "One valuable feature is the capability to access and refresh parts on the platform through computer-aided design systems utilised by engineers and designers.",
+        "example": "Demonstration of integration with FreeCAD on"
     },
     "3d-viewer": "3D Viewer",
-    "api-content": "The engineering platform's API, accessible to all users, enables them to create bespoke solutions for automating business processes and presenting data.",
+    "api": {
+        "title": "API",
+        "content": "The engineering platform's API, accessible to all users, enables them to create bespoke solutions for automating business processes and presenting data.",
+        "example": "Request for user creation via"
+    },
     "features": {
         "title": "Features",
         "subtitle": "What is the advantage of an engineering data sharing platform?",
