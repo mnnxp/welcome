@@ -45,11 +45,7 @@
             }
         ]
     },
-    "resume": {
-        "title": "Platform Application",
-        "subtitle": "Your browser must support WebAssembly (Wasm) and JavaScript (importmap is used) for it to function properly. Please check if your browser has these features."
-    },
-    "btn-open-platform": "Open CADBase Platform",
+    "btn-open-platform": "Open CADBase",
     "overviews": {
         "title": "Overviews",
         "subtitle": "Training manuals and articles"

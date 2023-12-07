@@ -123,7 +123,13 @@
       <h3 class="title is-2">{{about-us.title}}</h3>
       <h4 class="subtitle is-5">{{about-us.subtitle}}</h4>
       <div class="container">
-        <p>{{about-us.text}}</p>
+        <p class="subtitle is-5">{{about-us.text}}</p>
+        <a href="https://app.cadbase.rs/#/login" target="_blank" class="button is-success is-large">
+          <span class="icon">
+            <i class="fas fa-door-open" style="color: #fff;"></i>
+          </span>
+          <span>{{btn-open-platform}}</span>
+        </a>
       </div>
     </div>
 
@@ -172,18 +178,6 @@
     </div>
   </section>
 
-  <!-- Skills tags -->
-  <!-- <br>
-        <div class="tags custom-tags">
-          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
-            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
-            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
-            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
-            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
-            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
-            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
-        </div> -->
-
   <!-- Features -->
   <section class="section" id="features">
     <div class="section-heading">
@@ -219,66 +213,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Resume -->
-  <section class="section" id="resume">
-    <div class="section-heading">
-      <h3 class="title is-2">{{resume.title}}</h3>
-      <h4 class="subtitle is-5">{{resume.subtitle}}</h4>
-      <a href="https://app.cadbase.rs/#/login" target="_blank" class="button is-success is-large">
-        <span class="icon">
-          <i class="fas fa-door-open" style="color: #fff;"></i>
-        </span>
-        <span>{{btn-open-platform}}</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- Overviews -->
-  <!-- <section class="section" id="overviews">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">{{overviews.title}}</h3>
-        <h4 class="subtitle is-5">{{overviews.subtitle}}</h4>
-      </div>
-      <br>
-
-      {{nothing}}
-
-      <div class="container portfolio-container">
-        <div class="columns is-multiline is-variable is-2-mobile is-1-tablet is-3-desktop is-8-widescreen is-1-fullhd">
-
-          <div class="column is-half">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Admin <small>(Light)</small></span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-danger">WIP</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/admin.png" alt="Admin template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/admin.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
 
   <!-- Terms -->
   <section class="section" id="terms">
@@ -326,7 +260,7 @@
         <div class="column">
         </div>
         <div class="column">
-            <a href="#about" >
+            <a href="https://app.cadbase.rs/#/login" target="_blank" >
               {{about-us.title}}
             </a>
             <br/>
@@ -334,7 +268,7 @@
               {{terms.title}}
             </a>
             <br/>
-            <a href="https://docs.cadbase.rs/" >
+            <a href="https://docs.cadbase.rs/" target="_blank" >
               {{api-reference}}
             </a>
         </div>
