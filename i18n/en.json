@@ -61,5 +61,9 @@
     "language": {
         "english": "English",
         "russian": "Russian"
+    },
+    "link-titles": {
+        "youtube": "YouTube Channel",
+        "gitlab": "CADBase Source Codes"
     }
 }
