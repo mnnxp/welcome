@@ -29,7 +29,9 @@
   <!-- Bulma Version 0.9.x-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/cube.css">
   <script async type="text/javascript" src="../js/bulma.js"></script>
+  <script async type="text/javascript" src="../js/cube.js"></script>
 </head>
 
 <body>
@@ -153,9 +155,31 @@
         <div class="card">
           <div class="card-content">
             <h3 class="title is-4">3D Просмотрщик</h3>
-            <figure class="image is-4by3">
-              <img src="../images/cube.svg" alt="3D Viewer">
-            </figure>
+            <!-- Thanks to Jordan Leigh for publishing the code (https://jordizle.com/contact/) -->
+            <div id="cube-wrapper">
+              <div class="viewport">
+                <div class="cube">
+                  <div class="side">
+                    <div class="cube-image">1</div>
+                  </div>
+                  <div class="side">
+                    <div class="cube-image">2</div>
+                  </div>
+                  <div class="side">
+                    <div class="cube-image">3</div>
+                  </div>
+                  <div class="side">
+                    <div class="cube-image">4</div>
+                  </div>
+                  <div class="side">
+                    <div class="cube-image">5</div>
+                  </div>
+                  <div class="side">
+                    <div class="cube-image active">6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
