@@ -1,6 +1,13 @@
 {
+    "lang": "en",
+    "onclick_lang": {
+        "ru": "href=\"/ru\"",
+        "class_ru": "",
+        "en": "",
+        "class_en": " is-info"
+    },
     "cadbase": {
-        "title": "CADBase - Welcome",
+        "title": "CADBase - Making the present better",
         "short-description": "The platform for publishing and sharing information about drawings and manufacturers.",
         "slogan": "Making the present better"
     },
@@ -12,8 +19,8 @@
     },
     "cad-integrations": {
         "title": "CAD Integrations",
-        "content": "One valuable feature is the capability to access and refresh parts on the platform through computer-aided design systems utilised by engineers and designers.",
-        "example": "Demonstration of integration with FreeCAD on"
+        "content": "Ability to access and update parts on the platform through computer-aided design, modeling and simulation systems used by engineers and designers.",
+        "example": "Demonstration of integrations with FreeCAD and Blender 3D on"
     },
     "3d-viewer": "3D Viewer",
     "api": {
@@ -48,7 +55,26 @@
     "btn-open-platform": "Open CADBase",
     "overviews": {
         "title": "Overviews",
-        "subtitle": "Training manuals and articles"
+        "subtitle": "Training manuals and articles",
+        "item": [
+            {
+                "title": "Value of CADBase platform for creators and engineers",
+                "item-tags": [
+                    {
+                        "level": "is-default",
+                        "tag": "Overview 1/6"
+                    }
+                ],
+                "image": {
+                    "link": "./images/ow_concept_mini_en.svg",
+                    "alt": "platform concept for engineers"
+                },
+                "action": {
+                    "link": "/platform-for-creators-and-engineers.html",
+                    "text": "READ MORE"
+                }
+            }
+        ]
     },
     "nothing": "Nothing",
     "terms": {
@@ -65,5 +91,10 @@
     "link-titles": {
         "youtube": "YouTube Channel",
         "gitlab": "CADBase Source Codes"
+    },
+    "resources": {
+        "images": "./images",
+        "css": "./css",
+        "js": "./js"
     }
 }

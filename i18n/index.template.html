@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
 <!-- Template from https://bulmatemplates.github.io/bulma-templates -->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Referrer-Policy" value="no-referrer | same-origin" />
   <title>{{cadbase.title}}</title>
   <meta name="description" content="{{cadbase.short-description}}" />
-  <link rel="canonical" href="https://cadbase.rs/">
-  <link rel="icon" href="./images/favicon.png">
-  <link rel="alternate" hreflang="ru" href="/ru">
+  <link rel="canonical" href="https://cadbase.rs/" />
+  <link rel="icon" href="{{resources.images}}/favicon.png" />
+  <link rel="alternate" hreflang="ru" href="/ru" />
 
   <!-- Open Graph Card -->
   <meta property="og:title" content="{{cadbase.title}}" />
   <meta property="og:url" content="https://cadbase.rs" />
-  <meta property="og:image" content="./images/full_logo.svg" />
+  <meta property="og:image" content="{{resources.images}}/full_logo.svg" />
   <meta property="og:description" content="{{cadbase.short-description}}" />
 
   <!-- Twitter Card -->
-  <meta name="twitter:title" content="{{cadbase.title}}">
-  <meta name="twitter:description" content="{{cadbase.short-description}}">
-  <meta name="twitter:image" content="./images/full_logo.svg">
-  <meta name="twitter:site" content="@cadbase_rs">
-  <meta name="twitter:url" content="https://cadbase.rs">
+  <meta name="twitter:title" content="{{cadbase.title}}" />
+  <meta name="twitter:description" content="{{cadbase.short-description}}" />
+  <meta name="twitter:image" content="{{resources.images}}/full_logo.svg" />
+  <meta name="twitter:site" content="@cadbase_rs" />
+  <meta name="twitter:url" content="https://cadbase.rs" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.9.x-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
-  <link rel="stylesheet" type="text/css" href="./css/cube.css">
-  <script async type="text/javascript" src="./js/bulma.js"></script>
-  <script async type="text/javascript" src="./js/cube.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" integrity="sha384-PSQkZIGhbT9sq4xpfKbW37+lQAW2Pm0TZIzzySf3DQ1s4A5ojGZx4jHS+XU/mqP+" crossorigin="anonymous" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha384-HmYpsz2Aa9Gh3JlkCoh8kUJ2mUKJKTnkyC2Lzt8aLzpPOpnDe8KpFE2xNiBpMDou" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="{{resources.css}}/index.css" />
+  <link rel="stylesheet" type="text/css" href="{{resources.css}}/cube.css" />
+  <script async type="text/javascript" src="{{resources.js}}/bulma.js"></script>
+  <script async type="text/javascript" src="{{resources.js}}/cube.js"></script>
 </head>
 
 <body>
@@ -72,12 +72,12 @@
           </span>
           <span>{{features.title}}</span>
         </a>
-        <!-- <a class="navbar-item" href="#overviews">
+        <a class="navbar-item" href="#overviews">
           <span class="icon">
             <i class="far fa-newspaper"></i>
           </span>
           <span>{{overviews.title}}</span>
-        </a> -->
+        </a>
         <a class="navbar-item" href="#terms">
           <span class="icon">
             <i class="fas fa-handshake"></i>
@@ -108,7 +108,7 @@
     <div class="hero-body container pb-0">
       <div>
         <h1 class="title is-1" title="CADBase" style="margin-bottom: 0; position: initial;">
-          <img src="./images/full_logo.svg" alt="CADBase">
+          <img src="{{resources.images}}/full_logo.svg" alt="CADBase"/>
         </h1>
         <!-- <br/> -->
         <h2 class="subtitle is-3">
@@ -126,7 +126,7 @@
       <h4 class="subtitle is-5">{{about-us.subtitle}}</h4>
       <div class="container">
         <p class="subtitle is-5">{{about-us.text}}</p>
-        <a href="https://app.cadbase.rs/#/login" target="_blank" class="button is-success is-large">
+        <a onclick=rt_click() href="https://app.cadbase.rs/#/login" target="_blank" class="button is-success is-large">
           <span class="icon">
             <i class="fas fa-door-open" style="color: #fff;"></i>
           </span>
@@ -146,7 +146,7 @@
             </div>
             <div class="content">
               {{cad-integrations.example}}
-              <a href="https://youtu.be/e_OGffAgRPo" target="_blank" rel="noopener noreferrer"> YouTube</a>
+              <a href="https://www.youtube.com/@cadbaseplatform/playlists" target="_blank" rel="noopener noreferrer"> YouTube</a>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@
             </div>
             <div class="content">
               {{api.example}}
-              <a href="https://docs.cadbase.rs/#mutation-registerUser" target="_blank"> GraphQL API</a>
+              <a onclick=rt_click_docs() href="https://docs.cadbase.rs/#mutation-registerUser" target="_blank"> GraphQL API</a>
             </div>
           </div>
         </div>
@@ -238,6 +238,45 @@
     </div>
   </section>
 
+  <!-- Overviews -->
+  <section class="section" id="overviews">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">{{overviews.title}}</h3>
+        <h4 class="subtitle is-5">{{overviews.subtitle}}</h4>
+      </div>
+      <div class="container portfolio-container">
+        <div class="columns is-multiline is-variable is-2-mobile is-1-tablet is-3-desktop is-8-widescreen is-1-fullhd">
+
+          {{#each overviews.item}}
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>{{title}}</span>
+                  <span class="is-pulled-right ml-1">
+                    {{#each item-tags}}
+                    <span class="tag {{level}}">{{tag}}</span>
+                    {{/each}}
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="{{image.link}}" alt="{{image.alt}}"/>
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="{{action.link}}" class="card-footer-item">{{action.text}}</a>
+              </footer>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Terms -->
   <section class="section" id="terms">
     <div class="section-heading">
@@ -246,7 +285,7 @@
     </div>
     <div class="content">
       {{terms.content}}
-      <br>
+      <br/>
       <blockquote>{{terms.body}}</blockquote>
     </div>
   </section>
@@ -273,18 +312,17 @@
                 </div>
             </div>
             <div class="buttons">
-                <a class="button is-info" onclick=onclick_lang_en>
+                <a class="button{{onclick_lang.class_en}}" {{{onclick_lang.en}}}>
                     {{language.english}}
                 </a>
-                <a class="button" onclick=onclick_lang_ru>
+                <a class="button{{onclick_lang.class_ru}}" {{{onclick_lang.ru}}}>
                     {{language.russian}}
                 </a>
             </div>
         </div>
+        <div class="column"></div>
         <div class="column">
-        </div>
-        <div class="column">
-            <a href="https://app.cadbase.rs/#/login" target="_blank" >
+            <a onclick=rt_click() href="https://app.cadbase.rs/#/login" target="_blank" >
               {{about-us.title}}
             </a>
             <br/>
@@ -292,7 +330,7 @@
               {{terms.title}}
             </a>
             <br/>
-            <a href="https://docs.cadbase.rs/" target="_blank" >
+            <a onclick=rt_click_docs() href="https://docs.cadbase.rs/" target="_blank" >
               {{api-reference}}
             </a>
         </div>
@@ -302,5 +340,6 @@
     </div>
   </footer>
 </body>
-
+<script>function rt_click(){return true}</script>
+<script>function rt_click_docs(){return true}</script>
 </html>

@@ -1,0 +1,59 @@
+{
+    "lang": "en",
+    "onclick_lang": {
+        "ru": "href=\"/ru/platform-for-creators-and-engineers.html\"",
+        "class_ru": "",
+        "en": "",
+        "class_en": " is-info"
+    },
+    "root-prefix": "/",
+    "article": {
+        "title": "Value of CADBase platform for creators and engineers",
+        "short-description": "The article presents a general overview of the history of the creation of a platform for the exchange of 3D models and drawings, as well as supporting documentation. The issues of product data management, organization of product catalogs and interaction between customers and suppliers are discussed.",
+        "main-image": "./images/full_logo.svg",
+        "link": "/platform-for-creators-and-engineers.html",
+        "published": {
+            "date": "2024-06-27",
+            "text": "June 27, 2024"
+        },
+        "content": "<img src=\"./images/ow_concept_mini_en.svg\" alt=\"Conceptual description of the engineering data exchange platform\" /><p>The CADBase platform has been under development since 2018. The name of the platform is formed by combining two words CAD and Base, conventionally \"CADBase\". This name describes the platform as \"CAD Data Base\".</p><p>The main task of CADBase platform is to provide exchange of 3D models, drawings and related information: supporting documentation, manufacturers' catalogs with information about suppliers, certificates, standardization and classification documents.</p><p>The idea of sharing access to projects from different programs is not new, and there are already solutions for integrations between <abbr title=\"Computer-aided design systems\">CAD</abbr>, <abbr title=\"Product data management systems\">PDM</abbr>, <abbr title=\"Product lifecycle management systems\">PLM</abbr> and <abbr title=\"Supply chain management systems\">SCM</abbr>. From a business point of view, CADBase platform is focused on manufacturing enterprises and engineering companies. In the future, the use of the platform will simplify the process of searching for suppliers and selecting analogs, allowing potential customers to quickly receive information about the manufacturer and its products.</p><p>The platform with minimal functionality was launched in January 2022. The main users of the platform are people who need external storage for the results of intellectual labor, those who lack the capabilities of a cloud disk and need a wider functionality, with model catalogs, 3D viewer and file version control. Taking into account user requests, integrations with <a href=\"https://www.freecad.org/\" title=\"FreeCAD website\" rel=\"noopener noreferrer\" target=\"_blank\">FreeCAD</a> (a free parametric CAD program) and <a href=\"https://extensions.blender.org/add-ons/cadbase-library/\" title=\"CADBase Library extension page for Blender 3D\" rel=\"noopener noreferrer\" target=\"_blank\">Blender 3D</a> (a free program for creating 3D computer graphics) were implemented.</p><h3 class=\"has-text-centered\">CADBase platform structure</h3><p>The main object of the platform is \"Component\". When viewing the component on the platform site, the following information is displayed:</p><ul><li>attributes and files of the component</li><li>component modifications and their files</li><li>file sets for component modifications (grouping files by software)</li><li>standards related to the component (published on the platform)</li><li>information about the manufacturer or suppliers of the component</li><li>catalogs associated with the component</li></ul><p>Currently, the platform's website is available in Russian and English. There are plans to add Chinese and Spanish. In general, the more localizations the better, new ones will be added as requests or those who wish to keep them up to date arise.</p><h3 class=\"has-text-centered\">Advantageous differences between CADBase and analogs</h3><p>The presence of similar products to CADBase platform makes it necessary to constantly search for improvements and innovations. The CADBase platform already combines a number of advantages:</p><dl><dt><strong>Easy integration with third party software</strong></dt><dd>Selected user components and file sets are used to define components and data from third-party programs to interact with. For example, when working through the CADBase Library workbench in FreeCAD, the user will have only the necessary data updated.</dd><dt><strong>Creation of websites based on CADBase platform</strong></dt><dd>With branding, adding commodity calculations and creating add-ons for other programs, including those with limited API access. This is facilitated by access to the API of the platform server by (any) user of the platform, as well as distribution of the source codes of the platform and related projects under free licenses.</dd><dt><strong>Availability of a file versioning system</strong></dt><dd>File <abbr title=\"revision\">version</abbr> control can help users and organizations improve data management strategies. A new version is created by uploading a file with the same name as a previously uploaded file. Users can revisit older versions as files evolve. In some cases, users prefer to retain certain versions.</dd><dt><strong>Differential access</strong></dt><dd>The read/write access differentiation feature allows some users to be granted modification access and others to be granted read-only access. If access is granted to a company, its members will be granted access depending on their role in the company.</dd><dt><strong>The component contains information about the manufacturer or suppliers</strong></dt><dd>This allows companies that are distributors of standard industrial products to add themselves to component supplier lists.</dd></dl>",
+        "conclusion": "Thank you for your interest!",
+        "next": "",
+        "reference-materials": [
+            {"material-item": "Computer-Aided Design Systems (CAD - Computer-aided design; CADD - Computer-aided design and drafting) - a class of software for creating 3D models and drawings, as well as design and technological documentation."},
+            {"material-item": "Product Data Management (abbreviation PDM) - software for automating data and document storage, product structure and workflow management."},
+            {"material-item": "Product Lifecycle Management (abbreviation PLM) - this class of software manages information and processes at each stage of the product lifecycle, from the moment the need is identified to its utilization."},
+            {"material-item": "Supply Chain Management (abbreviation SCM) - end-to-end supply chain management software that simplifies the process of optimizing logistics and procurement."}
+        ]
+    },
+    "platform": "Platform",
+    "about-us": {
+        "title": "Platform"
+    },
+    "api": {
+        "title": "API"
+    },
+    "features": {
+        "title": "Features"
+    },
+    "overviews": {
+        "title": "Overviews"
+    },
+    "terms": {
+        "title": "Terms"
+    },
+    "api-reference": "API reference",
+    "language": {
+        "english": "English",
+        "russian": "Russian"
+    },
+    "link-titles": {
+        "youtube": "YouTube Channel",
+        "gitlab": "CADBase Source Codes"
+    },
+    "resources": {
+        "images": "./images",
+        "css": "./css",
+        "js": "./js"
+    }
+}
