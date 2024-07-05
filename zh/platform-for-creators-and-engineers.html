@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <!-- Template from https://bulmatemplates.github.io/bulma-templates -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Referrer-Policy" value="no-referrer | same-origin" />
+    <title>CADBase - 让现在更美好</title>
+    <meta name="description" content="发布和共享图纸及制造商信息的平台。" />
+    <link rel="canonical" href="https://cadbase.rs/" />
+    <link rel="icon" href="./../images/favicon.png" />
+    <link rel="alternate" hreflang="zh" href="/zh" />
+
+    <!-- Open Graph Card -->
+    <meta property="og:title" content="CADBase - 让现在更美好" />
+    <meta property="og:url" content="https://cadbase.rs" />
+    <meta property="og:image" content="./../images/full_logo.svg" />
+    <meta
+      property="og:description"
+      content="发布和共享图纸及制造商信息的平台。"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="CADBase - 让现在更美好" />
+    <meta
+      name="twitter:description"
+      content="发布和共享图纸及制造商信息的平台。"
+    />
+    <meta name="twitter:image" content="./../images/full_logo.svg" />
+    <meta name="twitter:site" content="@cadbase_rs" />
+    <meta name="twitter:url" content="https://cadbase.rs" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      integrity="sha384-PSQkZIGhbT9sq4xpfKbW37+lQAW2Pm0TZIzzySf3DQ1s4A5ojGZx4jHS+XU/mqP+"
+      crossorigin="anonymous"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+      integrity="sha384-HmYpsz2Aa9Gh3JlkCoh8kUJ2mUKJKTnkyC2Lzt8aLzpPOpnDe8KpFE2xNiBpMDou"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/cube.css" />
+    <script async type="text/javascript" src="./../js/bulma.js"></script>
+    <script async type="text/javascript" src="./../js/cube.js"></script>
+  </head>
+
+  <body>
+    <!-- START NAV -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div class="navbar-item is-size-3 header-logo logo-bookmark">
+          <a href="/ru/">
+            <svg
+              width="66"
+              height="91"
+              viewBox="0 0 66 91"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0H66V82C66 86.9706 61.9706 91 57 91H9C4.02944 91 0 86.9706 0 82V0Z"
+                fill="#F3F6FF"
+              />
+              <path
+                d="M32.6316 39.0202C32.1719 39.0202 31.7988 38.6471 31.7988 38.1875V33.8327C31.7988 33.3731 32.1719 33 32.6316 33C33.0912 33 33.4643 33.3731 33.4643 33.8327V38.1875C33.4643 38.6471 33.0912 39.0202 32.6316 39.0202Z"
+                fill="#1872F0"
+              />
+              <path
+                d="M43.4308 60.0237H21.8327C21.3731 60.0237 21 59.6507 21 59.191C21 58.7313 21.3731 58.3582 21.8327 58.3582H43.4308C43.8905 58.3582 44.2636 58.7313 44.2636 59.191C44.2636 59.6507 43.8905 60.0237 43.4308 60.0237Z"
+                fill="#B2BBCC"
+              />
+              <path
+                d="M22.1751 69.9055C22.0819 69.9055 21.9864 69.89 21.892 69.8567C21.459 69.699 21.2358 69.2227 21.3912 68.7896L29.581 46.1178C29.7376 45.6859 30.2117 45.4594 30.648 45.6171C31.0811 45.7736 31.3042 46.2511 31.1488 46.683L22.959 69.3559C22.8358 69.6946 22.516 69.9055 22.1751 69.9055Z"
+                fill="#B2BBCC"
+              />
+              <path
+                d="M43.09 69.9055C42.7491 69.9055 42.4293 69.6946 42.3061 69.3559L34.1163 46.683C33.9597 46.2511 34.184 45.7736 34.617 45.6171C35.049 45.4594 35.5264 45.6859 35.683 46.1178L43.8738 68.7896C44.0293 69.2227 43.8061 69.699 43.3731 69.8567C43.2798 69.89 43.1832 69.9055 43.09 69.9055Z"
+                fill="#B2BBCC"
+              />
+              <path
+                d="M32.6316 62.2015C32.1719 62.2015 31.7988 61.8284 31.7988 61.3688V57.0141C31.7988 56.5544 32.1719 56.1813 32.6316 56.1813C33.0912 56.1813 33.4643 56.5544 33.4643 57.0141V61.3688C33.4643 61.8284 33.0912 62.2015 32.6316 62.2015Z"
+                fill="#1872F0"
+              />
+              <path
+                d="M34.9049 50.8456C34.6006 50.8456 34.3064 50.678 34.1609 50.3871C33.9544 49.9763 34.1187 49.4755 34.5307 49.269C35.9874 48.5362 36.8934 47.0827 36.8934 45.4761C36.8934 43.1266 34.9815 41.2147 32.632 41.2147C30.2814 41.2147 28.3706 43.1266 28.3706 45.4761C28.3706 47.0827 29.2755 48.5362 30.7333 49.269C31.1442 49.4755 31.3096 49.9763 31.1031 50.3871C30.8966 50.7979 30.3958 50.9644 29.985 50.7568C27.962 49.7398 26.7051 47.7167 26.7051 45.4761C26.7051 42.2084 29.3632 39.5492 32.632 39.5492C35.8997 39.5492 38.5589 42.2084 38.5589 45.4761C38.5589 47.7167 37.302 49.7398 35.2779 50.7568C35.1591 50.8179 35.0303 50.8456 34.9049 50.8456Z"
+                fill="#2C72F0"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="navbar-burger burger"
+          data-target="navbarExampleTransparentExample"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about">
+            <span class="icon">
+              <i class="fas fa-info"></i>
+            </span>
+            <span>平台</span>
+          </a>
+          <a class="navbar-item" href="#features">
+            <span class="icon">
+              <i class="fas fa-fire"></i>
+            </span>
+            <span>优势</span>
+          </a>
+          <a class="navbar-item" href="#overviews">
+            <span class="icon">
+              <i class="far fa-newspaper"></i>
+            </span>
+            <span>概述</span>
+          </a>
+          <a class="navbar-item" href="#terms">
+            <span class="icon">
+              <i class="fas fa-handshake"></i>
+            </span>
+            <span>条款</span>
+          </a>
+        </div>
+        <div class="buttons">
+          <a
+            class="button"
+            href="https://app.cadbase.rs/#/login"
+            target="_blank"
+          >
+            <span class="icon">
+              <i class="fas fa-door-open"></i>
+            </span>
+            <span>平台</span>
+          </a>
+          <a class="button" href="https://docs.cadbase.rs" target="_blank">
+            <span class="icon">
+              <i class="fas fa-book"></i>
+            </span>
+            <span>API</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAV -->
+
+    <div class="container">
+      <!-- START ARTICLE FEED -->
+      <section class="articles">
+        <div class="column">
+          <!-- START ARTICLE -->
+          <div class="card article">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <p class="title article-title">
+                    CADBase平台对创作者和工程师的价值
+                  </p>
+                  <div class="tags has-addons level-item">
+                    <span class="tag is-rounded is-info is-light">
+                      <i class="far fa-calendar" style="color: #ffffff"></i>
+                    </span>
+                    <span class="tag is-rounded">
+                      <time datetime="2024-06-27"> 2024年6月27日 </time>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="content article-body">
+                <img
+                  src="../images/ow_concept_mini_en.svg"
+                  alt="平台交换工程数据的概念描述"
+                />
+                <p>
+                  CADBase平台的开发始于2018年。平台名称由两个词汇“CAD（计算机辅助设计）”和“Base（基础）”组合而成，俗称“CAD基础”。这种命名描述了该平台作为“计算机辅助设计数据基础”的功能。
+                </p>
+                <p>
+                  CADBase平台的主要任务是确保3D模型、图纸及相关信息的交换：包括附带文档、制造商目录和供应商信息、认证、标准化和分类文档。
+                </p>
+                <p>
+                  关于从不同软件中访问项目的共同理念并不新鲜，已经存在用于<abbr
+                    title="计算机辅助设计系统"
+                    >CAD</abbr
+                  >、<abbr title="产品数据管理系统">PDM</abbr>、<abbr
+                    title="产品生命周期管理系统"
+                    >PLM</abbr
+                  >和<abbr title="供应链管理系统">SCM</abbr
+                  >的集成解决方案。从商业角度看，CADBase平台面向制造企业和工程公司。未来，平台的使用将简化供应商搜索和替代品选择过程，使潜在客户能够快速获取有关制造商及其产品的信息。
+                </p>
+                <p>
+                  平台在2022年1月启动了最小化功能。主要用户是需要外部存储智能劳动成果的人员，缺乏云盘功能且需要更广泛功能，如模型目录、3D查看器和文件版本控制的用户。根据用户需求，实现了与<a
+                    href="https://www.freecad.org/"
+                    title="FreeCAD官网"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >FreeCAD</a
+                  >（免费参数化CAD）和<a
+                    href="https://extensions.blender.org/add-ons/cadbase-library/"
+                    title="Blender 3D中“CADBase库”插件页面"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Blender 3D</a
+                  >（免费3D计算机图形创建程序）的集成。
+                </p>
+                <h3 class="has-text-centered">CADBase平台的结构</h3>
+                <p>
+                  平台的主要对象是“组件”。在平台网站上查看组件时，将显示以下信息：
+                </p>
+                <ul>
+                  <li>组件的属性和文件</li>
+                  <li>组件的修改和它们的文件</li>
+                  <li>组件修改的文件集合（文件分组）</li>
+                  <li>与组件相关的标准（在平台上发布）</li>
+                  <li>组件的制造商或供应商信息</li>
+                  <li>与组件相关的目录</li>
+                </ul>
+                <p>
+                  目前，平台网站提供俄语和英语版本。计划增加中文和西班牙语。总体而言，语言越多越好，随着需求或希望保持其更新的用户的出现，将添加新的语言。
+                </p>
+                <h3 class="has-text-centered">
+                  CADBase与其他类似产品的主要区别
+                </h3>
+                <p>
+                  由于存在与CADBase类似的产品，必须不断寻找改进和创新。现在，CADBase平台结合了一系列优势：
+                </p>
+                <dl>
+                  <dt><strong>与第三方服务的简单集成</strong></dt>
+                  <dd>
+                    为了识别需要与之交互的第三方程序中的组件和数据，使用用户选择的组件和文件集合。例如，在使用FreeCAD中的CADBase
+                    Library工作台时，用户只会更新所需的数据。
+                  </dd>
+                  <dt><strong>基于CADBase平台创建网站</strong></dt>
+                  <dd>
+                    包括品牌化、产品计价和为其他程序创建插件，包括对API有限访问的支持。这得益于通过授权令牌（任何平台用户的）访问平台服务器的API，以及将平台及相关项目的源代码以自由许可证分发。
+                  </dd>
+                  <dt>
+                    <strong
+                      ><abbr title="文件版本管理">文件版本控制</abbr
+                      >系统的存在</strong
+                    >
+                  </dt>
+                  <dd>
+                    文件版本控制可以帮助用户和组织改进数据管理策略。在文件上传时创建新版本，其名称与之前上传的文件相同。活动<abbr
+                      title="审查"
+                      >文件版本</abbr
+                    >可以在较低或较高的版本之间更改。在某些情况下，用户更喜欢保存特定版本。
+                  </dd>
+                  <dt><strong>差异化访问</strong></dt>
+                  <dd>
+                    读取和写入访问权限的功能可以为部分用户提供修改权限，而其他用户仅提供读取权限。为公司授予访问权限时，其成员将根据其在公司的角色获得访问权限。
+                  </dd>
+                  <dt><strong>组件包含制造商或供应商信息</strong></dt>
+                  <dd>
+                    这允许供应标准和常规产品的公司“加入”到组件供应商列表中。
+                  </dd>
+                </dl>
+                <h4 class="has-text-centered">感谢您对CADBase平台的关注！</h4>
+                <h6 class="has-text-centered"></h6>
+              </div>
+
+              <hr />
+              <div class="content is-small">
+                <ul>
+                  <li>
+                    计算机辅助设计（CAD，Computer-aided
+                    design）和计算机辅助设计与制图（CADD，Computer-aided design
+                    and
+                    drafting）是一类用于创建3D模型和图纸，以及设计和工艺文档的软件。
+                  </li>
+                  <li>
+                    产品数据管理（PDM，Product Data
+                    Management）是管理产品数据（物品）的系统。这种软件自动化存储数据和文件，管理产品结构和工作流程。
+                  </li>
+                  <li>
+                    产品生命周期管理（PLM，Product Lifecycle
+                    Management）是管理产品（物品）生命周期的系统。这类软件管理产品生命周期的信息和流程，从需求识别到处置。
+                  </li>
+                  <li>
+                    供应链管理（SCM，Supply Chain
+                    Management）是供应链管理系统。这种软件通过优化物流和采购过程来简化供应链的综合管理。
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- END ARTICLE -->
+        </div>
+      </section>
+      <!-- END ARTICLE FEED -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="columns">
+        <div class="column">
+          <div class="tags">
+            <div class="tag is-white is-medium">
+              <a
+                class="social-network"
+                href="mailto:info@cadbase.rs"
+                title="Email"
+                style="margin-right: 0.1rem"
+              >
+                <i class="fas fa-lg fa-envelope"></i>
+              </a>
+            </div>
+            <div class="tag is-white is-medium">
+              <a
+                class="social-network"
+                href="https://www.youtube.com/channel/UC-dHiTHBGV88ScxFKSC3srw"
+                title="YouTube Channel"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i class="fab fa-lg fa-youtube"></i>
+              </a>
+            </div>
+            <div class="tag is-white is-medium">
+              <a
+                class="social-network"
+                href="https://gitlab.com/cadbase"
+                title="CADBase Source Codes"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i class="fab fa-lg fa-brands fa-gitlab"></i>
+              </a>
+            </div>
+          </div>
+          <div class="buttons">
+            <a class="button" href="/platform-for-creators-and-engineers.html">
+              英语
+            </a>
+            <a
+              class="button"
+              href="/ru/platform-for-creators-and-engineers.html"
+            >
+              俄语
+            </a>
+            <a class="button is-info"> 中文 </a>
+          </div>
+        </div>
+        <div class="column"></div>
+        <div class="column">
+          <a href="https://app.cadbase.rs/#/login" target="_blank"> 平台 </a>
+          <br />
+          <a href="/#terms"> 条款 </a>
+          <br />
+          <a href="https://docs.cadbase.rs/" target="_blank"> API 参考 </a>
+        </div>
+        <div class="column">
+          <h4>© CADBase</h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
