@@ -41,6 +41,7 @@
         "title": "Условия"
     },
     "api-reference": "Справочник по API",
+    "privacy-notice": "Уведомление о конфиденциальности",
     "language": {
         "english": "Английский",
         "russian": "Русский"
@@ -50,8 +51,8 @@
         "gitlab": "Исходные коды CADBase"
     },
     "resources": {
-        "images": "./images",
-        "css": "./css",
-        "js": "./js"
+        "images": "./../images",
+        "css": "./../css",
+        "js": "./../js"
     }
 }

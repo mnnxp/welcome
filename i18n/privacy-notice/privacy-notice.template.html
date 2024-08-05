@@ -109,16 +109,6 @@
                         </div>
                         <div class="content article-body">
                             {{{article.content}}}
-                            <h4 class="has-text-centered">{{article.conclusion}}</h4>
-                            <h6 class="has-text-centered">{{{article.next}}}</h6>
-                        </div>
-                        <hr/>
-                        <div class="content is-small">
-                            <ul>
-                                {{#each article.reference-materials}}
-                                <li>{{{material-item}}}</li>
-                                {{/each}}
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -169,7 +159,7 @@
                     {{terms.title}}
                 </a>
                 <br/>
-                <a href="{{root-prefix}}privacy-notice.html" target="_blank" >
+                <a href="{{article.link}}" target="_blank" >
                     {{privacy-notice}}
                 </a>
                 <br/>

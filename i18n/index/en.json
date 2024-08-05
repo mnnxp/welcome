@@ -15,7 +15,7 @@
     "about-us": {
         "title": "Platform",
         "subtitle": "for engineers and suppliers",
-        "text": "When organising collaborative engineering work, a platform that supports CAD file versioning, differentiated data access, verified supplier catalogues with 3D models and supporting documentation is a useful solution."
+        "text": "The platform has functionality to organize collaborative engineering work, exchange components (parts) between users, supports versioning of CAD files, differentiated data access, vendor catalogs with 2D drawings, 3D models and supporting documentation."
     },
     "cad-integrations": {
         "title": "CAD Integrations",
@@ -84,6 +84,7 @@
         "body": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
     },
     "api-reference": "API reference",
+    "privacy-notice": "Privacy Notice",
     "language": {
         "english": "English",
         "russian": "Russian"
