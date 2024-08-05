@@ -1,5 +1,5 @@
 <!-- PROJECT LOGO -->
-<br />
+<br/>
 <div align="center">
   <a href="https://gitlab.com/cadbase/cdbs-app">
     <img src="./images/favicon.png" alt="Logo" width="80">
@@ -9,7 +9,7 @@
 
   <p>
     CADBase is a digital platform for sharing 3D models and drawings!
-    <br />
+    <br/>
     <a href="https://cadbase.rs">View site</a>
     ·
     <a href="https://gitlab.com/cadbase/cdbs-app/issues">Report Bug</a>
