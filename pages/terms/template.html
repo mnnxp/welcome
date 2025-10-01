@@ -1,0 +1,18 @@
+{% extends "i18n/templates/article.html" %}
+
+{% block title %}{{ terms.title }}{% endblock %}
+
+{% block article %}
+<div class="has-text-centered mb-6">
+    <h3 class="title">{{ terms.title }}</h3>
+    <h4 class="subtitle">{{ terms.subtitle }}</h4>
+</div>
+<div class="column">
+    <div class="content">
+        <p>{{ terms.intro }}</p>
+        <blockquote class="has-background-light p-5 mt-5" style="border-left: 4px solid #3273dc;">
+            <p class="is-size-6">{{ terms.disclaimer }}</p>
+        </blockquote>
+    </div>
+</div>
+{% endblock %}

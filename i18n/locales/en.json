@@ -1,0 +1,386 @@
+{
+    "meta": {
+        "title": "CADBase - Platform for creators and engineers",
+        "description": "Join a community of engineers, DIY enthusiasts, and professionals to share ideas and collaborate.",
+        "title_suffix": " - CADBase",
+        "site_name": "CADBase",
+        "root_url": "https://cadbase.rs/",
+        "base_url": "https://cadbase.rs/en/",
+        "og_image": "images/og/og-image.webp",
+        "og_type": "website",
+        "twitter_site": "@cadbase_rs",
+        "twitter_creator": "@cadbase_rs",
+        "keywords": "CAD, 3D modeling, engineering collaboration, FreeCAD, Blender"
+    },
+    "assets": {
+        "favicon": "images/favicon.png",
+        "brand": "images/full_logo.svg",
+        "noimage": "images/noimage.svg",
+        "css": "css/index.css",
+        "js": "js/usability.js"
+    },
+    "navigation": {
+        "brand": "CADBase",
+        "home_url": "en/",
+        "menu_items": [
+            {
+                "text": "Platform",
+                "url": "#hero",
+                "icon": "fas fa-info"
+            },
+            {
+                "text": "Features",
+                "url": "#features",
+                "icon": "fas fa-fire"
+            },
+            {
+                "text": "Overviews",
+                "url": "#overviews",
+                "icon": "far fa-newspaper"
+            },
+            {
+                "text": "Terms",
+                "url": "terms/",
+                "icon": "fas fa-handshake"
+            }
+        ],
+        "buttons": [
+            {
+                "text": "Open",
+                "url": "https://app.cadbase.rs/",
+                "icon": "fas fa-door-open",
+                "class": ""
+            }
+        ]
+    },
+    "hero": {
+        "title": "CADBase Platform",
+        "subtitle": "Join a community of engineers, DIY enthusiasts, and professionals to share ideas and collaborate. Manage your 3D projects and get them made - simple.",
+        "visual_text": "Part Storage & 3D Viewer",
+        "buttons": [
+            {
+                "text": "Open This Platform",
+                "url": "https://app.cadbase.rs/",
+                "icon": "fas fa-door-open",
+                "class": "is-white is-large"
+            },
+            {
+                "text": "Overviews",
+                "url": "overviews/",
+                "icon": "",
+                "class": "is-light is-outlined is-medium"
+            }
+        ],
+        "cube_texts": ["", "Projects", "Versions", "Parts", "Models", "Drawings", "Libraries"]
+    },
+    "integrations": {
+        "title": "Integrated with parametric and polygonal modeling software",
+        "tools": [
+            {
+                "name": "FreeCAD",
+                "url": "https://github.com/mnnxp/cadbaselibrary-freecad",
+                "logo": "images/brands/FreeCAD-wordmark.svg"
+            },
+            {
+                "name": "Blender",
+                "url": "https://extensions.blender.org/add-ons/cadbase-library/",
+                "logo": "images/brands/Blender-logo.svg"
+            }
+        ],
+        "cta": {
+            "text": "Suggest New Integration",
+            "url": "mailto:support@cadbase.rs?subject=New Integration Suggestion",
+            "icon": "fas fa-plus"
+        }
+    },
+    "features": {
+        "title": "Streamline Your Workflow",
+        "subtitle": "From design to production in one platform",
+        "benefits": [
+            {
+                "icon": "project-diagram",
+                "color": "primary",
+                "title": "Component Management",
+                "description": "Organize components with modifications. Structured data hierarchy for easy search and reuse.",
+                "points": ["Version control", "Parameter search", "File sets organization"]
+            },
+            {
+                "icon": "users",
+                "color": "link",
+                "title": "Community & Collaboration",
+                "description": "Join a community of engineers and creators. Collaborate on projects and find the right partners.",
+                "points": ["Direct client communications", "Joint project development", "Professional knowledge sharing"]
+            },
+            {
+                "icon": "code-branch",
+                "color": "info",
+                "title": "API & Integrations",
+                "description": "API access using your account's JWT token. Connect tools effortlessly, extend capabilities, and automate workflows.",
+                "points": [
+                    "Full GraphQL API access",
+                    "Ready-to-use CAD plugins",
+                    "Custom deployment options"
+                ]
+            }
+        ]
+    },
+    "how_it_works": {
+        "title": "How It Works",
+        "steps": [
+            {
+                "number": 1,
+                "title": "Save Projects to Cloud",
+                "description": "Export 3D models from FreeCAD or Blender directly to CADBase cloud storage. Organize files with version control and team access management."
+            },
+            {
+                "number": 2,
+                "title": "Collaborate on Projects",
+                "description": "Grant access to colleagues and partners. Track changes and manage project versions in real-time with full visibility."
+            },
+            {
+                "number": 3,
+                "title": "Organize Workspace",
+                "description": "Create component libraries, configure access permissions, and maintain secure cloud backups of all your projects."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to organize your projects?",
+        "subtitle": "Join the community of 3D artists and engineers who store and manage their work with the platform",
+        "note": "Free • No card required",
+        "buttons": [
+            {
+                "text": "Start",
+                "class": "is-white",
+                "url": "https://app.cadbase.rs/#/register",
+                "icon": ""
+            },
+            {
+                "text": "View",
+                "class": "is-light is-outlined",
+                "url": "https://app.cadbase.rs/#/search",
+                "icon": ""
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Privacy Notice",
+        "date": "August 5, 2024",
+        "date_iso": "2024-08-05",
+        "body": "<p>CADBase operates websites on the domain cadbase.rs and its subdomains, which provide CADBase platform services.</p><p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, cadbase.rs websites.</p><p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p><p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://cadbase.rs/en/privacy-notice.html URL, unless otherwise defined in this Privacy Policy.</p><h3>Information Collection and Use</h3><p>For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.</p><h3>Log Data</h3><p>We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer's Internet Protocol (“IP”) address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p><h3>Cookies</h3><p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.</p><p>Our website uses these “cookies” to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.</p><h3>Service Providers</h3><p>We may employ third-party companies and individuals due to the following reasons:</p><ul><li>To facilitate our Service;</li><li>To provide the Service on our behalf;</li><li>To perform Service-related services;</li><li>To analyze how the Service is used and operates. </li></ul><p>We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p><h3>Security</h3><p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p><h3>Links to Other Sites</h3><p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p><h3>Children's Privacy</h3><p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p><h3>Changes to This Privacy Policy</h3><p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p><h3>Contact Us</h3><p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>"
+    },
+    "terms": {
+        "id": "terms",
+        "title": "Terms",
+        "subtitle": "We're really happy you're here",
+        "intro": "Please read this Terms of Service agreement carefully before accessing or using CADBase. <br/>Because it is such an important contract between us and our users, we need to make it as clear as possible:",
+        "disclaimer": "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    },
+    "footer": {
+        "social_networks": [
+            {
+                "url": "mailto:info@cadbase.rs",
+                "title": "Email",
+                "icon": "fas fa-lg fa-envelope"
+            },
+            {
+                "url": "https://www.youtube.com/channel/UC-dHiTHBGV88ScxFKSC3srw",
+                "title": "Youtube Channel",
+                "icon": "fab fa-lg fa-youtube"
+            },
+            {
+                "url": "https://gitlab.com/cadbase",
+                "title": "CADBase Source Codes",
+                "icon": "fab fa-lg fa-gitlab"
+            }
+        ],
+        "available_languages": [
+            {
+                "code": "en",
+                "name": "English",
+                "label": "English"
+            },
+            {
+                "code": "ru",
+                "name": "Russian",
+                "label": "Русский"
+            },
+            {
+                "code": "zh",
+                "name": "Chinese",
+                "label": "中文"
+            }
+        ],
+        "resources_links": [
+            {
+                "text": "Overviews",
+                "url": "overviews/"
+            },
+            {
+                "text": "API reference",
+                "url": "https://docs.cadbase.rs/"
+            },
+            {
+                "text": "Code of this site",
+                "url": "https://gitlab.com/cadbase/welcome/"
+            }
+        ],
+        "legal_links": [
+            {
+                "text": "Platform",
+                "url": "https://app.cadbase.rs/"
+            },
+            {
+                "text": "Terms",
+                "url": "terms/"
+            },
+            {
+                "text": "Privacy notice",
+                "url": "privacy-notice/"
+            }
+        ],
+        "copyright": "© CADBase",
+        "additional_info": "Making the present better."
+    },
+    "overviews": {
+        "meta": {
+            "title": "Overviews and Articles",
+            "description": "Useful materials about CADBase platform, integrations and best practices",
+            "og_image": "",
+            "og_type": "website",
+            "keywords": "CADBase, articles, tutorials, engineering, guides"
+        },
+        "hero": {
+            "title": "Overviews and Articles",
+            "subtitle": "Useful materials about CADBase platform, integrations and best practices"
+        },
+        "coming_soon": "<div class=\"container\"><div class=\"has-text-centered\"><div class=\"icon is-large has-text-grey-lighter mb-5\"><i class=\"fas fa-hourglass-half fa-4x\"></i></div><div class=\"notification is-info is-light is-size-5\" style=\"max-width: 600px; margin: 0 auto 3rem auto;\"><p class=\"mb-3\"><strong>🚧 This article is coming soon!</strong></p><p>We're working hard to bring you comprehensive content on this topic.</p></div><div class=\"buttons is-centered are-medium\"><a href=\"../\" class=\"button is-primary\"><span class=\"icon\"><i class=\"fas fa-arrow-left\"></i></span><span>Back to All Articles</span></a></div><div class=\"mt-6\"></div></div></div>",
+        "articles": [
+            {
+                "page_name": "platform-for-creators-and-engineers",
+                "title": "Value of CADBase platform for creators and engineers",
+                "excerpt": "The article presents a general overview of the history of the creation of a platform for the exchange of 3D models and drawings.",
+                "meta": {
+                    "title": "Value of CADBase Platform for Creators and Engineers - Complete Overview",
+                    "description": "Discover how CADBase platform connects engineers with manufacturers through structured collaboration. Manage 3D projects and streamline workflow.",
+                    "og_image": "images/og/og_concept_mini_en.webp",
+                    "og_type": "article",
+                    "author": "CADBase Team",
+                    "keywords": "CADBase, platform overview, engineering collaboration, 3D modeling"
+                },
+                "url": "overviews/platform-for-creators-and-engineers/",
+                "published": {
+                    "date_iso": "2024-06-27",
+                    "date": "June 27, 2024"
+                },
+                "image": {
+                    "path": "images/overviews/ow_concept_mini_en.webp",
+                    "alt": "Conceptual description of the engineering data exchange platform"
+                },
+                "content": "<p>The CADBase platform has been under development since 2018. The name of the platform is formed by combining two words CAD and Base, conventionally \"CADBase\". This name describes the platform as \"CAD Data Base\".</p><p>The main task of CADBase platform is to provide exchange of 3D models, drawings and related information: supporting documentation, manufacturers' catalogs with information about suppliers, certificates, standardization and classification documents.</p><p>The idea of sharing access to projects from different programs is not new, and there are already solutions for integrations between <abbr title=\"Computer-aided design systems\">CAD</abbr>, <abbr title=\"Product data management systems\">PDM</abbr>, <abbr title=\"Product lifecycle management systems\">PLM</abbr> and <abbr title=\"Supply chain management systems\">SCM</abbr>. From a business point of view, CADBase platform is focused on manufacturing enterprises and engineering companies. In the future, the use of the platform will simplify the process of searching for suppliers and selecting analogs, allowing potential customers to quickly receive information about the manufacturer and its products.</p><p>The platform with minimal functionality was launched in January 2022. The main users of the platform are people who need external storage for the results of intellectual labor, those who lack the capabilities of a cloud disk and need a wider functionality, with model catalogs, 3D viewer and file version control. Taking into account user requests, integrations with <a href=\"https://www.freecad.org/\" title=\"FreeCAD website\" rel=\"noopener noreferrer\" target=\"_blank\">FreeCAD</a> (a free parametric CAD program) and <a href=\"https://extensions.blender.org/add-ons/cadbase-library/\" title=\"CADBase Library extension page for Blender 3D\" rel=\"noopener noreferrer\" target=\"_blank\">Blender 3D</a> (a free program for creating 3D computer graphics) were implemented.</p><h3 class=\"has-text-centered\">CADBase platform structure</h3><p>The main object of the platform is \"Component\". When viewing the component on the platform site, the following information is displayed:</p><ul><li>attributes and files of the component</li><li>component modifications and their files</li><li>file sets for component modifications (grouping files by software)</li><li>standards related to the component (published on the platform)</li><li>information about the manufacturer or suppliers of the component</li><li>catalogs associated with the component</li></ul><p>Currently, the platform's website is available in Russian and English. There are plans to add Chinese and Spanish. In general, the more localizations the better, new ones will be added as requests or those who wish to keep them up to date arise.</p><h3 class=\"has-text-centered\">Advantageous differences between CADBase and analogs</h3><p>The presence of similar products to CADBase platform makes it necessary to constantly search for improvements and innovations. The CADBase platform already combines a number of advantages:</p><dl><dt><strong>Easy integration with third party software</strong></dt><dd>Selected user components and file sets are used to define components and data from third-party programs to interact with. For example, when working through the CADBase Library workbench in FreeCAD, the user will have only the necessary data updated.</dd><dt><strong>Creation of websites based on CADBase platform</strong></dt><dd>With branding, adding commodity calculations and creating add-ons for other programs, including those with limited API access. This is facilitated by access to the API of the platform server by (any) user of the platform, as well as distribution of the source codes of the platform and related projects under free licenses.</dd><dt><strong>Availability of a file versioning system</strong></dt><dd>File <abbr title=\"revision\">version</abbr> control can help users and organizations improve data management strategies. A new version is created by uploading a file with the same name as a previously uploaded file. Users can revisit older versions as files evolve. In some cases, users prefer to retain certain versions.</dd><dt><strong>Differential access</strong></dt><dd>The read/write access differentiation feature allows some users to be granted modification access and others to be granted read-only access. If access is granted to a company, its members will be granted access depending on their role in the company.</dd><dt><strong>The component contains information about the manufacturer or suppliers</strong></dt><dd>This allows companies that are distributors of standard industrial products to add themselves to component supplier lists.</dd></dl>",
+                "conclusion": "Thank you for your interest!",
+                "next": "",
+                "reference_materials": [
+                    "Computer-Aided Design Systems (CAD - Computer-aided design; CADD - Computer-aided design and drafting) - a class of software for creating 3D models and drawings, as well as design and technological documentation.",
+                    "Product Data Management (abbreviation PDM) - software for automating data and document storage, product structure and workflow management.",
+                    "Product Lifecycle Management (abbreviation PLM) - this class of software manages information and processes at each stage of the product lifecycle, from the moment the need is identified to its utilization.",
+                    "Supply Chain Management (abbreviation SCM) - end-to-end supply chain management software that simplifies the process of optimizing logistics and procurement."
+                ],
+                "tags": ["Overview", "CADBase"]
+            },
+            {
+                "page_name": "freecad-integration",
+                "title": "CADBase Integration with FreeCAD",
+                "excerpt": "Learn how to connect FreeCAD with CADBase cloud platform for seamless project management and collaboration.",
+                "meta": {
+                    "title": "",
+                    "description": "",
+                    "og_image": "",
+                    "og_type": "article",
+                    "author": "",
+                    "keywords": ""
+                },
+                "url": "overviews/freecad-integration/",
+                "published": {
+                    "date_iso": "2025-12-15",
+                    "date": "December 15, 2025"
+                },
+                "image": {
+                    "path": "",
+                    "alt": ""
+                },
+                "content": "",
+                "conclusion": "",
+                "next": "",
+                "reference_materials": [],
+                "tags": ["FreeCAD", "CAD", "Integration", "Cloud Storage", "Version Control", "Collaboration"]
+            },
+            {
+                "page_name": "blender-integration",
+                "title": "CADBase Integration with Blender",
+                "excerpt": "Discover how to enhance your Blender workflow with CADBase cloud storage and project management features.",
+                "meta": {
+                    "title": "",
+                    "description": "",
+                    "og_image": "",
+                    "og_type": "article",
+                    "author": "",
+                    "keywords": ""
+                },
+                "url": "overviews/blender-integration/",
+                "published": {
+                    "date_iso": "2025-12-15",
+                    "date": "December 15, 2025"
+                },
+                "image": {
+                    "path": "",
+                    "alt": ""
+                },
+                "content": "",
+                "conclusion": "",
+                "next": "",
+                "reference_materials": [],
+                "tags": ["Blender", "3D Modeling", "Integration", "Cloud Storage", "Version Control", "3D Art"]
+            },
+            {
+                "page_name": "self-hosting",
+                "title": "Self-Hosting CADBase Platform",
+                "excerpt": "Complete guide to deploying CADBase on your own infrastructure with Docker and Kubernetes.",
+                "meta": {
+                    "title": "",
+                    "description": "",
+                    "og_image": "",
+                    "og_type": "article",
+                    "author": "",
+                    "keywords": ""
+                },
+                "url": "overviews/self-hosting/",
+                "published": {
+                    "date_iso": "2026-01-15",
+                    "date": "January 15, 2026"
+                },
+                "image": {
+                    "path": "",
+                    "alt": ""
+                },
+                "content": "",
+                "conclusion": "",
+                "next": "platform-for-creators-and-engineers",
+                "reference_materials": [],
+                "tags": ["Self-Hosting", "Docker", "Kubernetes", "Deployment", "Infrastructure", "Enterprise"]
+            }
+        ],
+        "cta": {
+            "title": "Want to learn more?",
+            "subtitle": "Contact us for more information",
+            "buttons": [
+                {
+                    "text": "Contact Us",
+                    "url": "mailto:support@cadbase.rs?subject=Additional information needed",
+                    "icon": "fas fa-envelope",
+                    "class": "is-info is-medium"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Redirect to the user's language
+        window.onload = function() {
+            const userLang = navigator.language.split('-')[0];
+            const supportedLangs = ['en', 'ru', 'zh'];
+            const defaultLang = 'en';
+            const lang = supportedLangs.includes(userLang) ? userLang : defaultLang;
+            window.location.href = `/${lang}/index.html`;
+        };
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>

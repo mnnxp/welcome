@@ -1,0 +1,386 @@
+{
+    "meta": {
+        "title": "CADBase - 面向创作者和工程师的平台",
+        "description": "加入工程师、DIY爱好者和专业人士社区，分享想法并协同工作。",
+        "title_suffix": " - CADBase",
+        "site_name": "CADBase",
+        "root_url": "https://cadbase.rs/",
+        "base_url": "https://cadbase.rs/zh/",
+        "og_image": "images/og/og-image.webp",
+        "og_type": "website",
+        "twitter_site": "@cadbase_rs",
+        "twitter_creator": "@cadbase_rs",
+        "keywords": "CAD, 三维建模, 工程协作, FreeCAD, Blender, 开源"
+    },
+    "assets": {
+        "favicon": "images/favicon.png",
+        "brand": "images/full_logo.svg",
+        "noimage": "images/noimage.svg",
+        "css": "css/index.css",
+        "js": "js/usability.js"
+    },
+    "navigation": {
+        "brand": "CADBase",
+        "home_url": "zh/",
+        "menu_items": [
+            {
+                "text": "平台",
+                "url": "#hero",
+                "icon": "fas fa-info"
+            },
+            {
+                "text": "功能",
+                "url": "#features",
+                "icon": "fas fa-fire"
+            },
+            {
+                "text": "文章",
+                "url": "#overviews",
+                "icon": "far fa-newspaper"
+            },
+            {
+                "text": "条款",
+                "url": "terms/",
+                "icon": "fas fa-handshake"
+            }
+        ],
+        "buttons": [
+            {
+                "text": "打开",
+                "url": "https://app.cadbase.rs/",
+                "icon": "fas fa-door-open",
+                "class": ""
+            }
+        ]
+    },
+    "hero": {
+        "title": "CADBase平台",
+        "subtitle": "加入工程师、DIY爱好者和专业人士社区，分享想法并协同工作。管理您的3D项目并实现制造 - 简单高效。",
+        "visual_text": "零件存储与3D查看器",
+        "buttons": [
+            {
+                "text": "打开平台",
+                "url": "https://app.cadbase.rs/",
+                "icon": "fas fa-door-open",
+                "class": "is-white is-large"
+            },
+            {
+                "text": "文章",
+                "url": "overviews/",
+                "icon": "",
+                "class": "is-light is-outlined is-medium"
+            }
+        ],
+        "cube_texts": ["", "项目", "版本", "零件", "模型", "图纸", "库"]
+    },
+    "integrations": {
+        "title": "集成参数化和多边形建模软件",
+        "tools": [
+            {
+                "name": "FreeCAD",
+                "url": "https://github.com/mnnxp/cadbaselibrary-freecad",
+                "logo": "images/brands/FreeCAD-wordmark.svg"
+            },
+            {
+                "name": "Blender",
+                "url": "https://extensions.blender.org/add-ons/cadbase-library/",
+                "logo": "images/brands/Blender-logo.svg"
+            }
+        ],
+        "cta": {
+            "text": "建议新集成",
+            "url": "mailto:support@cadbase.rs?subject=新集成建议",
+            "icon": "fas fa-plus"
+        }
+    },
+    "features": {
+        "title": "优化工作流程",
+        "subtitle": "从设计到生产的一站式平台",
+        "benefits": [
+            {
+                "icon": "project-diagram",
+                "color": "primary",
+                "title": "组件管理",
+                "description": "组织带修改版本的组件。结构化数据层次便于搜索和重用。",
+                "points": ["版本控制", "参数搜索", "文件集组织"]
+            },
+            {
+                "icon": "users",
+                "color": "link",
+                "title": "社区与协作",
+                "description": "加入工程师和创作者社区。协同完成项目并找到合适的合作伙伴。",
+                "points": ["直接客户沟通", "联合项目开发", "专业知识分享"]
+            },
+            {
+                "icon": "code-branch",
+                "color": "info",
+                "title": "API与集成",
+                "description": "通过账户的JWT令牌访问API。轻松连接工具、扩展功能并自动化工作流程。",
+                "points": [
+                    "完整的GraphQL API访问",
+                    "即用型CAD插件",
+                    "自定义部署选项"
+                ]
+            }
+        ]
+    },
+    "how_it_works": {
+        "title": "工作原理",
+        "steps": [
+            {
+                "number": 1,
+                "title": "保存项目至云端",
+                "description": "将FreeCAD或Blender中的3D模型直接导出到CADBase云存储。通过版本控制和团队访问管理来组织文件。"
+            },
+            {
+                "number": 2,
+                "title": "项目协作",
+                "description": "为同事和合作伙伴授予访问权限。实时跟踪变更并管理项目版本，保持完全可见性。"
+            },
+            {
+                "number": 3,
+                "title": "管理工作空间",
+                "description": "创建组件库，配置访问权限，并为所有项目维护安全的云备份。"
+            }
+        ]
+    },
+    "cta": {
+        "title": "准备好管理您的项目了吗？",
+        "subtitle": "加入使用该平台存储和管理作品的3D艺术家和工程师社区",
+        "note": "免费 • 无需绑定银行卡",
+        "buttons": [
+            {
+                "text": "开始",
+                "class": "is-white",
+                "url": "https://app.cadbase.rs/#/register",
+                "icon": ""
+            },
+            {
+                "text": "查看",
+                "class": "is-light is-outlined",
+                "url": "https://app.cadbase.rs/#/search",
+                "icon": ""
+            }
+        ]
+    },
+    "privacy": {
+        "title": "隐私声明",
+        "date": "2024年8月5日",
+        "date_iso": "2024-08-05",
+        "body": "<p>CADBase在cadbase.rs域名及其子域名上运营网站，提供CADBase平台服务。</p><p>本页面用于告知网站访问者，如果有人决定使用我们的服务，即cadbase.rs网站，我们关于收集、使用和披露个人信息的政策。</p><p>如果您选择使用我们的服务，则表示您同意根据本政策收集和使用信息。我们收集的个人信息用于提供和改进服务。除非本隐私政策中另有说明，否则我们不会与任何人使用或共享您的信息。</p><p>本隐私政策中使用的术语与我们的条款和条件具有相同的含义，除非本隐私政策中另有定义，否则可在https://cadbase.rs/zh/privacy-notice.html URL访问。</p><h3>信息收集与使用</h3><p>为了在使用我们的服务时获得更好的体验，我们可能要求您向我们提供某些个人身份信息，包括但不限于您的姓名、电话号码和邮政地址。我们收集的信息将用于联系或识别您。</p><h3>日志数据</h3><p>我们想通知您，每当您访问我们的服务时，我们都会收集您的浏览器发送给我们的称为日志数据的信息。这些日志数据可能包括诸如您计算机的互联网协议（\"IP\"）地址、浏览器版本、您访问的服务页面、访问时间和日期、在这些页面上花费的时间以及其他统计数据等信息。</p><h3>Cookie</h3><p>Cookie是带有少量数据的文件，通常用作匿名唯一标识符。这些文件从您访问的网站发送到您的浏览器，并存储在您计算机的硬盘驱动器上。</p><p>我们的网站使用这些\"cookie\"来收集信息并改进我们的服务。您可以选择接受或拒绝这些cookie，并知道何时将cookie发送到您的计算机。如果您选择拒绝我们的cookie，您可能无法使用我们服务的某些部分。</p><h3>服务提供商</h3><p>我们可能出于以下原因雇用第三方公司和个人：</p><ul><li>促进我们的服务；</li><li>代表我们提供服务；</li><li>执行与服务相关的服务；</li><li>分析服务的使用和运作方式。</li></ul><p>我们想告知我们的服务用户，这些第三方可以访问您的个人信息。原因是代表我们执行分配给他们的任务。但是，他们有义务不将信息用于任何其他目的。</p><h3>安全</h3><p>我们重视您向我们提供个人信息的信任，因此我们努力使用商业上可接受的方式来保护它。但请记住，互联网上的任何传输方法或电子存储方法都不是100%安全可靠的，我们无法保证其绝对安全。</p><h3>指向其他网站的链接</h3><p>我们的服务可能包含指向其他网站的链接。如果您单击第三方链接，您将被定向到该网站。请注意，这些外部网站并非由我们运营。因此，我们强烈建议您查看这些网站的隐私政策。我们无法控制任何第三方网站或服务的内容、隐私政策或做法，也不承担任何责任。</p><h3>儿童隐私</h3><p>我们的服务不面向13岁以下的任何人。我们不会故意收集13岁以下儿童的个人身份信息。如果我们发现13岁以下儿童向我们提供了个人信息，我们会立即从我们的服务器中删除这些信息。如果您是父母或监护人，并且您知道您的孩子向我们提供了个人信息，请与我们联系，以便我们能够采取必要的行动。</p><h3>本隐私政策的变更</h3><p>我们可能会不时更新我们的隐私政策。因此，我们建议您定期查看此页面以了解任何更改。我们将通过在此页面上发布新的隐私政策来通知您任何更改。这些更改在此页面上发布后立即生效。</p><h3>联系我们</h3><p>如果您对我们的隐私政策有任何疑问或建议，请随时与我们联系。</p>"
+    },
+    "terms": {
+        "id": "terms",
+        "title": "条款",
+        "subtitle": "我们非常高兴您来到这里",
+        "intro": "在访问或使用CADBase之前，请仔细阅读本服务条款协议。<br/>因为这是我们与用户之间非常重要的合同，我们需要尽可能清楚地说明：",
+        "disclaimer": "本软件按\"原样\"提供，不附带任何明示或暗示的担保，包括但不限于适销性、特定用途适用性和非侵权性的担保。在任何情况下，作者或版权持有人均不对因软件或使用或其他软件交易而产生的任何索赔、损害赔偿或其他责任承担责任，无论是在合同诉讼、侵权诉讼还是其他诉讼中。"
+    },
+    "footer": {
+        "social_networks": [
+            {
+                "url": "mailto:info@cadbase.rs",
+                "title": "电子邮件",
+                "icon": "fas fa-lg fa-envelope"
+            },
+            {
+                "url": "https://www.youtube.com/channel/UC-dHiTHBGV88ScxFKSC3srw",
+                "title": "YouTube频道",
+                "icon": "fab fa-lg fa-youtube"
+            },
+            {
+                "url": "https://gitlab.com/cadbase",
+                "title": "CADBase源代码",
+                "icon": "fab fa-lg fa-gitlab"
+            }
+        ],
+        "available_languages": [
+            {
+                "code": "en",
+                "name": "英文",
+                "label": "English"
+            },
+            {
+                "code": "ru",
+                "name": "俄文",
+                "label": "Русский"
+            },
+            {
+                "code": "zh",
+                "name": "中文",
+                "label": "中文"
+            }
+        ],
+        "resources_links": [
+            {
+                "text": "文章",
+                "url": "overviews/"
+            },
+            {
+                "text": "API参考",
+                "url": "https://docs.cadbase.rs/"
+            },
+            {
+                "text": "网站的代码",
+                "url": "https://gitlab.com/cadbase/welcome/"
+            }
+        ],
+        "legal_links": [
+            {
+                "text": "平台",
+                "url": "https://app.cadbase.rs/"
+            },
+            {
+                "text": "条款",
+                "url": "terms/"
+            },
+            {
+                "text": "隐私声明",
+                "url": "privacy-notice/"
+            }
+        ],
+        "copyright": "© CADBase",
+        "additional_info": "让现在更美好"
+    },
+    "overviews": {
+        "meta": {
+            "title": "文章与概述",
+            "description": "关于CADBase平台、集成和最佳实践的有用资料",
+            "og_image": "",
+            "og_type": "website",
+            "keywords": "CADBase，文章，教程，工程，指南"
+        },
+        "hero": {
+            "title": "文章与概述",
+            "subtitle": "关于CADBase平台、集成和最佳实践的有用资料"
+        },
+        "coming_soon": "<div class=\"container\"><div class=\"has-text-centered\"><div class=\"icon is-large has-text-grey-lighter mb-5\"><i class=\"fas fa-hourglass-half fa-4x\"></i></div><div class=\"notification is-info is-light is-size-5\" style=\"max-width: 600px; margin: 0 auto 3rem auto;\"><p class=\"mb-3\"><strong>🚧 本文即将发布！</strong></p><p>我们正在努力为您提供关于此主题的全面内容。</p></div><div class=\"buttons is-centered are-medium\"><a href=\"../\" class=\"button is-primary\"><span class=\"icon\"><i class=\"fas fa-arrow-left\"></i></span><span>返回所有文章</span></a></div><div class=\"mt-6\"></div></div></div>",
+        "articles": [
+            {
+                "page_name": "platform-for-creators-and-engineers",
+                "title": "CADBase平台对创作者和工程师的价值",
+                "excerpt": "本文概述了3D模型和图纸交换平台的创建历史。",
+                "meta": {
+                    "title": "CADBase平台对创作者和工程师的价值 - 完整概述",
+                    "description": "了解CADBase平台如何通过结构化协作连接工程师与制造商。管理3D项目并优化工作流程。",
+                    "og_image": "images/og/og_concept_mini_zh.webp",
+                    "og_type": "article",
+                    "author": "CADBase团队",
+                    "keywords": "CADBase, 平台概述, 工程协作, 三维建模"
+                },
+                "url": "overviews/platform-for-creators-and-engineers/",
+                "published": {
+                    "date_iso": "2024-06-27",
+                    "date": "2024年6月27日"
+                },
+                "image": {
+                    "path": "images/overviews/ow_concept_mini_zh.webp",
+                    "alt": "工程数据交换平台的概念描述"
+                },
+                "content": "<p>CADBase平台的开发始于2018年。平台名称由\"CAD\"和\"Base\"组合而成，意为\"CAD数据库\"。此名称体现了平台作为计算机辅助设计数据管理平台的功能定位。</p><p>CADBase平台的主要任务是提供3D模型、图纸及相关信息的交换服务，包括技术文档、制造商目录与供应商信息、认证文件、标准化和分类文档。</p><p>关于从不同软件共享项目访问的理念并不新鲜，已经存在用于<abbr title=\"计算机辅助设计系统\">CAD</abbr>、<abbr title=\"产品数据管理系统\">PDM</abbr>、<abbr title=\"产品生命周期管理系统\">PLM</abbr>和<abbr title=\"供应链管理系统\">SCM</abbr>的集成解决方案。从商业角度看，CADBase平台面向制造企业和工程公司。未来，平台的使用将简化供应商搜索和替代品选择过程，使潜在客户能够快速获取有关制造商及其产品的信息。</p><p>平台于2022年1月以最小功能集上线。主要用户是需要外部存储智能劳动成果的人员，缺乏云盘功能且需要更广泛功能，如模型目录、3D查看器和文件版本控制的用户。根据用户需求，实现了与<a href=\"https://www.freecad.org/\" title=\"FreeCAD官网\" rel=\"noopener noreferrer\" target=\"_blank\">FreeCAD</a>（免费参数化CAD程序）和<a href=\"https://extensions.blender.org/add-ons/cadbase-library/\" title=\"Blender 3D中CADBase库扩展页面\" rel=\"noopener noreferrer\" target=\"_blank\">Blender 3D</a>（免费3D计算机图形创建程序）的集成。</p><h3 class=\"has-text-centered\">CADBase平台结构</h3><p>平台的核心对象是\"组件\"。在平台上查看组件时会显示以下信息：</p><ul><li>组件的属性和文件</li><li>组件修改版本及其文件</li><li>组件修改的文件集（按软件分组文件）</li><li>与组件相关的标准（平台发布）</li><li>制造商或供应商信息</li><li>相关产品目录</li></ul><p>目前，平台网站提供俄语和英语版本。计划增加中文和西班牙语。总体而言，语言越多越好，随着需求或希望保持其更新的用户的出现，将添加新的语言。</p><h3 class=\"has-text-centered\">CADBase平台优势</h3><p>由于存在与CADBase类似的产品，必须不断寻找改进和创新。CADBase平台现已结合了一系列优势：</p><dl><dt><strong>简易的第三方软件集成</strong></dt><dd>通过用户选择的组件和文件集定义与第三方程序交互的数据。例如在FreeCAD中使用CADBase Library工作台时，仅更新必要数据。</dd><dt><strong>基于CADBase平台的网站创建</strong></dt><dd>支持品牌定制、商品计算功能，并为其他程序创建插件（包括API访问受限的情况）。平台API对所有用户开放，且相关项目源代码采用自由许可证分发。</dd><dt><strong>文件版本控制系统</strong></dt><dd>文件版本控制帮助用户和企业优化数据管理策略。通过上传与现有文件同名的新文件来创建新版本。用户可以查看文件历史版本，在某些情况下保留特定版本。</dd><dt><strong>差异化访问</strong></dt><dd>读写访问权限区分功能可以为部分用户授予修改权限，而其他用户仅提供读取权限。为公司授予访问权限时，其成员将根据角色获得相应访问权限。</dd><dt><strong>组件包含制造商或供应商信息</strong></dt><dd>这允许标准工业产品的分销商公司将自身添加到组件供应商列表中。</dd></dl>",
+                "conclusion": "感谢您的关注！",
+                "next": "",
+                "reference_materials": [
+                    "计算机辅助设计系统（CAD - Computer-aided design; CADD - Computer-aided design and drafting） - 用于创建3D模型和图纸以及设计工艺文档的软件类别。",
+                    "产品数据管理（PDM，Product Data Management） - 用于自动化数据和文档存储、产品结构和工作流管理的软件。",
+                    "产品生命周期管理（PLM，Product Lifecycle Management） - 这类软件管理产品生命周期每个阶段的信息和流程，从需求识别到处置利用。",
+                    "供应链管理（SCM，Supply Chain Management） - 端到端供应链管理软件，通过优化物流和采购流程来简化供应链管理。"
+                ],
+                "tags": ["概述", "CADBase"]
+            },
+            {
+                "page_name": "freecad-integration",
+                "title": "CADBase与FreeCAD的集成",
+                "excerpt": "了解如何将FreeCAD连接到CADBase云平台，实现无缝项目管理和协作。",
+                "meta": {
+                    "title": "",
+                    "description": "",
+                    "og_image": "",
+                    "og_type": "article",
+                    "author": "",
+                    "keywords": ""
+                },
+                "url": "overviews/freecad-integration/",
+                "published": {
+                    "date_iso": "2025-12-15",
+                    "date": "2025年12月15日"
+                },
+                "image": {
+                    "path": "",
+                    "alt": ""
+                },
+                "content": "",
+                "conclusion": "",
+                "next": "",
+                "reference_materials": [],
+                "tags": ["FreeCAD", "CAD", "集成", "云存储", "版本控制", "协作"]
+            },
+            {
+                "page_name": "blender-integration",
+                "title": "CADBase与Blender的集成",
+                "excerpt": "探索如何通过CADBase云存储和项目管理功能增强您的Blender工作流程。",
+                "meta": {
+                    "title": "",
+                    "description": "",
+                    "og_image": "",
+                    "og_type": "article",
+                    "author": "",
+                    "keywords": ""
+                },
+                "url": "overviews/blender-integration/",
+                "published": {
+                    "date_iso": "2025-12-15",
+                    "date": "2025年12月15日"
+                },
+                "image": {
+                    "path": "",
+                    "alt": ""
+                },
+                "content": "",
+                "conclusion": "",
+                "next": "",
+                "reference_materials": [],
+                "tags": ["Blender", "三维建模", "集成", "云存储", "版本控制", "三维艺术"]
+            },
+            {
+                "page_name": "self-hosting",
+                "title": "CADBase平台自托管部署",
+                "excerpt": "使用Docker和Kubernetes在自有基础设施上部署CADBase的完整指南。",
+                "meta": {
+                    "title": "",
+                    "description": "",
+                    "og_image": "",
+                    "og_type": "article",
+                    "author": "",
+                    "keywords": ""
+                },
+                "url": "overviews/self-hosting/",
+                "published": {
+                    "date_iso": "2026-01-15",
+                    "date": "2026年1月15日"
+                },
+                "image": {
+                    "path": "",
+                    "alt": ""
+                },
+                "content": "",
+                "conclusion": "",
+                "next": "",
+                "reference_materials": [],
+                "tags": ["自托管", "Docker", "Kubernetes", "部署", "基础设施"]
+            }
+        ],
+        "cta": {
+            "title": "想了解更多？",
+            "subtitle": "联系我们获取更多信息",
+            "buttons": [
+                {
+                    "text": "联系我们",
+                    "url": "mailto:support@cadbase.rs?subject=需要更多信息",
+                    "icon": "fas fa-envelope",
+                    "class": "is-info is-medium"
+                }
+            ]
+        }
+    }
+}

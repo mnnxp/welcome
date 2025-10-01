@@ -1,0 +1,90 @@
+{% extends "i18n/templates/base.html" %}
+
+{% block title %}{{ overviews.meta.title }}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero is-small is-primary mt-6">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1 has-text-white mb-4">
+                {{ overviews.hero.title }}
+            </h1>
+            <p class="subtitle has-text-white has-text-weight-light is-size-5">
+                {{ overviews.hero.subtitle }}
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Articles Grid -->
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            {% for article in overviews.articles %}
+            <div class="column is-4 article-column">
+                <a class="card article-card-link" {{ article.url | smart_url(meta.base_url, page_name) }} >
+                <div class="card article-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            {% if article.image.path %}
+                            <img src="{{ meta.root_url }}{{ article.meta.og_image }}" alt="{{ article.image.alt }}" />
+                            {% else %}
+                            <img src="{{ meta.root_url }}{{ assets.noimage }}" alt="{{ meta.site_name }}" />
+                            {% endif %}
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">{{ article.title }}</p>
+                                <p class="subtitle is-6">
+                                    <span class="icon">
+                                        <i class="far fa-calendar"></i>
+                                    </span>
+                                    <time datetime="{{ article.published.date_iso }}">{{ article.published.date }}</time>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>{{ article.excerpt }}</p>
+                            <div class="tags">
+                                {% for tag in article.tags %}
+                                <span class="tag is-light">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section has-background-light">
+    <div class="container has-text-centered">
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+                <h2 class="title is-2">{{ overviews.cta.title }}</h2>
+                <p class="subtitle is-5 mb-5">
+                    {{ overviews.cta.subtitle }}
+                </p>
+                <div class="buttons is-centered">
+                    {% for button in overviews.cta.buttons %}
+                    <a class="button {{ button.class }}" {{ button.url | smart_url(meta.base_url, page_name) }} >
+                        <span class="icon">
+                            <i class="{{ button.icon }}"></i>
+                        </span>
+                        <span>{{ button.text }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

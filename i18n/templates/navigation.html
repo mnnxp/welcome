@@ -1,0 +1,22 @@
+<div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-end">
+        {% for item in navigation.menu_items %}
+        <a class="navbar-item" {{ item.url | smart_url(meta.base_url, page_name) }} >
+            <span class="icon">
+                <i class="{{ item.icon }}"></i>
+            </span>
+            <span>{{ item.text }}</span>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="buttons">
+        {% for button in navigation.buttons %}
+        <a class="button {{ button.class }}" {{ button.url | smart_url(meta.base_url, page_name) }} >
+            <span class="icon">
+                <i class="{{ button.icon }}"></i>
+            </span>
+            <span>{{ button.text }}</span>
+        </a>
+        {% endfor %}
+    </div>
+</div>

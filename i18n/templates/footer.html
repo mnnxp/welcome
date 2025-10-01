@@ -1,0 +1,50 @@
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column">
+                <div class="tags">
+                    {% for social in footer.social_networks %}
+                    <div class="tag is-white is-medium social-btn">
+                        <a href="{{ social.url }}"
+                           target="_blank" rel="noopener noreferrer"
+                           title="{{ social.title }}">
+                            <i class="{{ social.icon }}"></i>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="buttons mt-3">
+                    {% for lang in footer.available_languages %}
+                    <a class="button {% if lang.code == lang_code %}is-info{% endif %}"
+                       href="/{{ lang.code }}/"
+                       title="{{ lang.name }}">
+                        {{ lang.label }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="column">
+                {% for link in footer.resources_links %}
+                <a {{ link.url | smart_url(meta.base_url, page_name) }} class="footer-link">
+                    {{ link.text }}
+                </a>
+                <br>
+                {% endfor %}
+            </div>
+            <div class="column">
+                {% for link in footer.legal_links %}
+                <a {{ link.url | smart_url(meta.base_url, page_name) }} class="footer-link">
+                    {{ link.text }}
+                </a>
+                <br>
+                {% endfor %}
+            </div>
+            <div class="column">
+                <h4>{{ footer.copyright }}</h4>
+                {% if footer.additional_info %}
+                <p class="help">{{ footer.additional_info }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>
