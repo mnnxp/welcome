@@ -1,0 +1,49 @@
+{% extends "i18n/templates/article.html" %}
+
+{% block title %}{{ art.title }}{% endblock %}
+
+{% block og_title %}{% if art.meta.title %}{{ art.meta.title }}{% else %}{{ art.title }}{% endif %}{% endblock %}
+{% block og_description %}{% if art.meta.description %}{{ art.meta.description }}{% else %}{{ art.excerpt }}{% endif %}{% endblock %}
+{% block og_image %}{% if art.meta.og_image %}{{ art.meta.og_image }}{% else %}{{ assets.noimage }}{% endif %}{% endblock %}
+{% block og_type %}{% if art.meta.og_type %}{{ art.meta.og_type }}{% else %}article{% endif %}{% endblock %}
+{% block article_meta %}
+<meta property="art:published_time" content="{{ art.published.date_iso }}T00:00:00Z">
+<meta property="art:author" content="{% if art.meta.author %}{{ art.meta.author }}{% else %}CADBase Team{% endif %}">
+{% endblock %}
+
+{% block twitter_title %}{% if art.meta.title %}{{ art.meta.title }}{% else %}{{ art.title }}{% endif %}{% endblock %}
+{% block twitter_description %}{% if art.meta.description %}{{ art.meta.description }}{% else %}{{ art.excerpt }}{% endif %}{% endblock %}
+{% block twitter_image %}{% if art.meta.og_image %}{{ art.meta.og_image }}{% else %}{{ assets.noimage }}{% endif %}{% endblock %}
+
+{% block article %}
+<div class="media">
+    <div class="media-content has-text-centered">
+        <h1 class="title article-title">{{ art.title }}</h1>
+        <p class="subtitle has-text-grey">{{ art.excerpt }}</p>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded is-info is-light">
+                <i class="far fa-calendar" style="color: #ffffff;"></i>
+            </span>
+            <span class="tag is-rounded">
+                <time datetime="{{ art.published.date_iso }}">
+                    {{ art.published.date }}
+                </time>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="content article-body">
+    {% if art.image.path %}<img src="{{ meta.root_url }}{{ art.image.path }}" alt="{{ art.image.alt }}" />{% endif %}
+    {% if art.content %}{{ art.content }}{% else %}{{ overviews.coming_soon }}{% endif %}
+    <h4 class="has-text-centered">{{ art.conclusion }}</h4>
+    <h6 class="has-text-centered"></h6>
+</div>
+<hr/>
+<div class="content is-small">
+    <ul>
+    {% for refm in art.reference_materials %}
+        <li>{{ refm }}</li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "i18n/templates/article.html" %}
+
+{% block title %}{{ privacy.title }}{% endblock %}
+
+{% block article %}
+<div class="media">
+    <div class="media-content has-text-centered">
+        <p class="title article-title">{{ privacy.title }}</p>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded is-info is-light">
+                <i class="far fa-calendar" style="color: #ffffff;"></i>
+            </span>
+            <span class="tag is-rounded">
+                <time datetime="{{ privacy.date_iso }}">
+                    {{ privacy.date }}
+                </time>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="content article-body">
+    {{ privacy.body | safe }}
+</div>
+{% endblock %}

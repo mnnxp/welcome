@@ -1,0 +1,18 @@
+{% extends "i18n/templates/base.html" %}
+{% block content %}
+    <div class="container mt-6">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                    {% block article %}{% endblock %}
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+              </div>
+        </section>
+        <!-- END ARTICLE FEED -->
+    </div>
+{% endblock %}

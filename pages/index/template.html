@@ -1,0 +1,209 @@
+{% extends "i18n/templates/base.html" %}
+
+{% block title %}{{ meta.title }}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero is-medium hero-gradient has-text-white">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <h1 class="title is-1 has-text-white mb-5 mt-5">
+                        {{ hero.title }}
+                    </h1>
+                    <p class="subtitle has-text-white has-text-weight-light is-size-5 mb-5">
+                        {{ hero.subtitle }}
+                    </p>
+                    <div class="buttons">
+                        {% for button in hero.buttons %}
+                        <a class="button {{ button.class }}" href="{{ button.url }}" target="_blank">
+                            {% if button.icon %}
+                            <span class="icon"><i class="{{ button.icon }}"></i></span>
+                            {% endif %}
+                            <span>{{ button.text }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="column has-text-centered">
+                    <div class="box" style="background: rgba(255,255,255,0.1); border: none; backdrop-filter: blur(10px);">
+                        <div id="cube-wrapper">
+                            <div class="viewport">
+                                <div class="cube" style="transform: rotateX(136deg) rotateY(1122deg);">
+                                <div class="side">
+                                    <div class="cube-image" style="transform: rotate(1122deg);"><span class="is-size-6">{{ hero.cube_texts[1] }}</span></div>
+                                </div>
+                                <div class="side">
+                                    <div class="cube-image"><span class="is-size-6">{{ hero.cube_texts[2] }}</span></div>
+                                </div>
+                                <div class="side">
+                                    <div class="cube-image"><span class="is-size-6">{{ hero.cube_texts[3] }}</span></div>
+                                </div>
+                                <div class="side">
+                                    <div class="cube-image"><span class="is-size-6">{{ hero.cube_texts[4] }}</span></div>
+                                </div>
+                                <div class="side">
+                                    <div class="cube-image"><span class="is-size-6">{{ hero.cube_texts[5] }}</span></div>
+                                </div>
+                                <div class="side">
+                                    <div class="cube-image active" style="transform: rotate(-1302deg);"><span class="is-size-6">{{ hero.cube_texts[6] }}</span></div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="has-text-white">{{ hero.visual_text }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Integrations Section -->
+<section id="integrations" class="section">
+    <div class="container">
+        <div class="has-text-centered mb-6">
+            <p class="title is-4">{{ integrations.title }}</p>
+        </div>
+        <div class="is-flex is-justify-content-center is-flex-wrap-wrap">
+            {% for tool in integrations.tools %}
+            <a class="integration-logo" {{ tool.url | smart_url(meta.base_url, page_name) }} >
+                <img class="partner-logo" src="{{ assets_prefix }}{{ tool.logo }}" alt="{{ tool.name }}" width="120" height="40" />
+            </a>
+            {% endfor %}
+        </div>
+        <div class="has-text-centered">
+            <a class="button is-primary is-outlined" href="{{ integrations.cta.url }}" target="_blank" rel="noopener noreferrer">
+                <span class="icon">
+                    <i class="{{ integrations.cta.icon }}"></i>
+                </span>
+                <span>{{ integrations.cta.text }}</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="section has-background-light">
+    <div class="container">
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2">{{ features.title }}</h2>
+            <p class="subtitle">{{ features.subtitle }}</p>
+        </div>
+        <div class="bento-grid">
+            {% for feature in features.benefits %}
+            <div class="feature-card card">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="icon is-large has-text-{{ feature.color }}">
+                                <i class="fas fa-2x fa-{{ feature.icon }}"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title is-4">{{ feature.title }}</h3>
+                        <p>{{ feature.description }}</p>
+                        <ul>
+                            {% for point in feature.points %}
+                            <li>{{ point }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section id="hiw" class="section">
+    <div class="container">
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2">{{ how_it_works.title }}</h2>
+        </div>
+
+        <div class="columns is-vcentered">
+            {% for step in how_it_works.steps %}
+            <div class="column">
+                <div class="step-number">{{ step.number }}</div>
+                <h3 class="title is-4">{{ step.title }}</h3>
+                <p>{{ step.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Overviews Section -->
+<section id="overviews" class="section has-background-light">
+    <div class="container">
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2">{{ overviews.hero.title }}</h2>
+            <p class="subtitle">{{ overviews.hero.subtitle }}</p>
+        </div>
+        <div class="columns is-multiline">
+            {% for article in overviews.articles[:3] %}
+            <div class="column is-4 article-column">
+                <a class="card article-card-link" {{ article.url | smart_url(meta.base_url, page_name) }} >
+                <div class="card article-card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            {% if article.image.path %}
+                            <img src="{{ meta.root_url }}{{ article.meta.og_image }}" alt="{{ article.image.alt }}" />
+                            {% else %}
+                            <img src="{{ meta.root_url }}{{ assets.noimage }}" alt="{{ meta.site_name }}" />
+                            {% endif %}
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">{{ article.title }}</p>
+                                <p class="subtitle is-6">
+                                    <span class="icon">
+                                        <i class="far fa-calendar"></i>
+                                    </span>
+                                    <time datetime="{{ article.published.date_iso }}">{{ article.published.date }}</time>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>{{ article.excerpt }}</p>
+                            <div class="tags">
+                                {% for tag in article.tags %}
+                                <span class="tag is-light">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="cta" class="section has-background-primary has-text-white">
+    <div class="container has-text-centered">
+        <h2 class="title is-2 has-text-white">{{ cta.title }}</h2>
+        <p class="subtitle has-text-white mb-5">{{ cta.subtitle }}</p>
+        <div class="buttons is-centered">
+            {% for button in cta.buttons %}
+            <a class="button is-large {{ button.class }}" href="{{ button.url }}" target="_blank">
+                {% if button.icon %}
+                <span class="icon"><i class="{{ button.icon }}"></i></span>
+                {% endif %}
+                <span>{{ button.text }}</span>
+            </a>
+            {% endfor %}
+        </div>
+        <p class="has-text-white-bis mt-3">{{ cta.note }}</p>
+    </div>
+</section>
+{% endblock %}

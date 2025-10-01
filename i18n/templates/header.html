@@ -1,0 +1,16 @@
+<!-- Navigation -->
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold is-size-4" href="{{ meta.base_url }}">
+                <img class="navbar-brand-logo" src="{{ meta.root_url }}{{ assets.brand }}" alt="{{ navigation.brand }}" width="120" height="40" />
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        {% include 'i18n/templates/navigation.html' %}
+    </div>
+</nav>

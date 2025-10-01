@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ lang_code }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ pages[page_name].title }}{% endblock %}{% if page_name != 'index' %}{{ meta.title_suffix }}{% endif %}</title>
+    <meta name="description" content="{{ meta.description }}">
+    <meta name="keywords" content="{{ meta.keywords }}">
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="x-default" href="{{ meta.root_url }}en/">
+    <link rel="alternate" hreflang="en" href="{{ meta.root_url }}en/">
+    <link rel="alternate" hreflang="ru" href="{{ meta.root_url }}ru/">
+    <link rel="alternate" hreflang="zh" href="{{ meta.root_url }}zh/">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% block og_title %}{{ meta.title }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{{ meta.description }}{% endblock %}">
+    <meta property="og:image" content="{{ meta.root_url }}{% block og_image %}{{ meta.og_image }}{% endblock %}">
+    <meta property="og:url" content="{{ meta.base_url }}{% if page_name != 'index' %}{{ page_name }}/{% endif %}">
+    <meta property="og:type" content="{% block og_type %}{{ meta.og_type }}{% endblock %}">
+    <meta property="og:site_name" content="{{ meta.site_name }}">
+    <meta property="og:locale" content="{% if lang_code == 'en' %}en_US{% elif lang_code == 'ru' %}ru_RU{% elif lang_code == 'zh' %}zh_CN{% endif %}">
+    {% block article_meta %}{% endblock %}
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ meta.twitter_site }}">
+    <meta name="twitter:creator" content="{{ meta.twitter_creator }}">
+    <meta name="twitter:title" content="{% block twitter_title %}{{ meta.title }}{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}{{ meta.description }}{% endblock %}">
+    <meta name="twitter:image" content="{{ meta.root_url }}{% block twitter_image %}{{ meta.og_image }}{% endblock %}">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ meta.base_url }}{% if page_name != 'index' %}{{ page_name }}/{% endif %}">
+    <link rel="icon" type="image/png" href="{{ meta.root_url }}{{ assets.favicon }}" />
+    {% if page_name == 'index' %}
+    <!-- Organization + WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "CADBase",
+                "url": "{{ meta.base_url }}",
+                "logo": "{{ meta.root_url }}images/logo.png",
+                "sameAs": [
+                    "https://gitlab.com/cadbase",
+                    "https://www.youtube.com/@cadbaseplatform",
+                    "https://twitter.com/cadbase_rs"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "name": "{{ meta.site_name }}",
+                "url": "{{ meta.base_url }}"
+            }
+        ]
+    }
+    </script>
+    {% endif %}
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome-5-css@5.4.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ meta.root_url }}{{ assets.css }}" />
+    {% if page_name == 'index' %}
+    <link rel="stylesheet" type="text/css" href="{{ meta.root_url }}css/cube.css" />
+    <script async defer type="text/javascript" src="{{ meta.root_url }}js/cube.js"></script>
+    {% endif %}
+    <script async defer type="text/javascript" src="{{ meta.root_url }}{{ assets.js }}"></script>
+</head>
+<body>
+    {% include 'i18n/templates/header.html' %}
+
+    <main role="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'i18n/templates/footer.html' %}
+{% if page_name == 'index' %}
+<!-- op_i_{{ lang_code }} -->
+{% endif %}
+</body>
+</html>
