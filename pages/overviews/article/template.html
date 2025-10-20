@@ -35,8 +35,7 @@
 <div class="content article-body">
     {% if art.image.path %}<img src="{{ meta.root_url }}{{ art.image.path }}" alt="{{ art.image.alt }}" />{% endif %}
     {% if art.content %}{{ art.content }}{% else %}{{ overviews.coming_soon }}{% endif %}
-    <h4 class="has-text-centered">{{ art.conclusion }}</h4>
-    <h6 class="has-text-centered"></h6>
+    {% if art.conclusion %}<h4 class="has-text-centered">{{ art.conclusion }}</h4>{% endif %}
 </div>
 <hr/>
 <div class="content is-small">
