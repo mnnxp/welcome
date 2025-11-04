@@ -27,7 +27,7 @@ def setup_jinja_environment():
 
 def smart_url(url, base_url, page_name):
     """Apply base_url only for relative paths"""
-    if url.startswith('#') and page_name == 'index':
+    if (url.startswith('#') and page_name == 'index') or url.startswith('mailto:'):
         return f'href=\"{url}\"'
     if url.startswith('http://') or url.startswith('https://'):
         return f'href=\"{url}\" target=\"_blank\" rel=\"noopener noreferrer\"'
