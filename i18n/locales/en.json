@@ -371,7 +371,7 @@
                 "conclusion": "",
                 "next": "platform-for-creators-and-engineers",
                 "reference_materials": [],
-                "tags": ["Self-Hosting", "Docker", "Kubernetes", "Deployment", "Infrastructure", "Enterprise"]
+                "tags": ["Self-Hosting", "Docker", "Kubernetes", "S3", "Deployment", "Infrastructure", "Enterprise"]
             }
         ],
         "cta": {

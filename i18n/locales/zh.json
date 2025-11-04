@@ -371,7 +371,7 @@
                 "conclusion": "",
                 "next": "",
                 "reference_materials": [],
-                "tags": ["自托管", "Docker", "Kubernetes", "部署", "基础设施"]
+                "tags": ["自托管", "Docker", "Kubernetes", "S3", "部署", "基础设施"]
             }
         ],
         "cta": {
