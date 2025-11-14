@@ -61,6 +61,13 @@ nav, footer {
     margin-bottom: 1rem;
 }
 
+.step-visual {
+    text-align: center;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
 .integration-logo {
     height: 40px;
     margin: 10px 20px;
