@@ -59,9 +59,14 @@
     }
     </script>
     {% endif %}
+    {% if assets.nocdn %}
+    <link rel="stylesheet" type="text/css" href="https://cadbase.org/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cadbase.org/css/font-awesome.css" />
+    {% else %}
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome-5-css@5.4.1/css/all.min.css">
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="{{ meta.root_url }}{{ assets.css }}" />
     {% if page_name == 'index' %}
     <link rel="stylesheet" type="text/css" href="{{ meta.root_url }}css/cube.css" />

@@ -17,7 +17,8 @@
         "brand": "images/full_logo.svg",
         "noimage": "images/noimage.svg",
         "css": "css/index.css",
-        "js": "js/usability.js"
+        "js": "js/usability.js",
+        "nocdn": true
     },
     "navigation": {
         "brand": "CADBase",
