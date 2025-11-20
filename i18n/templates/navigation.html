@@ -1,4 +1,33 @@
 <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+            <span class="icon">
+                <i class="fas fa-language"></i>
+            </span>
+        </a>
+        <div class="navbar-dropdown is-right">
+            {% for lang in footer.available_languages %}
+            <hr class="navbar-divider">
+            <a class="navbar-item"
+                {% if lang.code == 'en' %}
+                    href="https://cadbase.rs/{{ lang.code }}/"
+                {% endif %}
+                {% if lang.code == 'ru' %}
+                    href="https://cadbase.ru/{{ lang.code }}/"
+                {% endif %}
+                {% if lang.code == 'zh' %}
+                    href="https://cadbase.org/{{ lang.code }}/"
+                {% endif %}
+                title="{{ lang.name }}">
+                {% if lang.code == lang_code %}
+                    <strong>{{ lang.label }}</strong>
+                {% else %}
+                    <span>{{ lang.label }}</span>
+                {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
     <div class="navbar-end">
         {% for item in navigation.menu_items %}
         <a class="navbar-item" {{ item.url | smart_url(meta.base_url, page_name) }} >

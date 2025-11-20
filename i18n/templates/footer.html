@@ -13,15 +13,6 @@
                     </div>
                     {% endfor %}
                 </div>
-                <div class="buttons mt-3">
-                    {% for lang in footer.available_languages %}
-                    <a class="button {% if lang.code == lang_code %}is-info{% endif %}"
-                       href="/{{ lang.code }}/"
-                       title="{{ lang.name }}">
-                        {{ lang.label }}
-                    </a>
-                    {% endfor %}
-                </div>
             </div>
             <div class="column">
                 {% for link in footer.resources_links %}
