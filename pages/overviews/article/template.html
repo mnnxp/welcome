@@ -36,6 +36,14 @@
     {% if art.image.path %}<img src="{{ meta.root_url }}{{ art.image.path }}" alt="{{ art.image.alt }}" />{% endif %}
     {% if art.content %}{{ art.content }}{% else %}{{ overviews.coming_soon }}{% endif %}
     {% if art.conclusion %}<h4 class="has-text-centered">{{ art.conclusion }}</h4>{% endif %}
+    {% if art.next %}
+        <div class="buttons is-centered mt-3">
+            <a href="../" class="button is-white">
+                <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                <span>{{ overviews.hero.alt_title }}</span>
+            </a>
+        </div>
+    {% endif %}
 </div>
 <hr/>
 <div class="content is-small">

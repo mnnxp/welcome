@@ -253,6 +253,7 @@
         },
         "hero": {
             "title": "文章与概述",
+            "alt_title": "所有出版物",
             "subtitle": "关于CADBase平台、集成和最佳实践的有用资料"
         },
         "coming_soon": "<div class=\"container\"><div class=\"has-text-centered\"><div class=\"icon is-large has-text-grey-lighter mb-5\"><i class=\"fas fa-hourglass-half fa-4x\"></i></div><div class=\"notification is-info is-light is-size-5\" style=\"max-width: 600px; margin: 0 auto 3rem auto;\"><p class=\"mb-3\"><strong>🚧 本文即将发布！</strong></p><p>我们正在努力为您提供关于此主题的全面内容。</p></div><div class=\"buttons is-centered are-medium\"><a href=\"../\" class=\"button is-primary\"><span class=\"icon\"><i class=\"fas fa-arrow-left\"></i></span><span>返回所有文章</span></a></div><div class=\"mt-6\"></div></div></div>",
