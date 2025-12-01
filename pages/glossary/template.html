@@ -1,0 +1,123 @@
+{% extends "i18n/templates/base.html" %}
+{% block title %}{{ glossary.title }}{% endblock %}
+
+{% block og_title %}{% if glossary.meta.title %}{{ glossary.meta.title }}{% else %}{{ glossary.title }}{% endif %}{% endblock %}
+{% block og_description %}{% if glossary.meta.description %}{{ glossary.meta.description }}{% else %}{{ glossary.excerpt }}{% endif %}{% endblock %}
+{% block og_image %}{% if glossary.meta.og_image %}{{ glossary.meta.og_image }}{% else %}{{ assets.noimage }}{% endif %}{% endblock %}
+{% block og_type %}{% if glossary.meta.og_type %}{{ glossary.meta.og_type }}{% else %}article{% endif %}{% endblock %}
+{% block twitter_title %}{% if glossary.meta.title %}{{ glossary.meta.title }}{% else %}{{ glossary.title }}{% endif %}{% endblock %}
+{% block twitter_description %}{% if glossary.meta.description %}{{ glossary.meta.description }}{% else %}{{ glossary.excerpt }}{% endif %}{% endblock %}
+{% block twitter_image %}{% if glossary.meta.og_image %}{{ glossary.meta.og_image }}{% else %}{{ assets.noimage }}{% endif %}{% endblock %}
+
+{% block content %}
+<!-- START GLOSSARY FEED -->
+<section class="glossary">
+    <!-- START GLOSSARY -->
+    <section class="hero is-small is-primary is-bold mt-6">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-two-thirds">
+                        <h1 class="title is-1">{{ glossary.hero.title }}</h1>
+                        <p class="subtitle">{{ glossary.hero.subtitle }}</p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <span class="icon is-large">
+                            <i class="fas fa-book-open fa-3x"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Glossary Content -->
+    <section class="section">
+        <div class="container">
+            <!-- Search Box -->
+            <div class="box">
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input class="input is-medium" type="text" id="searchInput" placeholder="{{ glossary.search_placeholder }}">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Alphabet Navigation -->
+            <div class="box">
+                <p class="has-text-weight-semibold mb-3">{{ glossary.alphabet_navigation }}</p>
+                <div class="tags" id="alphabetNav">
+                    {% set letters = [] %}
+                    {% for term in glossary.terms %}
+                        {% set first_letter = term.term[0] | upper %}
+                        {% if first_letter not in letters %}
+                            {% set _ = letters.append(first_letter) %}
+                        {% endif %}
+                    {% endfor %}
+                    {% for letter in letters | sort %}
+                        <a class="tag is-info is-light alphabet-link" data-letter="{{ letter }}" href="#{{ letter }}-terms">{{ letter }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- Terms List -->
+            <div id="termsList">
+                {% for term in glossary.terms %}
+                <div class="card mb-4 term-card"
+                    id="{{ term.key }}"
+                    data-key="{{ term.key }}"
+                    data-term="{{ term.term | lower }}"
+                    data-first-letter="{{ term.term[0] | upper }}">
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="is-flex is-justify-content-space-between is-align-items-flex-start">
+                                <h3 class="title is-4 has-text-primary mb-2">{{ term.term }}</h3>
+                                <button class="button is-small is-info is-light copy-term-link"
+                                        data-key="{{ term.key }}"
+                                        title="{{ glossary.share.copy_link }}">
+                                    <span class="icon is-small">
+                                        <i class="fas fa-link"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            {% if term.synonyms %}
+                            <p class="has-text-grey mb-2">
+                                <strong>{{ glossary.synonyms_label }}</strong>
+                                {% for synonym in term.synonyms %}
+                                <span class="tag is-light is-info mr-1">{{ synonym }}</span>
+                                {% endfor %}
+                            </p>
+                            {% endif %}
+                            <p class="is-size-5">{{ term.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- No Results Message -->
+            <div id="noResults" class="has-text-centered is-hidden">
+                <div class="notification is-warning">
+                    <p class="is-size-4">{{ glossary.no_results }}</p>
+                </div>
+            </div>
+            <!-- CTA Section -->
+            <section class="section">
+                <div class="container has-text-centered">
+                    <h2 class="title is-2">{{ glossary.cta.title }}</h2>
+                    <p class="subtitle is-4">{{ glossary.cta.subtitle }}</p>
+                    <div class="buttons is-centered">
+                        {% for button in glossary.cta.buttons %}
+                        <a class="button {{ button.class }}" {{ button.url | smart_url(meta.base_url, page_name) }}>
+                            {% if button.icon %}<span class="icon"><i class="{{ button.icon }}"></i></span>{% endif %}
+                            <span>{{ button.text }}</span>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- END GLOSSARY -->
+</section>
+<!-- END GLOSSARY FEED -->
+{% endblock %}

@@ -36,8 +36,13 @@
             },
             {
                 "text": "Обзоры",
-                "url": "#overviews",
+                "url": "overviews/",
                 "icon": "far fa-newspaper"
+            },
+            {
+                "text": "Глоссарий",
+                "url": "glossary/",
+                "icon": "fas fa-book-open"
             },
             {
                 "text": "Условия",

@@ -1,0 +1,1701 @@
+{
+    "glossary": {
+        "id": "glossary",
+        "title": "Glossary",
+        "meta": {
+            "title": "CADBase Terminology Glossary",
+            "description": "Explanatory dictionary of terms used in the CADBase platform and related fields",
+            "og_image": "",
+            "og_type": "website",
+            "keywords": "glossary, terms, dictionary, CAD, definitions"
+        },
+        "hero": {
+            "title": "Terminology Glossary",
+            "subtitle": "Explanatory dictionary of terms used in CADBase solutions and related fields"
+        },
+        "terms": [
+            {
+                "key": "aps",
+                "term": "APS",
+                "synonyms": [
+                    "Advanced Planning and Scheduling"
+                ],
+                "description": "Systems for optimizing production planning considering constraints and resources."
+            },
+            {
+                "key": "asme-y14",
+                "term": "ASME Y14",
+                "synonyms": [
+                    "Engineering Drawing Standards"
+                ],
+                "description": "Series of standards by the American Society of Mechanical Engineers for engineering drawings and documentation. Widely used in North America and international projects."
+            },
+            {
+                "key": "authorization",
+                "term": "Authorization",
+                "synonyms": [
+                    "Authentication"
+                ],
+                "description": "Process of verifying user access rights to CADBase platform resources."
+            },
+            {
+                "key": "access-control",
+                "term": "Access Control",
+                "synonyms": [
+                    "Permission management"
+                ],
+                "description": "System for configuring data access rights, allowing different users various access levels."
+            },
+            {
+                "key": "addon",
+                "term": "Addon",
+                "synonyms": [
+                    "Extension"
+                ],
+                "description": "Software module extending main application functionality."
+            },
+            {
+                "key": "api-integration",
+                "term": "API Integration",
+                "synonyms": [
+                    "API connection"
+                ],
+                "description": "Process of connecting and using CADBase programming interface in third-party applications and systems."
+            },
+            {
+                "key": "api",
+                "term": "API",
+                "synonyms": [
+                    "Application Programming Interface"
+                ],
+                "description": "Set of methods and protocols for interaction between various software components and systems."
+            },
+            {
+                "key": "assembly-design",
+                "term": "Assembly Design",
+                "synonyms": [
+                    "Assembly design"
+                ],
+                "description": "Process of creating and managing assemblies from individual components and parts."
+            },
+            {
+                "key": "access-token",
+                "term": "Access Token",
+                "synonyms": [
+                    "JWT token"
+                ],
+                "description": "Unique authentication key providing access to CADBase platform API."
+            },
+            {
+                "key": "bim",
+                "term": "BIM",
+                "synonyms": [
+                    "Building Information Modeling"
+                ],
+                "description": "Process of creating and managing information about a construction object throughout its lifecycle."
+            },
+            {
+                "key": "brep",
+                "term": "BREP",
+                "synonyms": [
+                    "Boundary Representation"
+                ],
+                "description": "Method of representing 3D objects through their boundaries - faces, edges, and vertices."
+            },
+            {
+                "key": "bi",
+                "term": "BI",
+                "synonyms": [
+                    "Business Intelligence"
+                ],
+                "description": "Technologies and methods for analyzing business data to support management decisions."
+            },
+            {
+                "key": "bom",
+                "term": "BOM",
+                "synonyms": [
+                    "Bill of Materials"
+                ],
+                "description": "Complete list of components, assemblies and materials with their quantities for manufacturing a product."
+            },
+            {
+                "key": "bpm",
+                "term": "BPM",
+                "synonyms": [
+                    "Business Process Management"
+                ],
+                "description": "Systematic approach methodology to managing and improving enterprise business processes."
+            },
+            {
+                "key": "b-spline",
+                "term": "B-spline",
+                "synonyms": [
+                    "Basis spline"
+                ],
+                "description": "Mathematical curve used in computer graphics and CAD for representing complex shapes. Main advantage is local control: changing one control point affects only a limited section of the curve."
+            },
+            {
+                "key": "workflow",
+                "term": "Business Process",
+                "synonyms": [
+                    "Workflow"
+                ],
+                "description": "Sequence of steps and operations for completing specific business task."
+            },
+            {
+                "key": "bezier-curve",
+                "term": "Bezier Curve",
+                "synonyms": [
+                    "Bézier curve"
+                ],
+                "description": "Parametric curve used in computer graphics for modeling smooth shapes."
+            },
+            {
+                "key": "benchmarking",
+                "term": "Benchmarking",
+                "synonyms": [
+                    "Comparative analysis"
+                ],
+                "description": "Process of comparing product characteristics, processes or methods with best market analogues."
+            },
+            {
+                "key": "business-rules",
+                "term": "Business Rules",
+                "synonyms": [
+                    "Business logic rules"
+                ],
+                "description": "Formalized constraints and conditions defining behavior of business processes and systems."
+            },
+            {
+                "key": "bookmarks",
+                "term": "Bookmarks",
+                "synonyms": [
+                    "Favorites"
+                ],
+                "description": "System for quick access to frequently used components and projects in CADBase platform."
+            },
+            {
+                "key": "baseline",
+                "term": "Baseline",
+                "synonyms": [
+                    "Base level"
+                ],
+                "description": "Approved version of product configuration serving as basis for subsequent changes."
+            },
+            {
+                "key": "build-platform",
+                "term": "Build Platform",
+                "synonyms": [
+                    "Build plate"
+                ],
+                "description": "Surface where layer-by-layer object construction occurs in 3D printer."
+            },
+            {
+                "key": "binder-jetting",
+                "term": "Binder Jetting",
+                "synonyms": [
+                    "Binder printing"
+                ],
+                "description": "3D printing technology where liquid binder is deposited on thin powder layer, bonding particles together to form object."
+            },
+            {
+                "key": "cae",
+                "term": "CAE",
+                "synonyms": [
+                    "Computer-Aided Engineering"
+                ],
+                "description": "Use of computer software for engineering analysis including strength calculations, thermal and dynamic analyses."
+            },
+            {
+                "key": "cals",
+                "term": "CALS",
+                "synonyms": [
+                    "Continuous Acquisition and Life-cycle Support"
+                ],
+                "description": "Concept of integrated information support for products throughout their lifecycle."
+            },
+            {
+                "key": "capp",
+                "term": "CAPP",
+                "synonyms": [
+                    "Computer-Aided Process Planning"
+                ],
+                "description": "Use of computer systems for developing manufacturing process plans for parts."
+            },
+            {
+                "key": "cfd",
+                "term": "CFD",
+                "synonyms": [
+                    "Computational Fluid Dynamics"
+                ],
+                "description": "CAE field dealing with computer modeling of fluid and gas flows using numerical methods for analyzing hydrodynamic, thermal and mass transfer processes."
+            },
+            {
+                "key": "cam",
+                "term": "CAM",
+                "synonyms": [
+                    "Computer-Aided Manufacturing"
+                ],
+                "description": "Use of computer systems for planning, managing and controlling manufacturing operations."
+            },
+            {
+                "key": "cpd",
+                "term": "CPD",
+                "synonyms": [
+                    "Collaborative Product Development"
+                ],
+                "description": "Process of collective product development involving various departments and partners."
+            },
+            {
+                "key": "crm",
+                "term": "CRM",
+                "synonyms": [
+                    "Customer Relationship Management"
+                ],
+                "description": "System for managing interactions with customers and enterprise partners."
+            },
+            {
+                "key": "crp",
+                "term": "CRP",
+                "synonyms": [
+                    "Capacity Requirements Planning"
+                ],
+                "description": "Process of determining production capacities needed to fulfill production plans."
+            },
+            {
+                "key": "csg",
+                "term": "Constructive Solid Geometry",
+                "synonyms": [
+                    "CSG"
+                ],
+                "description": "Solid modeling method using boolean operations on primitives."
+            },
+            {
+                "key": "csm",
+                "term": "CSM",
+                "synonyms": [
+                    "Customer Service Management"
+                ],
+                "description": "System for managing after-sales service and customer support."
+            },
+            {
+                "key": "continuous-liquid-interface-production",
+                "term": "CLIP",
+                "synonyms": [
+                    "Continuous Liquid Interface Production"
+                ],
+                "description": "3D printing technology from Carbon using continuous photopolymerization process with oxygen inhibiting layer for significant print speed increase."
+            },
+            {
+                "key": "catalog",
+                "term": "Catalog",
+                "synonyms": [],
+                "description": "Thematic collection of components organized by specific criteria for convenient search and navigation."
+            },
+            {
+                "key": "component",
+                "term": "Component",
+                "synonyms": [
+                    "Part"
+                ],
+                "description": "Main structural unit of CADBase platform containing all information about product, material or equipment."
+            },
+            {
+                "key": "classification",
+                "term": "Classification",
+                "synonyms": [
+                    "Categorization"
+                ],
+                "description": "Process of systematizing objects by certain features and categories."
+            },
+            {
+                "key": "client-server-architecture",
+                "term": "Client-Server Architecture",
+                "synonyms": [],
+                "description": "Network architecture where clients request services from centralized servers."
+            },
+            {
+                "key": "cpdm",
+                "term": "cPDm",
+                "synonyms": [
+                    "Collaborative Product Definition management"
+                ],
+                "description": "Approach to managing all product information in distributed development environment."
+            },
+            {
+                "key": "check-in",
+                "term": "Check In",
+                "synonyms": [
+                    "Change registration"
+                ],
+                "description": "Process of placing new or modified object in electronic storage with replacement of previous object version."
+            },
+            {
+                "key": "check-out",
+                "term": "Check Out",
+                "synonyms": [
+                    "Extraction for editing"
+                ],
+                "description": "System-controlled process of extracting product database components for viewing, reference or use in other projects."
+            },
+            {
+                "key": "configurator",
+                "term": "Configurator",
+                "synonyms": [
+                    "Configuration system"
+                ],
+                "description": "Software tool for creating custom product configurations based on modular approach."
+            },
+            {
+                "key": "cloud-storage",
+                "term": "Cloud Storage",
+                "synonyms": [
+                    "Cloud repository"
+                ],
+                "description": "Remote data storage on CADBase servers providing file access from any device and secure backup."
+            },
+            {
+                "key": "cloud-platform",
+                "term": "Cloud Platform",
+                "synonyms": [
+                    "PaaS"
+                ],
+                "description": "CADBase infrastructure providing storage, management and project collaboration services via internet."
+            },
+            {
+                "key": "cad-data-exchange",
+                "term": "CAD Data Exchange",
+                "synonyms": [],
+                "description": "Process of transferring design data between different CAD systems."
+            },
+            {
+                "key": "concurrent-engineering",
+                "term": "Concurrent Engineering",
+                "synonyms": [
+                    "CE"
+                ],
+                "description": "Methodology of parallel product development where various design stages are performed simultaneously."
+            },
+            {
+                "key": "cutter-location",
+                "term": "Cutter Location",
+                "synonyms": [
+                    "CL Data"
+                ],
+                "description": "Coordinates and orientation of cutting tool in CAM systems for forming CNC toolpaths."
+            },
+            {
+                "key": "common-data-environment",
+                "term": "Common Data Environment",
+                "synonyms": [
+                    "CDE"
+                ],
+                "description": "Centralized storage acting as 'source of truth' for projects."
+            },
+            {
+                "key": "cad",
+                "term": "CAD",
+                "synonyms": [
+                    "Computer-Aided Design"
+                ],
+                "description": "Software for creating 3D models, drawings and design documentation."
+            },
+            {
+                "key": "corporate-standard",
+                "term": "Corporate Standard",
+                "synonyms": [
+                    "Internal standard"
+                ],
+                "description": "Normative document developed and applied within specific enterprise for process and product unification."
+            },
+            {
+                "key": "compatibility",
+                "term": "Compatibility",
+                "synonyms": [
+                    "Interoperability"
+                ],
+                "description": "Ability of various systems and components to work together and exchange data."
+            },
+            {
+                "key": "configuration-management",
+                "term": "Configuration Management",
+                "synonyms": [
+                    "CM"
+                ],
+                "description": "Process of managing changes in product configuration throughout entire lifecycle."
+            },
+            {
+                "key": "cnc",
+                "term": "CNC",
+                "synonyms": [
+                    "Computer Numerical Control"
+                ],
+                "description": "Equipment control system based on numerical commands generated by computer."
+            },
+            {
+                "key": "docker",
+                "term": "Docker",
+                "synonyms": [
+                    "Containerization"
+                ],
+                "description": "Platform for developing, shipping, and running applications in containers, providing software isolation and portability."
+            },
+            {
+                "key": "dwf",
+                "term": "DWF",
+                "synonyms": [
+                    "Design Web Format"
+                ],
+                "description": "Autodesk file format for secure publishing and distribution of design data without transferring source project files."
+            },
+            {
+                "key": "dwg",
+                "term": "DWG",
+                "synonyms": [
+                    "Drawing"
+                ],
+                "description": "File format for storing 2D and 3D design data. Originally created for AutoCAD but became industry standard supported by many CAD systems."
+            },
+            {
+                "key": "dxf",
+                "term": "DXF",
+                "synonyms": [
+                    "Drawing Exchange Format"
+                ],
+                "description": "Open Autodesk file format for data exchange between different CAD systems. Ensures compatibility when transferring 2D geometry and annotations between different software platforms."
+            },
+            {
+                "key": "dlp-printing",
+                "term": "DLP Printing",
+                "synonyms": [
+                    "Digital Light Processing"
+                ],
+                "description": "3D printing technology similar to SLA but using digital projector to cure entire layer of photopolymer resin simultaneously."
+            },
+            {
+                "key": "dmls",
+                "term": "DMLS",
+                "synonyms": [
+                    "Direct Metal Laser Sintering"
+                ],
+                "description": "Metal 3D printing technology where laser sinters metal powder layer by layer to create dense metal parts."
+            },
+            {
+                "key": "data-transfer",
+                "term": "Data Transfer",
+                "synonyms": [
+                    "Data exchange"
+                ],
+                "description": "Process of moving information between different systems and applications."
+            },
+            {
+                "key": "data-consumer",
+                "term": "Data Consumer",
+                "synonyms": [],
+                "description": "User or system using data to perform their functions."
+            },
+            {
+                "key": "design",
+                "term": "Design",
+                "synonyms": [
+                    "Engineering design"
+                ],
+                "description": "Creative process of developing concepts, solutions and documentation for creating new products."
+            },
+            {
+                "key": "data-author",
+                "term": "Data Author",
+                "synonyms": [
+                    "Data creator"
+                ],
+                "description": "Specialist creating and modifying data in system."
+            },
+            {
+                "key": "data-reviewer",
+                "term": "Data Reviewer",
+                "synonyms": [
+                    "Reviewer"
+                ],
+                "description": "Specialist checking and approving data before their use in production."
+            },
+            {
+                "key": "digital-mock-up",
+                "term": "Digital Mock-Up",
+                "synonyms": [
+                    "DMU"
+                ],
+                "description": "Three-dimensional digital product model used for analysis and simulation before physical production."
+            },
+            {
+                "key": "digital-transformation",
+                "term": "Digital Transformation",
+                "synonyms": [
+                    "Digitalization"
+                ],
+                "description": "Process of integrating digital technologies into all business aspects, fundamentally changing ways of working and value creation."
+            },
+            {
+                "key": "edms",
+                "term": "EDMS",
+                "synonyms": [
+                    "Electronic Document Management System"
+                ],
+                "description": "Software for managing electronic documents and their business processing workflows."
+            },
+            {
+                "key": "eam",
+                "term": "EAM",
+                "synonyms": [
+                    "Enterprise Asset Management"
+                ],
+                "description": "System for managing enterprise fixed assets and equipment throughout their lifecycle."
+            },
+            {
+                "key": "ecad",
+                "term": "ECAD",
+                "synonyms": [
+                    "Electronic CAD"
+                ],
+                "description": "Software for designing electronic circuits and printed circuit boards."
+            },
+            {
+                "key": "erp",
+                "term": "ERP",
+                "synonyms": [
+                    "Enterprise Resource Planning"
+                ],
+                "description": "Integrated system for managing main business processes in real-time."
+            },
+            {
+                "key": "esm",
+                "term": "ESM",
+                "synonyms": [
+                    "Enterprise Simulation Management"
+                ],
+                "description": "System for managing computer modeling and simulation processes in enterprise."
+            },
+            {
+                "key": "ebm",
+                "term": "EBM",
+                "synonyms": [
+                    "Electron Beam Melting"
+                ],
+                "description": "Metal 3D printing technology in vacuum chamber using electron beam to melt metal powder, suitable for refractory metals."
+            },
+            {
+                "key": "eskd",
+                "term": "ESKD",
+                "synonyms": [
+                    "Unified system for design documentation"
+                ],
+                "description": "Complex of state standards establishing uniform rules and norms for execution, formatting and handling of design documentation in Russian Federation."
+            },
+            {
+                "key": "end-product",
+                "term": "End Product",
+                "synonyms": [
+                    "Finished product"
+                ],
+                "description": "Completed product ready for use or sale."
+            },
+            {
+                "key": "engineering-design",
+                "term": "Engineering Design",
+                "synonyms": [
+                    "Design engineering"
+                ],
+                "description": "Part of design related to developing specific structures, assemblies and part designs."
+            },
+            {
+                "key": "extended-enterprise",
+                "term": "Extended Enterprise",
+                "synonyms": [
+                    "Extended organization"
+                ],
+                "description": "Concept including main enterprise and its partners, suppliers and customers in unified business environment."
+            },
+            {
+                "key": "event",
+                "term": "Event",
+                "synonyms": [
+                    "Trigger event"
+                ],
+                "description": "State change in system that can initiate certain actions or processes."
+            },
+            {
+                "key": "engineering-change-notice",
+                "term": "Engineering Change Notice",
+                "synonyms": [
+                    "ECN/ECO"
+                ],
+                "description": "Formalized process for managing changes in product design or documentation."
+            },
+            {
+                "key": "extranet",
+                "term": "Extranet",
+                "synonyms": [
+                    "External corporate network"
+                ],
+                "description": "Intranet extension for external users."
+            },
+            {
+                "key": "fcstd",
+                "term": "FCStd",
+                "synonyms": [
+                    "FreeCAD Document"
+                ],
+                "description": "Native FreeCAD file format containing 3D models, construction history and design parameters."
+            },
+            {
+                "key": "fea",
+                "term": "FEA",
+                "synonyms": [
+                    "Finite Element Analysis"
+                ],
+                "description": "CAE field using finite element method for computer modeling and analysis of physical processes: strength calculations, thermal, dynamic and other types of engineering analysis."
+            },
+            {
+                "key": "fem",
+                "term": "FEM",
+                "synonyms": [
+                    "Finite Element Method"
+                ],
+                "description": "Numerical method for solving differential equations widely used for engineering calculations of strength, heat transfer, dynamics and other physical processes."
+            },
+            {
+                "key": "fdm",
+                "term": "FDM",
+                "synonyms": [
+                    "Finite Difference Method"
+                ],
+                "description": "Numerical method for solving differential equations based on replacing derivatives with difference relations on discrete grid."
+            },
+            {
+                "key": "fvm",
+                "term": "FVM",
+                "synonyms": [
+                    "Finite Volume Method"
+                ],
+                "description": "Numerical method for solving partial differential equations based on integrating equations over control volumes."
+            },
+            {
+                "key": "fdm-printing",
+                "term": "FDM Printing",
+                "synonyms": [
+                    "Fused Deposition Modeling"
+                ],
+                "description": "3D printing technology where plastic filament is fed through heated extruder and deposited layer by layer on build platform."
+            },
+            {
+                "key": "fault-tree-analysis",
+                "term": "Fault Tree Analysis",
+                "synonyms": [
+                    "FTA"
+                ],
+                "description": "System reliability analysis method using tree diagrams to identify and evaluate failure causes and potential failure points."
+            },
+            {
+                "key": "fault-tree",
+                "term": "Fault Tree",
+                "synonyms": [
+                    "Diagnostic tree"
+                ],
+                "description": "Logical diagram showing relationships between cause events and system failure event."
+            },
+            {
+                "key": "federated-architecture",
+                "term": "Federated Architecture",
+                "synonyms": [
+                    "Integrated architecture"
+                ],
+                "description": "Information systems architecture combining heterogeneous systems into unified environment."
+            },
+            {
+                "key": "finite-element-mesh",
+                "term": "Finite Element Mesh",
+                "synonyms": [
+                    "FE Mesh"
+                ],
+                "description": "Discrete geometry representation as set of finite elements used for numerical solution of equations by finite element method."
+            },
+            {
+                "key": "feature",
+                "term": "Feature",
+                "synonyms": [
+                    "Functional element"
+                ],
+                "description": "Separate geometric element of model having specific functional purpose."
+            },
+            {
+                "key": "file-set",
+                "term": "File Set",
+                "synonyms": [
+                    "Fileset"
+                ],
+                "description": "Logical group of files organized by software types or purpose within component modification."
+            },
+            {
+                "key": "free-license",
+                "term": "Free License",
+                "synonyms": [
+                    "Open license"
+                ],
+                "description": "License permitting free use, modification and distribution of software."
+            },
+            {
+                "key": "filament",
+                "term": "Filament",
+                "synonyms": [
+                    "3D filament"
+                ],
+                "description": "Material in filament form used in FDM 3D printers."
+            },
+            {
+                "key": "functional-tolerancing-annotation",
+                "term": "Functional Tolerancing and Annotation",
+                "synonyms": [
+                    "FT&A"
+                ],
+                "description": "Process of adding geometric tolerances and technical requirements directly to 3D model in CAD."
+            },
+            {
+                "key": "fpa-manufacturing",
+                "term": "Financial Planning & Analysis for Manufacturing",
+                "synonyms": [
+                    "Manufacturing FP&A"
+                ],
+                "description": "Strategic financial planning and analysis aimed at optimizing operational activities, cost management and growth stimulation in manufacturing industry."
+            },
+            {
+                "key": "graphql-api",
+                "term": "GraphQL API",
+                "synonyms": [
+                    "GraphQL interface"
+                ],
+                "description": "Strongly typed application programming interface allowing clients to request exactly the data they need in predictable format."
+            },
+            {
+                "key": "gui",
+                "term": "GUI",
+                "synonyms": [
+                    "Graphical User Interface"
+                ],
+                "description": "User interface using graphical elements for interacting with software."
+            },
+            {
+                "key": "g-code",
+                "term": "G-code",
+                "synonyms": [
+                    "NC program"
+                ],
+                "description": "Commands for controlling computer numerical control machines."
+            },
+            {
+                "key": "group-technology",
+                "term": "Group Technology",
+                "synonyms": [
+                    "GT"
+                ],
+                "description": "Methodology for classifying parts by design and technological features to optimize production."
+            },
+            {
+                "key": "gdt",
+                "term": "GD&T",
+                "synonyms": [
+                    "Geometric Dimensioning and Tolerancing"
+                ],
+                "description": "System of symbols and standards for defining geometric characteristics of parts."
+            },
+            {
+                "key": "gbt",
+                "term": "GB/T",
+                "synonyms": [
+                    "Guobiao standards"
+                ],
+                "description": "Chinese national standards including sections on technical drawing and design documentation."
+            },
+            {
+                "key": "gantt-chart",
+                "term": "Gantt Chart",
+                "synonyms": [
+                    "Gantt diagram"
+                ],
+                "description": "Graphical representation of project schedule showing tasks, deadlines and dependencies."
+            },
+            {
+                "key": "geometric-solver",
+                "term": "Geometric Solver",
+                "synonyms": [
+                    "Constraint solver"
+                ],
+                "description": "Software module solving system of geometric equations and constraints in CAD systems."
+            },
+            {
+                "key": "geometric-modeling-kernel",
+                "term": "Geometric Modeling Kernel",
+                "synonyms": [
+                    "CAD kernel"
+                ],
+                "description": "Basic software component of CAD system responsible for mathematical operations with geometry."
+            },
+            {
+                "key": "hrm",
+                "term": "HRM",
+                "synonyms": [
+                    "Human Resource Management"
+                ],
+                "description": "System for managing enterprise personnel including hiring, training and employee development."
+            },
+            {
+                "key": "iges",
+                "term": "IGES",
+                "synonyms": [
+                    "Initial Graphics Exchange Specification"
+                ],
+                "description": "File format for CAD data exchange between different systems."
+            },
+            {
+                "key": "iso-128",
+                "term": "ISO 128",
+                "synonyms": [
+                    "Technical drawings"
+                ],
+                "description": "International standard establishing general principles for technical drawings presentation."
+            },
+            {
+                "key": "interchangeability",
+                "term": "Interchangeability",
+                "synonyms": [
+                    "Component compatibility"
+                ],
+                "description": "Property of parts or assemblies allowing their replacement without additional processing or fitting."
+            },
+            {
+                "key": "item-id",
+                "term": "Item ID",
+                "synonyms": [
+                    "Part number"
+                ],
+                "description": "Unique code assigned to each element in system for its identification."
+            },
+            {
+                "key": "intranet",
+                "term": "Intranet",
+                "synonyms": [
+                    "Corporate network"
+                ],
+                "description": "Internal private enterprise network using internet technologies."
+            },
+            {
+                "key": "instance",
+                "term": "Instance",
+                "synonyms": [
+                    "Component copy"
+                ],
+                "description": "Individual component occurrence in assembly that can have unique positional parameters."
+            },
+            {
+                "key": "jwt-token",
+                "term": "JWT Token",
+                "synonyms": [
+                    "JSON Web Token"
+                ],
+                "description": "Open standard for creating access tokens based on JSON format."
+            },
+            {
+                "key": "jt",
+                "term": "JT",
+                "synonyms": [
+                    "Siemens JT format"
+                ],
+                "description": "Siemens company file format for lightweight 3D visualization and collaboration."
+            },
+            {
+                "key": "kubernetes",
+                "term": "Kubernetes",
+                "synonyms": [
+                    "K8s",
+                    "Container orchestration"
+                ],
+                "description": "Open-source container orchestration system for automating deployment, scaling, and management of containerized applications."
+            },
+            {
+                "key": "kbe",
+                "term": "KBE",
+                "synonyms": [
+                    "Knowledge-Based Engineering"
+                ],
+                "description": "Methodology using knowledge bases to automate engineering processes and decision making."
+            },
+            {
+                "key": "laminated-object-manufacturing",
+                "term": "LOM",
+                "synonyms": [
+                    "Laminated Object Manufacturing"
+                ],
+                "description": "3D printing technology where material sheets are layered, bonded and cut by laser or cutting tool."
+            },
+            {
+                "key": "library",
+                "term": "Library",
+                "synonyms": [
+                    "Component library"
+                ],
+                "description": "Structured collection of components organized by categories, tags or other criteria."
+            },
+            {
+                "key": "lifecycle",
+                "term": "Lifecycle",
+                "synonyms": [
+                    "Product lifecycle"
+                ],
+                "description": "Sequence of product existence stages from concept to disposal."
+            },
+            {
+                "key": "local-storage",
+                "term": "Local Storage",
+                "synonyms": [
+                    "Local library"
+                ],
+                "description": "Folder on user computer where downloaded components and files are stored for offline work."
+            },
+            {
+                "key": "link-file",
+                "term": "Link File",
+                "synonyms": [],
+                "description": "Method of adding objects from external file to scene without direct data copying."
+            },
+            {
+                "key": "lifecycle-status",
+                "term": "Lifecycle Status",
+                "synonyms": [
+                    "LC Status"
+                ],
+                "description": "Indicator of current component lifecycle stage in system."
+            },
+            {
+                "key": "mcad",
+                "term": "MCAD",
+                "synonyms": [
+                    "Mechanical CAD"
+                ],
+                "description": "Software for designing mechanical parts and assemblies."
+            },
+            {
+                "key": "mes",
+                "term": "MES",
+                "synonyms": [
+                    "Manufacturing Execution System"
+                ],
+                "description": "Information system for managing and monitoring production processes in real-time."
+            },
+            {
+                "key": "mpm",
+                "term": "MPM",
+                "synonyms": [
+                    "Manufacturing Process Management"
+                ],
+                "description": "System for managing technological processes and production resources."
+            },
+            {
+                "key": "mrp",
+                "term": "MRP",
+                "synonyms": [
+                    "Material Requirements Planning"
+                ],
+                "description": "System for planning purchases and production based on specifications and production plans."
+            },
+            {
+                "key": "mps",
+                "term": "MPS",
+                "synonyms": [
+                    "Master Production Schedule"
+                ],
+                "description": "Plan for finished goods production over specific time period."
+            },
+            {
+                "key": "multijet-printing",
+                "term": "MultiJet Printing",
+                "synonyms": [
+                    "MJP"
+                ],
+                "description": "3D printing technology using array of print heads for high-speed deposition of photopolymer materials with wax or other soluble support material."
+            },
+            {
+                "key": "metal-printing",
+                "term": "Metal 3D Printing",
+                "synonyms": [
+                    "DMLS",
+                    "SLM",
+                    "EBM"
+                ],
+                "description": "Group of metal 3D printing technologies including direct metal laser sintering, selective laser melting and electron beam melting."
+            },
+            {
+                "key": "modification",
+                "term": "Modification",
+                "synonyms": [
+                    "Component version"
+                ],
+                "description": "Specific component version with design documentation, specifications and related documents."
+            },
+            {
+                "key": "metadata",
+                "term": "Metadata",
+                "synonyms": [
+                    "Descriptive data"
+                ],
+                "description": "Information about data: author, version, creation date, status and other file attributes."
+            },
+            {
+                "key": "modeling",
+                "term": "Modeling",
+                "synonyms": [
+                    "3D modeling"
+                ],
+                "description": "Process of creating digital representations of objects in three-dimensional space."
+            },
+            {
+                "key": "machining",
+                "term": "Machining",
+                "synonyms": [
+                    "Mechanical processing"
+                ],
+                "description": "Technological process of changing workpiece shape, dimensions and surface quality by removing material with cutting tool."
+            },
+            {
+                "key": "model-number",
+                "term": "Model Number",
+                "synonyms": [
+                    "Product identifier"
+                ],
+                "description": "Unique identifier of finished product in manufacturer catalog."
+            },
+            {
+                "key": "merge",
+                "term": "Merge",
+                "synonyms": [
+                    "Import"
+                ],
+                "description": "Function of importing selected file or component into current document for further work."
+            },
+            {
+                "key": "mold-design",
+                "term": "Mold Design",
+                "synonyms": [
+                    "Die design"
+                ],
+                "description": "Specialized CAD section for designing injection molds, dies and press forms."
+            },
+            {
+                "key": "material-jetting",
+                "term": "Material Jetting",
+                "synonyms": [
+                    "MJ"
+                ],
+                "description": "3D printing technology where photopolymer materials are deposited through microscopic nozzles and immediately cured by UV light."
+            },
+            {
+                "key": "nurbs",
+                "term": "NURBS",
+                "synonyms": [
+                    "Non-Uniform Rational B-Spline"
+                ],
+                "description": "Mathematical model for representing curves and surfaces in computer graphics."
+            },
+            {
+                "key": "oem-models",
+                "term": "OEM Models",
+                "synonyms": [
+                    "OEM models"
+                ],
+                "description": "3D models and technical documentation provided by equipment manufacturers for use in projects."
+            },
+            {
+                "key": "oem",
+                "term": "OEM",
+                "synonyms": [
+                    "Original Equipment Manufacturer"
+                ],
+                "description": "Company manufacturing components or products used in final products of other manufacturers."
+            },
+            {
+                "key": "open-source",
+                "term": "Open Source",
+                "synonyms": [
+                    "Free software"
+                ],
+                "description": "Software whose source code is available for study, modification and distribution."
+            },
+            {
+                "key": "pdm",
+                "term": "PDM",
+                "synonyms": [
+                    "Product Data Management"
+                ],
+                "description": "Systems for automating data and document storage, managing product structure and work processes."
+            },
+            {
+                "key": "plm",
+                "term": "PLM",
+                "synonyms": [
+                    "Product Lifecycle Management"
+                ],
+                "description": "Systems for managing information and processes at each stage of product lifecycle - from design to disposal."
+            },
+            {
+                "key": "pmi",
+                "term": "PMI",
+                "synonyms": [
+                    "Product Manufacturing Information"
+                ],
+                "description": "Data about tolerances, dimensions, surface finish and other manufacturing requirements in 3D models."
+            },
+            {
+                "key": "polyjet",
+                "term": "PolyJet",
+                "synonyms": [
+                    "Jet photopolymer printing"
+                ],
+                "description": "3D printing technology from Stratasys using print heads to deposit liquid photopolymers with subsequent UV curing."
+            },
+            {
+                "key": "polygonal-mesh",
+                "term": "Polygonal Mesh",
+                "synonyms": [
+                    "Polygon mesh"
+                ],
+                "description": "Three-dimensional object representation as set of polygons."
+            },
+            {
+                "key": "part-master",
+                "term": "Part Master",
+                "synonyms": [
+                    "Master part"
+                ],
+                "description": "Reference part version in system containing all approved data and specifications."
+            },
+            {
+                "key": "parameter",
+                "term": "Parameter",
+                "synonyms": [
+                    "Attribute"
+                ],
+                "description": "Characteristic or property of component containing additional information."
+            },
+            {
+                "key": "parameter-search",
+                "term": "Parameter Search",
+                "synonyms": [
+                    "Parametric search"
+                ],
+                "description": "Capability to search components by their technical characteristics, materials, dimensions and other attributes."
+            },
+            {
+                "key": "parametric-design",
+                "term": "Parametric Design",
+                "synonyms": [
+                    "Parametric modeling"
+                ],
+                "description": "Design method where geometry is defined by parameters and dependencies between them."
+            },
+            {
+                "key": "polygonal-modeling",
+                "term": "Polygonal Modeling",
+                "synonyms": [
+                    "Mesh Modeling"
+                ],
+                "description": "Creating 3D models using polygons to represent surfaces."
+            },
+            {
+                "key": "photopolymer-resin",
+                "term": "Photopolymer Resin",
+                "synonyms": [
+                    "UV resin"
+                ],
+                "description": "Liquid material used in SLA and DLP 3D printers that cures under ultraviolet light exposure."
+            },
+            {
+                "key": "postgresql",
+                "term": "PostgreSQL",
+                "synonyms": [
+                    "Postgres",
+                    "Relational DBMS"
+                ],
+                "description": "Advanced open-source object-relational database management system supporting complex queries and transactions."
+            },
+            {
+                "key": "qms",
+                "term": "QMS",
+                "synonyms": [
+                    "Quality Management System"
+                ],
+                "description": "Set of organizational structure, procedures, processes and resources for product quality management."
+            },
+            {
+                "key": "report-generation",
+                "term": "Report Generation",
+                "synonyms": [
+                    "Automatic report creation"
+                ],
+                "description": "Automation system functionality for automatic document generation based on project data."
+            },
+            {
+                "key": "replacement-part",
+                "term": "Replacement Part",
+                "synonyms": [
+                    "Alternative part"
+                ],
+                "description": "Part that can be used instead of original without degrading product characteristics."
+            },
+            {
+                "key": "review",
+                "term": "Review",
+                "synonyms": [
+                    "Verification"
+                ],
+                "description": "Process of evaluating and approving data, documents or projects by authorized persons."
+            },
+            {
+                "key": "role",
+                "term": "Role",
+                "synonyms": [
+                    "Functional role"
+                ],
+                "description": "Set of user rights and responsibilities in system defining their access to data and functions."
+            },
+            {
+                "key": "s3",
+                "term": "S3",
+                "synonyms": [
+                    "Amazon S3",
+                    "Object storage"
+                ],
+                "description": "Amazon Web Services object storage service providing scalable, highly available, and secure data storage."
+            },
+            {
+                "key": "scm",
+                "term": "SCM",
+                "synonyms": [
+                    "Supply Chain Management"
+                ],
+                "description": "Systems for end-to-end supply chain management, simplifying logistics and procurement optimization."
+            },
+            {
+                "key": "sha256",
+                "term": "SHA256",
+                "synonyms": [
+                    "Hash algorithm"
+                ],
+                "description": "Cryptographic hash function used for file integrity verification and computing unique identifiers."
+            },
+            {
+                "key": "step",
+                "term": "STEP",
+                "synonyms": [
+                    "STandard for the Exchange of Product data"
+                ],
+                "description": "International standard for exchanging product data between different CAD/CAM/CAE systems."
+            },
+            {
+                "key": "self-service-bi",
+                "term": "Self-service BI",
+                "synonyms": [
+                    "Self-service analytics"
+                ],
+                "description": "Business intelligence platforms allowing end users to independently create reports and analyze data without IT assistance."
+            },
+            {
+                "key": "stl",
+                "term": "STL",
+                "synonyms": [
+                    "Stereolithography"
+                ],
+                "description": "3D printing file format representing object surface as triangles."
+            },
+            {
+                "key": "sla-printing",
+                "term": "SLA Printing",
+                "synonyms": [
+                    "Stereolithography"
+                ],
+                "description": "3D printing technology using ultraviolet laser to cure liquid photopolymer resin layer by layer into solid plastic."
+            },
+            {
+                "key": "sls-printing",
+                "term": "SLS Printing",
+                "synonyms": [
+                    "Selective Laser Sintering"
+                ],
+                "description": "3D printing technology where laser sinters powder materials into solid objects layer by layer."
+            },
+            {
+                "key": "slm",
+                "term": "SLM",
+                "synonyms": [
+                    "Selective Laser Melting"
+                ],
+                "description": "Metal 3D printing technology where laser completely melts metal powder, creating parts with mechanical properties close to cast ones."
+            },
+            {
+                "key": "single-source-of-truth",
+                "term": "Single Source of Truth",
+                "synonyms": [
+                    "Centralized storage"
+                ],
+                "description": "Concept where all project participants work with same current data from single source."
+            },
+            {
+                "key": "surface-modeling",
+                "term": "Surface Modeling",
+                "synonyms": [],
+                "description": "Creating 3D models using mathematical surfaces for precise modeling of complex shapes."
+            },
+            {
+                "key": "standards-control",
+                "term": "Standards Control",
+                "synonyms": [
+                    "Normative control"
+                ],
+                "description": "Procedure for checking design and technological documentation compliance with established standards, norms and rules."
+            },
+            {
+                "key": "solid-modeling",
+                "term": "Solid Modeling",
+                "synonyms": [
+                    "Solid body modeling"
+                ],
+                "description": "Creating 3D models representing objects as solid bodies with defined volume."
+            },
+            {
+                "key": "support-structures",
+                "term": "Support Structures",
+                "synonyms": [
+                    "Supports"
+                ],
+                "description": "Temporary structures generated by software and printed with main model to support overhangs, bridges and complex geometries."
+            },
+            {
+                "key": "subdivision-surface",
+                "term": "Subdivision Surface",
+                "synonyms": [
+                    "Sub-D"
+                ],
+                "description": "Modeling method where coarse mesh is sequentially subdivided to create smooth surfaces."
+            },
+            {
+                "key": "sheet-metal-design",
+                "term": "Sheet Metal Design",
+                "synonyms": [
+                    "Stamping design"
+                ],
+                "description": "Specialized CAD section for designing sheet metal parts and stamping tooling."
+            },
+            {
+                "key": "sculpting",
+                "term": "Sculpting",
+                "synonyms": [
+                    "Digital Sculpting"
+                ],
+                "description": "Technology for creating 3D models by 'sculpting' virtual surface."
+            },
+            {
+                "key": "specification",
+                "term": "Specification",
+                "synonyms": [],
+                "description": "Main design document defining composition of assembly unit, kit or complex."
+            },
+            {
+                "key": "solution-convergence",
+                "term": "Solution Convergence",
+                "synonyms": [
+                    "Convergence"
+                ],
+                "description": "Property of numerical method to approach exact solution with increasing number of mesh elements/nodes."
+            },
+            {
+                "key": "scenario-planning",
+                "term": "Scenario Planning",
+                "synonyms": [
+                    "Scenario analysis"
+                ],
+                "description": "Financial planning method considering various development scenarios to optimize management decisions."
+            },
+            {
+                "key": "synchronization",
+                "term": "Synchronization",
+                "synonyms": [
+                    "Sync"
+                ],
+                "description": "Process of coordinating data between local storage and CADBase cloud platform."
+            },
+            {
+                "key": "standard",
+                "term": "Standard",
+                "synonyms": [
+                    "Technical standard"
+                ],
+                "description": "Normative document establishing uniform technical requirements, rules, characteristics and procedures."
+            },
+            {
+                "key": "soa",
+                "term": "SOA",
+                "synonyms": [
+                    "Service-Oriented Architecture"
+                ],
+                "description": "Architectural style where applications consist of independent services interacting over network."
+            },
+            {
+                "key": "spline",
+                "term": "Spline",
+                "synonyms": [
+                    "Smooth curve"
+                ],
+                "description": "Mathematical curve defined by set of control points and interpolation functions."
+            },
+            {
+                "key": "stereolithography",
+                "term": "Stereolithography",
+                "synonyms": [
+                    "SLA"
+                ],
+                "description": "3D printing technology using photopolymerization of liquid resin under laser action."
+            },
+            {
+                "key": "ttm",
+                "term": "TTM",
+                "synonyms": [
+                    "Time to Market"
+                ],
+                "description": "Indicator characterizing speed of new product development and market launch."
+            },
+            {
+                "key": "t-code",
+                "term": "T-code",
+                "synonyms": [
+                    "Tool code"
+                ],
+                "description": "Commands in CNC control programs for selecting, changing or identifying cutting tools."
+            },
+            {
+                "key": "team-collaboration",
+                "term": "Team Collaboration",
+                "synonyms": [
+                    "Collaborative work"
+                ],
+                "description": "Platform functionality allowing multiple users to work on single project simultaneously with version control and permission management."
+            },
+            {
+                "key": "tessellated-model",
+                "term": "Tessellated Model",
+                "synonyms": [
+                    "Triangulated model"
+                ],
+                "description": "3D model represented as set of triangles or other polygons."
+            },
+            {
+                "key": "technical-specification",
+                "term": "Technical Specification",
+                "synonyms": [],
+                "description": "Document establishing technical requirements for products, materials or processes."
+            },
+            {
+                "key": "tag",
+                "term": "Tag",
+                "synonyms": [
+                    "Keyword"
+                ],
+                "description": "Keyword or label for categorizing and searching components."
+            },
+            {
+                "key": "technology",
+                "term": "Technology",
+                "synonyms": [
+                    "Production process"
+                ],
+                "description": "Set of methods, processes and materials for manufacturing products."
+            },
+            {
+                "key": "tooling",
+                "term": "Tooling",
+                "synonyms": [
+                    "Production tooling"
+                ],
+                "description": "Complex of fixtures, tools and equipment used in production process."
+            },
+            {
+                "key": "triangulation",
+                "term": "Triangulation",
+                "synonyms": [
+                    "Triangle partitioning"
+                ],
+                "description": "Process of representing surface or object as set of triangles."
+            },
+            {
+                "key": "trigger",
+                "term": "Trigger",
+                "synonyms": [
+                    "Activation event"
+                ],
+                "description": "Condition or event that automatically launches specific process or action in system."
+            },
+            {
+                "key": "technological-control",
+                "term": "Technological Control",
+                "synonyms": [
+                    "Production control"
+                ],
+                "description": "System for checking and ensuring compliance of technological processes, operations and equipment with established requirements."
+            },
+            {
+                "key": "uuid",
+                "term": "UUID",
+                "synonyms": [
+                    "Universally Unique Identifier"
+                ],
+                "description": "Identification standard used in programming to create unique object identifiers."
+            },
+            {
+                "key": "u3d",
+                "term": "U3D",
+                "synonyms": [
+                    "Universal 3D"
+                ],
+                "description": "Standard file format for embedding 3D graphics in PDF documents."
+            },
+            {
+                "key": "vrml",
+                "term": "VRML",
+                "synonyms": [
+                    "Virtual Reality Modeling Language"
+                ],
+                "description": "Programming language for creating interactive 3D worlds and objects."
+            },
+            {
+                "key": "versioning",
+                "term": "Versioning",
+                "synonyms": [
+                    "Version control"
+                ],
+                "description": "File change management system allowing tracking change history, creating new versions and reverting to previous file states."
+            },
+            {
+                "key": "variational-design",
+                "term": "Variational Design",
+                "synonyms": [
+                    "Parametric design"
+                ],
+                "description": "Design method where parameter changes automatically update model geometry."
+            },
+            {
+                "key": "vendor-lock-in",
+                "term": "Vendor Lock-in",
+                "synonyms": [
+                    "Vendor dependency"
+                ],
+                "description": "Situation where user depends on specific software vendor and cannot easily switch to alternative solutions."
+            },
+            {
+                "key": "workbench",
+                "term": "Workbench",
+                "synonyms": [
+                    "Tool panel"
+                ],
+                "description": "Specialized interface in FreeCAD containing tools for specific tasks."
+            },
+            {
+                "key": "workpiece",
+                "term": "Workpiece",
+                "synonyms": [
+                    "Blank"
+                ],
+                "description": "Initial material form intended for further mechanical processing or part manufacturing."
+            },
+            {
+                "key": "wireframe",
+                "term": "Wireframe",
+                "synonyms": [
+                    "Wire model"
+                ],
+                "description": "Three-dimensional object representation as lines and vertices without surfaces."
+            },
+            {
+                "key": "workgroup",
+                "term": "Workgroup",
+                "synonyms": [
+                    "Development team"
+                ],
+                "description": "Group of specialists working together on product or project development."
+            },
+            {
+                "key": "xml",
+                "term": "XML",
+                "synonyms": [
+                    "eXtensible Markup Language"
+                ],
+                "description": "Universal markup language for storing and transmitting structured data."
+            },
+            {
+                "key": "xt",
+                "term": "XT",
+                "synonyms": [
+                    "Parasolid XT"
+                ],
+                "description": "Text file format of Parasolid geometric modeling kernel."
+            },
+            {
+                "key": "zip",
+                "term": "ZIP",
+                "synonyms": [
+                    "ZIP archive"
+                ],
+                "description": "Data compression and file archiving format often used for packaging CAD data."
+            },
+            {
+                "key": "3d-viewer",
+                "term": "3D Viewer",
+                "synonyms": [
+                    "3D viewer"
+                ],
+                "description": "Tool for viewing and interacting with 3D models directly in browser without additional software installation."
+            },
+            {
+                "key": "3d-printing",
+                "term": "3D Printing",
+                "synonyms": [
+                    "Additive Manufacturing"
+                ],
+                "description": "Technology of layer-by-layer creation of physical objects based on digital 3D models."
+            },
+            {
+                "key": "3d-editor",
+                "term": "3D Editor",
+                "synonyms": [
+                    "3D Modeling Software"
+                ],
+                "description": "Software for creating and editing three-dimensional graphics."
+            }
+        ],
+        "search_placeholder": "Search terms...",
+        "alphabet_navigation": "Quick navigation:",
+        "no_results": "No terms found",
+        "share": {
+            "copy_link": "Copy term link",
+            "copied": "Link copied!",
+            "copy_error": "Copy error"
+        },
+        "synonyms_label": "Synonyms:",
+        "cta": {
+            "title": "Didn't find the term you need?",
+            "subtitle": "Suggest new term for adding to glossary",
+            "buttons": [
+                {
+                    "text": "Suggest Term",
+                    "url": "mailto:support@cadbase.rs?subject=Term suggestion for glossary",
+                    "icon": "fas fa-plus",
+                    "class": "is-info is-medium"
+                }
+            ]
+        }
+    }
+}

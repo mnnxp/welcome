@@ -1,0 +1,1701 @@
+{
+    "glossary": {
+        "id": "glossary",
+        "title": "术语表",
+        "meta": {
+            "title": "CADBase 术语表",
+            "description": "CADBase平台及相关领域使用的术语解释词典",
+            "og_image": "",
+            "og_type": "website",
+            "keywords": "术语表, 术语, 词典, CAD, 定义"
+        },
+        "hero": {
+            "title": "术语表",
+            "subtitle": "CADBase解决方案及相关领域使用的术语解释词典"
+        },
+        "terms": [
+            {
+                "key": "aps",
+                "term": "APS",
+                "synonyms": [
+                    "高级计划与排程"
+                ],
+                "description": "考虑约束和资源的生产计划优化系统。"
+            },
+            {
+                "key": "asme-y14",
+                "term": "ASME Y14",
+                "synonyms": [
+                    "工程制图标准"
+                ],
+                "description": "美国机械工程师学会制定的工程图纸和文档标准系列。在北美和国际项目中广泛使用。"
+            },
+            {
+                "key": "api-integration",
+                "term": "API集成",
+                "synonyms": [
+                    "API连接"
+                ],
+                "description": "在第三方应用程序和系统中连接和使用CADBase编程接口的过程。"
+            },
+            {
+                "key": "api",
+                "term": "API",
+                "synonyms": [
+                    "应用程序编程接口"
+                ],
+                "description": "用于各种软件组件和系统之间交互的一套方法和协议。"
+            },
+            {
+                "key": "bim",
+                "term": "BIM",
+                "synonyms": [
+                    "建筑信息模型"
+                ],
+                "description": "在建筑对象整个生命周期中创建和管理信息的过程。"
+            },
+            {
+                "key": "brep",
+                "term": "BREP",
+                "synonyms": [
+                    "边界表示法"
+                ],
+                "description": "通过边界（面、边和顶点）表示三维对象的方法。"
+            },
+            {
+                "key": "bi",
+                "term": "BI",
+                "synonyms": [
+                    "商业智能"
+                ],
+                "description": "用于分析业务数据以支持管理决策的技术和方法。"
+            },
+            {
+                "key": "bom",
+                "term": "BOM",
+                "synonyms": [
+                    "物料清单"
+                ],
+                "description": "制造产品所需的组件、装配件和材料的完整列表及其数量。"
+            },
+            {
+                "key": "bpm",
+                "term": "BPM",
+                "synonyms": [
+                    "业务流程管理"
+                ],
+                "description": "管理和改进企业业务流程的系统化方法学。"
+            },
+            {
+                "key": "b-spline",
+                "term": "B样条",
+                "synonyms": [
+                    "基础样条"
+                ],
+                "description": "计算机图形学和CAD中用于表示复杂形状的数学曲线。主要优点是局部控制：更改一个控制点仅影响曲线的有限部分。"
+            },
+            {
+                "key": "cae",
+                "term": "CAE",
+                "synonyms": [
+                    "计算机辅助工程"
+                ],
+                "description": "使用计算机软件进行工程分析，包括强度计算、热分析和动态分析。"
+            },
+            {
+                "key": "cals",
+                "term": "CALS",
+                "synonyms": [
+                    "持续采办与全寿命支持"
+                ],
+                "description": "在产品整个生命周期内提供集成信息支持的概念。"
+            },
+            {
+                "key": "capp",
+                "term": "CAPP",
+                "synonyms": [
+                    "计算机辅助工艺规划"
+                ],
+                "description": "使用计算机系统开发零件制造工艺计划。"
+            },
+            {
+                "key": "cfd",
+                "term": "CFD",
+                "synonyms": [
+                    "计算流体动力学"
+                ],
+                "description": "使用数值方法进行流体和气体流动计算机建模的CAE领域，用于分析流体动力学、热和传质过程。"
+            },
+            {
+                "key": "cam",
+                "term": "CAM",
+                "synonyms": [
+                    "计算机辅助制造"
+                ],
+                "description": "使用计算机系统规划、管理和控制制造操作。"
+            },
+            {
+                "key": "cpd",
+                "term": "CPD",
+                "synonyms": [
+                    "协同产品开发"
+                ],
+                "description": "涉及不同部门和合作伙伴的集体产品开发过程。"
+            },
+            {
+                "key": "crm",
+                "term": "CRM",
+                "synonyms": [
+                    "客户关系管理"
+                ],
+                "description": "管理与客户和企业合作伙伴互动的系统。"
+            },
+            {
+                "key": "crp",
+                "term": "CRP",
+                "synonyms": [
+                    "产能需求计划"
+                ],
+                "description": "确定完成生产计划所需生产能力的过程。"
+            },
+            {
+                "key": "csm",
+                "term": "CSM",
+                "synonyms": [
+                    "客户服务管理"
+                ],
+                "description": "管理售后服务和客户支持的系统。"
+            },
+            {
+                "key": "continuous-liquid-interface-production",
+                "term": "CLIP",
+                "synonyms": [
+                    "连续液界面生产"
+                ],
+                "description": "Carbon公司的3D打印技术，使用具有氧抑制层的连续光聚合过程，显著提高打印速度。"
+            },
+            {
+                "key": "cpdm",
+                "term": "cPDm",
+                "synonyms": [
+                    "协同产品定义管理"
+                ],
+                "description": "在分布式开发环境中管理所有产品信息的方法。"
+            },
+            {
+                "key": "cad-data-exchange",
+                "term": "CAD数据交换",
+                "synonyms": [],
+                "description": "在不同CAD系统之间传输设计数据的过程。"
+            },
+            {
+                "key": "cad",
+                "term": "CAD",
+                "synonyms": [
+                    "计算机辅助设计"
+                ],
+                "description": "用于创建3D模型、图纸和设计文档的软件。"
+            },
+            {
+                "key": "cnc",
+                "term": "CNC",
+                "synonyms": [
+                    "计算机数控"
+                ],
+                "description": "基于计算机生成的数字命令的设备控制系统。"
+            },
+            {
+                "key": "docker",
+                "term": "Docker",
+                "synonyms": [
+                    "容器化"
+                ],
+                "description": "用于在容器中开发、交付和运行应用程序的平台，提供软件隔离和可移植性。"
+            },
+            {
+                "key": "dwf",
+                "term": "DWF",
+                "synonyms": [
+                    "设计网页格式"
+                ],
+                "description": "Autodesk文件格式，用于安全发布和分发设计数据，无需传输源项目文件。"
+            },
+            {
+                "key": "dwg",
+                "term": "DWG",
+                "synonyms": [
+                    "图纸"
+                ],
+                "description": "存储2D和3D设计数据的文件格式。最初为AutoCAD创建，但已成为许多CAD系统支持的行业标准。"
+            },
+            {
+                "key": "dxf",
+                "term": "DXF",
+                "synonyms": [
+                    "图纸交换格式"
+                ],
+                "description": "Autodesk开放文件格式，用于不同CAD系统之间的数据交换。"
+            },
+            {
+                "key": "dlp-printing",
+                "term": "DLP打印",
+                "synonyms": [
+                    "数字光处理"
+                ],
+                "description": "类似于SLA的3D打印技术，但使用数字投影仪同时固化整个光敏聚合物树脂层。"
+            },
+            {
+                "key": "dmls",
+                "term": "DMLS",
+                "synonyms": [
+                    "直接金属激光烧结"
+                ],
+                "description": "金属3D打印技术，激光逐层烧结金属粉末以创建致密金属零件。"
+            },
+            {
+                "key": "edms",
+                "term": "EDMS",
+                "synonyms": [
+                    "电子文档管理系统"
+                ],
+                "description": "用于管理电子文档及其业务处理工作流的软件。"
+            },
+            {
+                "key": "eam",
+                "term": "EAM",
+                "synonyms": [
+                    "企业资产管理"
+                ],
+                "description": "在整个生命周期内管理企业固定资产和设备的系统。"
+            },
+            {
+                "key": "ecad",
+                "term": "ECAD",
+                "synonyms": [
+                    "电子CAD"
+                ],
+                "description": "用于设计电子电路和印刷电路板的软件。"
+            },
+            {
+                "key": "erp",
+                "term": "ERP",
+                "synonyms": [
+                    "企业资源计划"
+                ],
+                "description": "实时管理主要业务流程的集成系统。"
+            },
+            {
+                "key": "esm",
+                "term": "ESM",
+                "synonyms": [
+                    "企业仿真管理"
+                ],
+                "description": "管理企业中计算机建模和仿真过程的系统。"
+            },
+            {
+                "key": "ebm",
+                "term": "EBM",
+                "synonyms": [
+                    "电子束熔融"
+                ],
+                "description": "在真空室中使用电子束熔化金属粉末的金属3D打印技术，适用于难熔金属。"
+            },
+            {
+                "key": "eskd",
+                "term": "ESKD",
+                "synonyms": [
+                    "设计文档统一系统"
+                ],
+                "description": "俄罗斯联邦制定的确立设计文档执行、格式化和处理的统一规则和规范的国家标准综合体。"
+            },
+            {
+                "key": "fcstd",
+                "term": "FCStd",
+                "synonyms": [
+                    "FreeCAD文档"
+                ],
+                "description": "FreeCAD原生文件格式，包含3D模型、构建历史记录和设计参数。"
+            },
+            {
+                "key": "fea",
+                "term": "FEA",
+                "synonyms": [
+                    "有限元分析"
+                ],
+                "description": "使用有限元方法进行物理过程计算机建模和分析的CAE领域。"
+            },
+            {
+                "key": "fem",
+                "term": "FEM",
+                "synonyms": [
+                    "有限元方法"
+                ],
+                "description": "求解微分方程的数值方法，广泛用于强度、传热、动力学和其他物理过程的工程计算。"
+            },
+            {
+                "key": "fdm",
+                "term": "FDM",
+                "synonyms": [
+                    "有限差分法"
+                ],
+                "description": "基于在离散网格上用差分关系替换导数来求解微分方程的数值方法。"
+            },
+            {
+                "key": "fvm",
+                "term": "FVM",
+                "synonyms": [
+                    "有限体积法"
+                ],
+                "description": "基于在控制体积上积分方程来求解偏微分方程的数值方法。"
+            },
+            {
+                "key": "fdm-printing",
+                "term": "FDM打印",
+                "synonyms": [
+                    "熔融沉积建模"
+                ],
+                "description": "3D打印技术，塑料丝材通过加热挤出机进料并逐层沉积在构建平台上。"
+            },
+            {
+                "key": "graphql-api",
+                "term": "GraphQL API",
+                "synonyms": [
+                    "GraphQL接口"
+                ],
+                "description": "强类型应用程序编程接口，允许客户端以可预测格式请求所需数据。"
+            },
+            {
+                "key": "gui",
+                "term": "GUI",
+                "synonyms": [
+                    "图形用户界面"
+                ],
+                "description": "使用图形元素与软件交互的用户界面。"
+            },
+            {
+                "key": "g-code",
+                "term": "G代码",
+                "synonyms": [
+                    "数控程序"
+                ],
+                "description": "用于控制计算机数控机床的命令。"
+            },
+            {
+                "key": "gdt",
+                "term": "GD&T",
+                "synonyms": [
+                    "几何尺寸与公差"
+                ],
+                "description": "用于定义零件几何特征的一套符号和标准系统。"
+            },
+            {
+                "key": "gbt",
+                "term": "GB/T",
+                "synonyms": [
+                    "国标"
+                ],
+                "description": "中国国家标准，包括技术制图和设计文档部分。"
+            },
+            {
+                "key": "hrm",
+                "term": "HRM",
+                "synonyms": [
+                    "人力资源管理"
+                ],
+                "description": "管理企业人员的系统，包括招聘、培训和员工发展。"
+            },
+            {
+                "key": "iges",
+                "term": "IGES",
+                "synonyms": [
+                    "初始图形交换规范"
+                ],
+                "description": "用于不同系统间CAD数据交换的文件格式。"
+            },
+            {
+                "key": "iso-128",
+                "term": "ISO 128",
+                "synonyms": [
+                    "技术制图"
+                ],
+                "description": "确立技术制图表示通用原则的国际标准。"
+            },
+            {
+                "key": "jwt-token",
+                "term": "JWT令牌",
+                "synonyms": [
+                    "JSON Web令牌"
+                ],
+                "description": "基于JSON格式创建访问令牌的开放标准。"
+            },
+            {
+                "key": "jt",
+                "term": "JT",
+                "synonyms": [
+                    "西门子JT格式"
+                ],
+                "description": "西门子公司用于轻量级3D可视化和协作的文件格式。"
+            },
+            {
+                "key": "kubernetes",
+                "term": "Kubernetes",
+                "synonyms": [
+                    "K8s",
+                    "容器编排"
+                ],
+                "description": "开源容器编排系统，用于自动化容器化应用程序的部署、扩展和管理。"
+            },
+            {
+                "key": "kbe",
+                "term": "KBE",
+                "synonyms": [
+                    "知识工程"
+                ],
+                "description": "使用知识库自动化工程过程和决策的方法学。"
+            },
+            {
+                "key": "laminated-object-manufacturing",
+                "term": "LOM",
+                "synonyms": [
+                    "分层实体制造"
+                ],
+                "description": "3D打印技术，材料片层叠、粘合并通过激光或切割工具切割。"
+            },
+            {
+                "key": "mcad",
+                "term": "MCAD",
+                "synonyms": [
+                    "机械CAD"
+                ],
+                "description": "用于设计机械零件和装配体的软件。"
+            },
+            {
+                "key": "mes",
+                "term": "MES",
+                "synonyms": [
+                    "制造执行系统"
+                ],
+                "description": "用于实时管理和监控生产过程的信息系统。"
+            },
+            {
+                "key": "mpm",
+                "term": "MPM",
+                "synonyms": [
+                    "制造过程管理"
+                ],
+                "description": "管理工艺流程和生产资源的系统。"
+            },
+            {
+                "key": "mrp",
+                "term": "MRP",
+                "synonyms": [
+                    "物料需求计划"
+                ],
+                "description": "基于规格和生产计划规划采购和生产的系统。"
+            },
+            {
+                "key": "mps",
+                "term": "MPS",
+                "synonyms": [
+                    "主生产计划"
+                ],
+                "description": "特定时间段内成品生产的计划。"
+            },
+            {
+                "key": "multijet-printing",
+                "term": "MultiJet打印",
+                "synonyms": [
+                    "MJP"
+                ],
+                "description": "3D打印技术，使用打印头阵列高速沉积光敏聚合物材料，配合蜡或其他可溶性支撑材料。"
+            },
+            {
+                "key": "nurbs",
+                "term": "NURBS",
+                "synonyms": [
+                    "非均匀有理B样条"
+                ],
+                "description": "计算机图形学中表示曲线和曲面的数学模型。"
+            },
+            {
+                "key": "oem-models",
+                "term": "OEM模型",
+                "synonyms": [
+                    "OEM模型"
+                ],
+                "description": "设备制造商提供的用于项目中的3D模型和技术文档。"
+            },
+            {
+                "key": "oem",
+                "term": "OEM",
+                "synonyms": [
+                    "原始设备制造商"
+                ],
+                "description": "生产用于其他制造商最终产品的组件或产品的公司。"
+            },
+            {
+                "key": "pdm",
+                "term": "PDM",
+                "synonyms": [
+                    "产品数据管理"
+                ],
+                "description": "用于自动化数据和文档存储、管理产品结构和工作流程的系统。"
+            },
+            {
+                "key": "plm",
+                "term": "PLM",
+                "synonyms": [
+                    "产品生命周期管理"
+                ],
+                "description": "在产品生命周期每个阶段（从设计到处置）管理信息和流程的系统。"
+            },
+            {
+                "key": "pmi",
+                "term": "PMI",
+                "synonyms": [
+                    "产品制造信息"
+                ],
+                "description": "关于3D模型中公差、尺寸、表面光洁度和其他制造要求的数据。"
+            },
+            {
+                "key": "polyjet",
+                "term": "PolyJet",
+                "synonyms": [
+                    "喷射光敏聚合物打印"
+                ],
+                "description": "Stratasys的3D打印技术，使用打印头沉积液态光敏聚合物并通过紫外线固化。"
+            },
+            {
+                "key": "postgresql",
+                "term": "PostgreSQL",
+                "synonyms": [
+                    "Postgres",
+                    "关系型数据库管理系统"
+                ],
+                "description": "先进的开源对象关系型数据库管理系统，支持复杂查询和事务处理。"
+            },
+            {
+                "key": "qms",
+                "term": "QMS",
+                "synonyms": [
+                    "质量管理体系"
+                ],
+                "description": "用于产品质量管理的一套组织结构、程序、流程和资源。"
+            },
+            {
+                "key": "s3",
+                "term": "S3",
+                "synonyms": [
+                    "Amazon S3",
+                    "对象存储"
+                ],
+                "description": "亚马逊网络服务的对象存储服务，提供可扩展、高可用且安全的数据存储。"
+            },
+            {
+                "key": "scm",
+                "term": "SCM",
+                "synonyms": [
+                    "供应链管理"
+                ],
+                "description": "用于端到端供应链管理的系统，简化物流和采购优化。"
+            },
+            {
+                "key": "sha256",
+                "term": "SHA256",
+                "synonyms": [
+                    "哈希算法"
+                ],
+                "description": "用于文件完整性验证和计算唯一标识符的加密哈希函数。"
+            },
+            {
+                "key": "step",
+                "term": "STEP",
+                "synonyms": [
+                    "产品数据交换标准"
+                ],
+                "description": "用于不同CAD/CAM/CAE系统间产品数据交换的国际标准。"
+            },
+            {
+                "key": "stl",
+                "term": "STL",
+                "synonyms": [
+                    "立体光刻"
+                ],
+                "description": "3D打印文件格式，将物体表面表示为三角形。"
+            },
+            {
+                "key": "sla-printing",
+                "term": "SLA打印",
+                "synonyms": [
+                    "立体光刻"
+                ],
+                "description": "3D打印技术，使用紫外激光将液态光敏聚合物树脂逐层固化成固体塑料。"
+            },
+            {
+                "key": "sls-printing",
+                "term": "SLS打印",
+                "synonyms": [
+                    "选择性激光烧结"
+                ],
+                "description": "3D打印技术，激光将粉末材料逐层烧结成固体对象。"
+            },
+            {
+                "key": "slm",
+                "term": "SLM",
+                "synonyms": [
+                    "选择性激光熔融"
+                ],
+                "description": "金属3D打印技术，激光完全熔化金属粉末，制造机械性能接近铸件的零件。"
+            },
+            {
+                "key": "soa",
+                "term": "SOA",
+                "synonyms": [
+                    "面向服务的架构"
+                ],
+                "description": "应用程序由通过网络交互的独立服务组成的架构风格。"
+            },
+            {
+                "key": "ttm",
+                "term": "TTM",
+                "synonyms": [
+                    "上市时间"
+                ],
+                "description": "表征新产品开发和市场推出速度的指标。"
+            },
+            {
+                "key": "t-code",
+                "term": "T代码",
+                "synonyms": [
+                    "刀具代码"
+                ],
+                "description": "CNC控制程序中用于选择、更换或识别切削刀具的命令。"
+            },
+            {
+                "key": "uuid",
+                "term": "UUID",
+                "synonyms": [
+                    "通用唯一标识符"
+                ],
+                "description": "编程中用于创建唯一对象标识符的识别标准。"
+            },
+            {
+                "key": "u3d",
+                "term": "U3D",
+                "synonyms": [
+                    "通用3D"
+                ],
+                "description": "用于在PDF文档中嵌入3D图形的标准文件格式。"
+            },
+            {
+                "key": "vrml",
+                "term": "VRML",
+                "synonyms": [
+                    "虚拟现实建模语言"
+                ],
+                "description": "用于创建交互式3D世界和对象的编程语言。"
+            },
+            {
+                "key": "xml",
+                "term": "XML",
+                "synonyms": [
+                    "可扩展标记语言"
+                ],
+                "description": "用于存储和传输结构化数据的通用标记语言。"
+            },
+            {
+                "key": "xt",
+                "term": "XT",
+                "synonyms": [
+                    "Parasolid XT"
+                ],
+                "description": "Parasolid几何建模内核的文本文件格式。"
+            },
+            {
+                "key": "zip",
+                "term": "ZIP",
+                "synonyms": [
+                    "ZIP归档"
+                ],
+                "description": "常用于打包CAD数据的数据压缩和文件归档格式。"
+            },
+            {
+                "key": "3d-viewer",
+                "term": "3D查看器",
+                "synonyms": [
+                    "3D查看器"
+                ],
+                "description": "无需安装额外软件即可直接在浏览器中查看和与3D模型交互的工具。"
+            },
+            {
+                "key": "3d-printing",
+                "term": "3D打印",
+                "synonyms": [
+                    "增材制造"
+                ],
+                "description": "基于数字3D模型逐层创建物理对象的技术。"
+            },
+            {
+                "key": "3d-editor",
+                "term": "3D编辑器",
+                "synonyms": [
+                    "3D建模软件"
+                ],
+                "description": "用于创建和编辑三维图形的软件。"
+            },
+            {
+                "key": "triangulation",
+                "term": "三角化",
+                "synonyms": [
+                    "三角形划分"
+                ],
+                "description": "将表面或对象表示为三角形集合的过程。"
+            },
+            {
+                "key": "workflow",
+                "term": "业务流程",
+                "synonyms": [
+                    "工作流"
+                ],
+                "description": "完成特定业务任务的步骤和操作序列。"
+            },
+            {
+                "key": "business-rules",
+                "term": "业务规则",
+                "synonyms": [
+                    "业务逻辑规则"
+                ],
+                "description": "定义业务流程和系统行为的规范化约束和条件。"
+            },
+            {
+                "key": "bookmarks",
+                "term": "书签",
+                "synonyms": [
+                    "收藏夹"
+                ],
+                "description": "用于快速访问CADBase平台中常用组件和项目的系统。"
+            },
+            {
+                "key": "event",
+                "term": "事件",
+                "synonyms": [
+                    "触发事件"
+                ],
+                "description": "系统中可以启动特定操作或流程的状态变化。"
+            },
+            {
+                "key": "cloud-storage",
+                "term": "云存储",
+                "synonyms": [
+                    "云仓库"
+                ],
+                "description": "CADBase服务器上的远程数据存储，提供从任何设备访问文件和安全备份。"
+            },
+            {
+                "key": "cloud-platform",
+                "term": "云平台",
+                "synonyms": [
+                    "PaaS"
+                ],
+                "description": "通过互联网提供存储、管理和项目协作服务的CADBase基础设施。"
+            },
+            {
+                "key": "interchangeability",
+                "term": "互换性",
+                "synonyms": [
+                    "组件兼容性"
+                ],
+                "description": "零件或装配体的属性，允许无需额外处理或适配即可替换。"
+            },
+            {
+                "key": "corporate-standard",
+                "term": "企业标准",
+                "synonyms": [
+                    "内部标准"
+                ],
+                "description": "在特定企业内部制定和应用以统一流程和产品的规范性文件。"
+            },
+            {
+                "key": "vendor-lock-in",
+                "term": "供应商锁定",
+                "synonyms": [
+                    "供应商依赖"
+                ],
+                "description": "用户依赖特定软件供应商且无法轻松切换到替代解决方案的情况。"
+            },
+            {
+                "key": "modification",
+                "term": "修改",
+                "synonyms": [
+                    "组件版本"
+                ],
+                "description": "具有设计文档、规格和相关文档的特定组件版本。"
+            },
+            {
+                "key": "metadata",
+                "term": "元数据",
+                "synonyms": [
+                    "描述性数据"
+                ],
+                "description": "关于数据的信息：作者、版本、创建日期、状态和其他文件属性。"
+            },
+            {
+                "key": "photopolymer-resin",
+                "term": "光敏聚合物树脂",
+                "synonyms": [
+                    "UV树脂"
+                ],
+                "description": "用于SLA和DLP 3D打印机的液态材料，在紫外线照射下固化。"
+            },
+            {
+                "key": "compatibility",
+                "term": "兼容性",
+                "synonyms": [
+                    "互操作性"
+                ],
+                "description": "各种系统和组件协同工作和交换数据的能力。"
+            },
+            {
+                "key": "intranet",
+                "term": "内联网",
+                "synonyms": [
+                    "企业网络"
+                ],
+                "description": "使用互联网技术的内部私有企业网络。"
+            },
+            {
+                "key": "geometric-solver",
+                "term": "几何求解器",
+                "synonyms": [
+                    "约束求解器"
+                ],
+                "description": "求解CAD系统中几何方程和约束系统的软件模块。"
+            },
+            {
+                "key": "geometric-modeling-kernel",
+                "term": "几何建模内核",
+                "synonyms": [
+                    "CAD内核"
+                ],
+                "description": "负责几何数学运算的CAD系统基本软件组件。"
+            },
+            {
+                "key": "cutter-location",
+                "term": "刀具位置",
+                "synonyms": [
+                    "CL数据"
+                ],
+                "description": "CAM系统中用于形成CNC刀具路径的切削刀具坐标和方向。"
+            },
+            {
+                "key": "classification",
+                "term": "分类",
+                "synonyms": [
+                    "分类"
+                ],
+                "description": "按特定特征和类别系统化对象的过程。"
+            },
+            {
+                "key": "fpa-manufacturing",
+                "term": "制造业财务规划与分析",
+                "synonyms": [
+                    "制造业FP&A"
+                ],
+                "description": "旨在优化制造业运营活动、成本管理和增长刺激的战略性财务规划和分析。"
+            },
+            {
+                "key": "functional-tolerancing-annotation",
+                "term": "功能公差与标注",
+                "synonyms": [
+                    "FT&A"
+                ],
+                "description": "在CAD中直接将几何公差和技术要求添加到3D模型的过程。"
+            },
+            {
+                "key": "single-source-of-truth",
+                "term": "单一事实来源",
+                "synonyms": [
+                    "集中存储"
+                ],
+                "description": "所有项目参与者从单一来源处理相同当前数据的概念。"
+            },
+            {
+                "key": "parameter",
+                "term": "参数",
+                "synonyms": [
+                    "属性"
+                ],
+                "description": "包含附加信息的组件特性或属性。"
+            },
+            {
+                "key": "parameter-search",
+                "term": "参数搜索",
+                "synonyms": [
+                    "参数化搜索"
+                ],
+                "description": "按技术特性、材料、尺寸和其他属性搜索组件的能力。"
+            },
+            {
+                "key": "parametric-design",
+                "term": "参数化设计",
+                "synonyms": [
+                    "参数化建模"
+                ],
+                "description": "几何形状由参数及其间依赖关系定义的设计方法。"
+            },
+            {
+                "key": "variational-design",
+                "term": "变分设计",
+                "synonyms": [
+                    "参数化设计"
+                ],
+                "description": "参数更改自动更新模型几何形状的设计方法。"
+            },
+            {
+                "key": "merge",
+                "term": "合并",
+                "synonyms": [
+                    "导入"
+                ],
+                "description": "将选定的文件或组件导入当前文档以供进一步工作的功能。"
+            },
+            {
+                "key": "synchronization",
+                "term": "同步",
+                "synonyms": [
+                    "同步"
+                ],
+                "description": "在本地存储和CADBase云平台之间协调数据的过程。"
+            },
+            {
+                "key": "team-collaboration",
+                "term": "团队协作",
+                "synonyms": [
+                    "协同工作"
+                ],
+                "description": "平台功能，允许多个用户在版本控制和权限管理下同时处理单个项目。"
+            },
+            {
+                "key": "model-number",
+                "term": "型号",
+                "synonyms": [
+                    "产品标识符"
+                ],
+                "description": "制造商目录中成品的唯一标识符。"
+            },
+            {
+                "key": "baseline",
+                "term": "基线",
+                "synonyms": [
+                    "基准水平"
+                ],
+                "description": "作为后续变更基础的产品配置的批准版本。"
+            },
+            {
+                "key": "extranet",
+                "term": "外联网",
+                "synonyms": [
+                    "外部企业网络"
+                ],
+                "description": "面向外部用户的内联网扩展。"
+            },
+            {
+                "key": "polygonal-mesh",
+                "term": "多边形网格",
+                "synonyms": [
+                    "多边形网格"
+                ],
+                "description": "以多边形集合表示的三维对象。"
+            },
+            {
+                "key": "polygonal-modeling",
+                "term": "多边形建模",
+                "synonyms": [
+                    "网格建模"
+                ],
+                "description": "使用多边形表示曲面来创建3D模型。"
+            },
+            {
+                "key": "solid-modeling",
+                "term": "实体建模",
+                "synonyms": [
+                    "实体建模"
+                ],
+                "description": "创建将对象表示为具有定义体积的实体的3D模型。"
+            },
+            {
+                "key": "instance",
+                "term": "实例",
+                "synonyms": [
+                    "组件副本"
+                ],
+                "description": "装配体中可以具有唯一位置参数的单个组件出现。"
+            },
+            {
+                "key": "review",
+                "term": "审核",
+                "synonyms": [
+                    "验证"
+                ],
+                "description": "由授权人员评估和批准数据、文档或项目的过程。"
+            },
+            {
+                "key": "client-server-architecture",
+                "term": "客户端-服务器架构",
+                "synonyms": [],
+                "description": "客户端从集中式服务器请求服务的网络架构。"
+            },
+            {
+                "key": "workbench",
+                "term": "工作台",
+                "synonyms": [
+                    "工具面板"
+                ],
+                "description": "FreeCAD中的专用界面，包含特定任务的工具。"
+            },
+            {
+                "key": "workpiece",
+                "term": "工件",
+                "synonyms": [
+                    "毛坯"
+                ],
+                "description": "用于进一步机械加工或零件制造的初始材料形态。"
+            },
+            {
+                "key": "engineering-design",
+                "term": "工程设计",
+                "synonyms": [
+                    "设计工程"
+                ],
+                "description": "与开发具体结构、装配体和零件设计相关的设计部分。"
+            },
+            {
+                "key": "workgroup",
+                "term": "工作组",
+                "synonyms": [
+                    "开发团队"
+                ],
+                "description": "共同从事产品或项目开发的专业人员小组。"
+            },
+            {
+                "key": "tooling",
+                "term": "工装",
+                "synonyms": [
+                    "生产工装"
+                ],
+                "description": "生产过程中使用的夹具、工具和设备的综合体。"
+            },
+            {
+                "key": "technological-control",
+                "term": "工艺控制",
+                "synonyms": [
+                    "生产控制"
+                ],
+                "description": "检查和确保工艺流程、操作和设备符合既定要求的系统。"
+            },
+            {
+                "key": "engineering-change-notice",
+                "term": "工程变更通知",
+                "synonyms": [
+                    "ECN/ECO"
+                ],
+                "description": "管理产品设计或文档变更的规范化过程。"
+            },
+            {
+                "key": "concurrent-engineering",
+                "term": "并行工程",
+                "synonyms": [
+                    "CE"
+                ],
+                "description": "各种设计阶段同时执行的并行产品开发方法学。"
+            },
+            {
+                "key": "library",
+                "term": "库",
+                "synonyms": [
+                    "组件库"
+                ],
+                "description": "按类别、标签或其他标准组织的结构化组件集合。"
+            },
+            {
+                "key": "modeling",
+                "term": "建模",
+                "synonyms": [
+                    "3D建模"
+                ],
+                "description": "在三维空间中创建对象的数字表示的过程。"
+            },
+            {
+                "key": "open-source",
+                "term": "开源",
+                "synonyms": [
+                    "自由软件"
+                ],
+                "description": "源代码可供学习、修改和分发的软件。"
+            },
+            {
+                "key": "scenario-planning",
+                "term": "情景规划",
+                "synonyms": [
+                    "情景分析"
+                ],
+                "description": "考虑各种发展情景以优化管理决策的财务规划方法。"
+            },
+            {
+                "key": "group-technology",
+                "term": "成组技术",
+                "synonyms": [
+                    "GT"
+                ],
+                "description": "按设计和工艺特征对零件进行分类以优化生产的方法学。"
+            },
+            {
+                "key": "extended-enterprise",
+                "term": "扩展企业",
+                "synonyms": [
+                    "扩展组织"
+                ],
+                "description": "将主要企业及其合作伙伴、供应商和客户纳入统一业务环境的概念。"
+            },
+            {
+                "key": "technical-specification",
+                "term": "技术规格",
+                "synonyms": [],
+                "description": "确立产品、材料或流程技术要求的文档。"
+            },
+            {
+                "key": "technology",
+                "term": "技术",
+                "synonyms": [
+                    "生产工艺"
+                ],
+                "description": "用于制造产品的一套方法、流程和材料。"
+            },
+            {
+                "key": "report-generation",
+                "term": "报告生成",
+                "synonyms": [
+                    "自动报告创建"
+                ],
+                "description": "基于项目数据自动生成文档的自动化系统功能。"
+            },
+            {
+                "key": "authorization",
+                "term": "授权",
+                "synonyms": [
+                    "认证"
+                ],
+                "description": "验证用户对CADBase平台资源访问权限的过程。"
+            },
+            {
+                "key": "addon",
+                "term": "插件",
+                "synonyms": [
+                    "扩展"
+                ],
+                "description": "扩展主应用程序功能的软件模块。"
+            },
+            {
+                "key": "support-structures",
+                "term": "支撑结构",
+                "synonyms": [
+                    "支撑"
+                ],
+                "description": "由软件生成并与主模型一起打印的临时结构，用于支撑悬垂、桥梁和复杂几何形状。"
+            },
+            {
+                "key": "fault-tree-analysis",
+                "term": "故障树分析",
+                "synonyms": [
+                    "FTA"
+                ],
+                "description": "使用树状图识别和评估故障原因及潜在故障点的系统可靠性分析方法。"
+            },
+            {
+                "key": "fault-tree",
+                "term": "故障树",
+                "synonyms": [
+                    "诊断树"
+                ],
+                "description": "显示原因事件与系统故障事件之间关系的逻辑图。"
+            },
+            {
+                "key": "data-transfer",
+                "term": "数据传输",
+                "synonyms": [
+                    "数据交换"
+                ],
+                "description": "在不同系统和应用程序之间移动信息的过程。"
+            },
+            {
+                "key": "data-consumer",
+                "term": "数据消费者",
+                "synonyms": [],
+                "description": "使用数据执行其功能的用户或系统。"
+            },
+            {
+                "key": "data-author",
+                "term": "数据作者",
+                "synonyms": [
+                    "数据创建者"
+                ],
+                "description": "在系统中创建和修改数据的专家。"
+            },
+            {
+                "key": "data-reviewer",
+                "term": "数据审核员",
+                "synonyms": [
+                    "审核员"
+                ],
+                "description": "在生产中使用前检查和批准数据的专家。"
+            },
+            {
+                "key": "digital-mock-up",
+                "term": "数字样机",
+                "synonyms": [
+                    "DMU"
+                ],
+                "description": "用于物理生产前分析和仿真的三维数字产品模型。"
+            },
+            {
+                "key": "digital-transformation",
+                "term": "数字化转型",
+                "synonyms": [
+                    "数字化"
+                ],
+                "description": "将数字技术整合到所有业务方面，从根本上改变工作方式和价值创造的过程。"
+            },
+            {
+                "key": "file-set",
+                "term": "文件集",
+                "synonyms": [
+                    "文件集"
+                ],
+                "description": "在组件修改内按软件类型或用途组织的逻辑文件组。"
+            },
+            {
+                "key": "surface-modeling",
+                "term": "曲面建模",
+                "synonyms": [],
+                "description": "使用数学曲面创建3D模型，以精确建模复杂形状。"
+            },
+            {
+                "key": "replacement-part",
+                "term": "替换零件",
+                "synonyms": [
+                    "替代零件"
+                ],
+                "description": "可在不降低产品特性的情况下替代原装零件使用的零件。"
+            },
+            {
+                "key": "end-product",
+                "term": "最终产品",
+                "synonyms": [
+                    "成品"
+                ],
+                "description": "准备使用或销售的已完成产品。"
+            },
+            {
+                "key": "finite-element-mesh",
+                "term": "有限元网格",
+                "synonyms": [
+                    "FE网格"
+                ],
+                "description": "以有限元集合表示的离散几何，用于通过有限元法数值求解方程。"
+            },
+            {
+                "key": "local-storage",
+                "term": "本地存储",
+                "synonyms": [
+                    "本地库"
+                ],
+                "description": "用户计算机上存储下载的组件和文件以供离线工作的文件夹。"
+            },
+            {
+                "key": "machining",
+                "term": "机械加工",
+                "synonyms": [
+                    "机械加工"
+                ],
+                "description": "通过切削工具去除材料来改变工件形状、尺寸和表面质量的工艺过程。"
+            },
+            {
+                "key": "material-jetting",
+                "term": "材料喷射",
+                "synonyms": [
+                    "MJ"
+                ],
+                "description": "3D打印技术，光敏聚合物材料通过微喷嘴沉积并立即通过紫外线固化。"
+            },
+            {
+                "key": "csg",
+                "term": "构造实体几何",
+                "synonyms": [
+                    "CSG"
+                ],
+                "description": "使用布尔运算对图元进行实体建模的方法。"
+            },
+            {
+                "key": "build-platform",
+                "term": "构建平台",
+                "synonyms": [
+                    "构建板"
+                ],
+                "description": "3D打印机中层叠构建物体发生的表面。"
+            },
+            {
+                "key": "benchmarking",
+                "term": "标杆分析",
+                "synonyms": [
+                    "比较分析"
+                ],
+                "description": "将产品特性、流程或方法与市场上最佳同类产品进行比较的过程。"
+            },
+            {
+                "key": "standards-control",
+                "term": "标准控制",
+                "synonyms": [
+                    "规范性控制"
+                ],
+                "description": "检查设计和工艺文档是否符合既定标准、规范和规则的程序。"
+            },
+            {
+                "key": "standard",
+                "term": "标准",
+                "synonyms": [
+                    "技术标准"
+                ],
+                "description": "确立统一技术要求、规则、特性和程序的规范性文件。"
+            },
+            {
+                "key": "tag",
+                "term": "标签",
+                "synonyms": [
+                    "关键词"
+                ],
+                "description": "用于分类和搜索组件的关键词或标签。"
+            },
+            {
+                "key": "spline",
+                "term": "样条",
+                "synonyms": [
+                    "平滑曲线"
+                ],
+                "description": "由一组控制点和插值函数定义的数学曲线。"
+            },
+            {
+                "key": "check-in",
+                "term": "检入",
+                "synonyms": [
+                    "变更注册"
+                ],
+                "description": "将新的或修改的对象放入电子存储并替换先前对象版本的过程。"
+            },
+            {
+                "key": "check-out",
+                "term": "检出",
+                "synonyms": [
+                    "提取编辑"
+                ],
+                "description": "系统控制的提取产品数据库组件以在其他项目中查看、引用或使用的过程。"
+            },
+            {
+                "key": "mold-design",
+                "term": "模具设计",
+                "synonyms": [
+                    "冲模设计"
+                ],
+                "description": "用于设计注塑模具、冲模和压模的专用CAD部分。"
+            },
+            {
+                "key": "versioning",
+                "term": "版本控制",
+                "synonyms": [
+                    "版本管理"
+                ],
+                "description": "文件变更管理系统，允许跟踪变更历史、创建新版本和恢复到先前的文件状态。"
+            },
+            {
+                "key": "feature",
+                "term": "特征",
+                "synonyms": [
+                    "功能元素"
+                ],
+                "description": "具有特定功能用途的模型的单独几何元素。"
+            },
+            {
+                "key": "gantt-chart",
+                "term": "甘特图",
+                "synonyms": [
+                    "甘特图"
+                ],
+                "description": "项目进度的图形表示，显示任务、截止日期和依赖关系。"
+            },
+            {
+                "key": "lifecycle",
+                "term": "生命周期",
+                "synonyms": [
+                    "产品生命周期"
+                ],
+                "description": "从概念到处置的产品存在阶段序列。"
+            },
+            {
+                "key": "lifecycle-status",
+                "term": "生命周期状态",
+                "synonyms": [
+                    "LC状态"
+                ],
+                "description": "系统中当前组件生命周期阶段的指示器。"
+            },
+            {
+                "key": "catalog",
+                "term": "目录",
+                "synonyms": [],
+                "description": "按特定标准组织的主题组件集合，便于搜索和导航。"
+            },
+            {
+                "key": "stereolithography",
+                "term": "立体光刻",
+                "synonyms": [
+                    "SLA"
+                ],
+                "description": "使用激光作用下液态树脂光聚合的3D打印技术。"
+            },
+            {
+                "key": "binder-jetting",
+                "term": "粘结剂喷射",
+                "synonyms": [
+                    "粘结剂打印"
+                ],
+                "description": "3D打印技术，液态粘结剂沉积在薄粉末层上，将颗粒粘合在一起形成物体。"
+            },
+            {
+                "key": "wireframe",
+                "term": "线框",
+                "synonyms": [
+                    "线框模型"
+                ],
+                "description": "以线条和顶点表示的三维对象，无表面。"
+            },
+            {
+                "key": "filament",
+                "term": "线材",
+                "synonyms": [
+                    "3D线材"
+                ],
+                "description": "FDM 3D打印机中使用的线材形式的材料。"
+            },
+            {
+                "key": "component",
+                "term": "组件",
+                "synonyms": [
+                    "零件"
+                ],
+                "description": "CADBase平台的主要结构单元，包含有关产品、材料或设备的所有信息。"
+            },
+            {
+                "key": "subdivision-surface",
+                "term": "细分曲面",
+                "synonyms": [
+                    "Sub-D"
+                ],
+                "description": "粗网格顺序细分以创建平滑曲面的建模方法。"
+            },
+            {
+                "key": "federated-architecture",
+                "term": "联邦架构",
+                "synonyms": [
+                    "集成架构"
+                ],
+                "description": "将异构系统组合到统一环境中的信息系统架构。"
+            },
+            {
+                "key": "self-service-bi",
+                "term": "自助式BI",
+                "synonyms": [
+                    "自助式分析"
+                ],
+                "description": "允许最终用户无需IT协助即可独立创建报告和分析数据的商业智能平台。"
+            },
+            {
+                "key": "free-license",
+                "term": "自由许可证",
+                "synonyms": [
+                    "开放许可证"
+                ],
+                "description": "允许自由使用、修改和分发软件的许可证。"
+            },
+            {
+                "key": "assembly-design",
+                "term": "装配设计",
+                "synonyms": [
+                    "装配设计"
+                ],
+                "description": "从单个组件和零件创建和管理装配体的过程。"
+            },
+            {
+                "key": "specification",
+                "term": "规格",
+                "synonyms": [],
+                "description": "定义装配单元、套件或复合体组成的主要设计文档。"
+            },
+            {
+                "key": "role",
+                "term": "角色",
+                "synonyms": [
+                    "功能角色"
+                ],
+                "description": "系统中用户权利和职责的集合，定义其对数据和功能的访问权限。"
+            },
+            {
+                "key": "solution-convergence",
+                "term": "解收敛",
+                "synonyms": [
+                    "收敛性"
+                ],
+                "description": "随着网格元素/节点数量增加，数值方法逼近精确解的特性。"
+            },
+            {
+                "key": "trigger",
+                "term": "触发器",
+                "synonyms": [
+                    "激活事件"
+                ],
+                "description": "自动启动系统中特定过程或操作的条件或事件。"
+            },
+            {
+                "key": "design",
+                "term": "设计",
+                "synonyms": [
+                    "工程设计"
+                ],
+                "description": "为创建新产品开发概念、解决方案和文档的创造性过程。"
+            },
+            {
+                "key": "access-control",
+                "term": "访问控制",
+                "synonyms": [
+                    "权限管理"
+                ],
+                "description": "配置数据访问权限的系统，允许不同用户具有不同的访问级别。"
+            },
+            {
+                "key": "access-token",
+                "term": "访问令牌",
+                "synonyms": [
+                    "JWT令牌"
+                ],
+                "description": "提供对CADBase平台API访问权限的唯一身份验证密钥。"
+            },
+            {
+                "key": "bezier-curve",
+                "term": "贝塞尔曲线",
+                "synonyms": [
+                    "Bézier曲线"
+                ],
+                "description": "计算机图形学中用于建模平滑形状的参数曲线。"
+            },
+            {
+                "key": "common-data-environment",
+                "term": "通用数据环境",
+                "synonyms": [
+                    "CDE"
+                ],
+                "description": "作为项目'单一事实来源'的集中存储。"
+            },
+            {
+                "key": "configurator",
+                "term": "配置器",
+                "synonyms": [
+                    "配置系统"
+                ],
+                "description": "基于模块化方法创建自定义产品配置的软件工具。"
+            },
+            {
+                "key": "configuration-management",
+                "term": "配置管理",
+                "synonyms": [
+                    "CM"
+                ],
+                "description": "在整个生命周期内管理产品配置变更的过程。"
+            },
+            {
+                "key": "metal-printing",
+                "term": "金属3D打印",
+                "synonyms": [
+                    "DMLS",
+                    "SLM",
+                    "EBM"
+                ],
+                "description": "金属3D打印技术组，包括直接金属激光烧结、选择性激光熔融和电子束熔融。"
+            },
+            {
+                "key": "sheet-metal-design",
+                "term": "钣金设计",
+                "synonyms": [
+                    "冲压设计"
+                ],
+                "description": "用于设计钣金零件和冲压模具的专用CAD部分。"
+            },
+            {
+                "key": "link-file",
+                "term": "链接文件",
+                "synonyms": [],
+                "description": "将外部文件中的对象添加到场景中而无需直接复制数据的方法。"
+            },
+            {
+                "key": "tessellated-model",
+                "term": "镶嵌模型",
+                "synonyms": [
+                    "三角化模型"
+                ],
+                "description": "以三角形或其他多边形集合表示的3D模型。"
+            },
+            {
+                "key": "sculpting",
+                "term": "雕刻",
+                "synonyms": [
+                    "数字雕刻"
+                ],
+                "description": "通过'雕刻'虚拟表面创建3D模型的技术。"
+            },
+            {
+                "key": "part-master",
+                "term": "零件主模型",
+                "synonyms": [
+                    "主零件"
+                ],
+                "description": "系统中包含所有批准数据和规格的参考零件版本。"
+            },
+            {
+                "key": "item-id",
+                "term": "项目ID",
+                "synonyms": [
+                    "零件编号"
+                ],
+                "description": "系统中为每个元素分配的唯一代码，用于其识别。"
+            }
+        ],
+        "search_placeholder": "搜索术语...",
+        "alphabet_navigation": "快速导航:",
+        "no_results": "未找到术语",
+        "share": {
+            "copy_link": "复制术语链接",
+            "copied": "链接已复制!",
+            "copy_error": "复制错误"
+        },
+        "synonyms_label": "同义词:",
+        "cta": {
+            "title": "没有找到需要的术语？",
+            "subtitle": "建议新术语添加到术语表",
+            "buttons": [
+                {
+                    "text": "建议术语",
+                    "url": "mailto:support@cadbase.rs?subject=术语表术语建议",
+                    "icon": "fas fa-plus",
+                    "class": "is-info is-medium"
+                }
+            ]
+        }
+    }
+}

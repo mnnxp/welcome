@@ -36,8 +36,13 @@
             },
             {
                 "text": "Overviews",
-                "url": "#overviews",
+                "url": "overviews/",
                 "icon": "far fa-newspaper"
+            },
+            {
+                "text": "Glossary",
+                "url": "glossary/",
+                "icon": "fas fa-book-open"
             },
             {
                 "text": "Terms",
