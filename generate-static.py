@@ -6,14 +6,22 @@ from jinja2 import Environment, FileSystemLoader, TemplateNotFound, StrictUndefi
 
 total_generated = 0
 
-def load_translations(lang_code):
-    """Load translations for the specified language"""
+def load_json(path_json):
+    """Load json for the specified language"""
     try:
-        with open(f'i18n/locales/{lang_code}.json', 'r', encoding='utf-8') as f:
+        with open(path_json, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        print(f"⚠️  Translations for {lang_code} not found")
+        print(f"⚠️  Translations for '{path_json}' not found")
         return None
+
+def load_translations(lang_code):
+    """Load translations for the specified language"""
+    return load_json(f'i18n/locales/{lang_code}.json')
+
+def load_glossary(lang_code):
+    """Loads glossary data for specified language"""
+    return load_json(f'i18n/glossary/{lang_code}.json')
 
 def setup_jinja_environment():
     """Set up Jinja2 environment"""
@@ -117,6 +125,37 @@ def generate_articles_from_json(env, lang, base_variables, json_articles, templa
         except Exception as e:
             print(f"Error generating from json {output_path}: {e}")
 
+def generate_glossary_from_json(env, lang, base_variables):
+    """Generates glossary pages for all languages"""
+    global total_generated
+
+    # Load glossary
+    glossary = load_glossary(lang)
+    if not glossary:
+        return
+
+    template = env.get_template('pages/glossary/template.html')
+    # Create path for glossary
+    page_name = 'glossary'
+    glossary_dir = os.path.join(f'dist/{lang}', page_name)
+    os.makedirs(glossary_dir, exist_ok=True)
+    output_path = os.path.join(glossary_dir, 'index.html')
+
+    try:
+        # Prepare variables
+        page_variables = base_variables.copy()
+        page_variables['page_name'] = page_name
+        page_variables['assets_prefix'] = '../../'
+        page_variables['glossary'] = glossary.get('glossary', {})
+        render_page(
+            env,
+            page_variables,
+            template,
+            output_path
+            )
+    except Exception as e:
+        print(f"Error generating glossary for {lang}: {e}")
+
 def generate_pages():
     """Generate static pages"""
 
@@ -179,6 +218,12 @@ def generate_pages():
             json_articles=f'i18n/locales/{lang}.json',
             template_path='pages/overviews/article/template.html',
             output_dir=f'dist/{lang}/overviews'
+        )
+
+        generate_glossary_from_json(
+            env,
+            lang,
+            base_variables
         )
 
     print(f"Generation completed! Pages created: {total_generated}")

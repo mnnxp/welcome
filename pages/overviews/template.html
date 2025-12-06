@@ -4,15 +4,20 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section class="hero is-small is-primary mt-6">
+<section class="hero is-small is-info is-bold mt-6">
     <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="title is-1 has-text-white mb-4">
-                {{ overviews.hero.title }}
-            </h1>
-            <p class="subtitle has-text-white has-text-weight-light is-size-5">
-                {{ overviews.hero.subtitle }}
-            </p>
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-two-thirds">
+                    <h1 class="title is-1">{{ overviews.hero.title }}</h1>
+                    <p class="subtitle">{{ overviews.hero.subtitle }}</p>
+                </div>
+                <div class="column has-text-centered">
+                    <span class="icon is-large">
+                        <i class="far fa-newspaper fa-3x"></i>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -65,7 +70,7 @@
 </section>
 
 <!-- CTA Section -->
-<section class="section has-background-light">
+<section class="section">
     <div class="container has-text-centered">
         <div class="columns is-centered">
             <div class="column is-two-thirds">

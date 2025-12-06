@@ -60,8 +60,9 @@
     </script>
     {% endif %}
     {% if assets.nocdn %}
-    <link rel="stylesheet" type="text/css" href="https://cadbase.org/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cadbase.org/css/font-awesome.css" />
+    <link rel="preconnect" href="https://cdn.bootcdn.net">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     {% else %}
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -70,9 +71,12 @@
     <link rel="stylesheet" type="text/css" href="{{ meta.root_url }}{{ assets.css }}" />
     {% if page_name == 'index' %}
     <link rel="stylesheet" type="text/css" href="{{ meta.root_url }}css/cube.css" />
-    <script async defer type="text/javascript" src="{{ meta.root_url }}js/cube.js"></script>
+    <script type="text/javascript" src="{{ meta.root_url }}js/cube.js"></script>
     {% endif %}
-    <script async defer type="text/javascript" src="{{ meta.root_url }}{{ assets.js }}"></script>
+    {% if page_name == 'glossary' %}
+    <script type="text/javascript" src="{{ meta.root_url }}js/glossary.js"></script>
+    {% endif %}
+    <script type="text/javascript" src="{{ meta.root_url }}{{ assets.js }}"></script>
 </head>
 <body>
     {% include 'i18n/templates/header.html' %}
