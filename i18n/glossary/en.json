@@ -847,6 +847,26 @@
                 "description": "System for managing enterprise personnel including hiring, training and employee development."
             },
             {
+                "key": "ifc",
+                "term": "IFC",
+                "synonyms": [
+                    "Industry Foundation Classes",
+                    "Open BIM Standard",
+                    "ifc file"
+                ],
+                "description": "An open, neutral file format for exchanging Building Information Modeling (BIM) data between different software applications. Developed and maintained by buildingSMART International."
+            },
+            {
+                "key": "ifc-frag",
+                "term": "IFC fragments",
+                "synonyms": [
+                    ".frag IFC files",
+                    "IFC partial files",
+                    "IFC model fragments"
+                ],
+                "description": "Files with .frag extension containing partial or fragmented IFC model data. Used for incremental updates, extracting data subsets, or exchanging only changed parts of BIM models."
+            },
+            {
                 "key": "iges",
                 "term": "IGES",
                 "synonyms": [
@@ -972,6 +992,16 @@
                     "LC Status"
                 ],
                 "description": "Indicator of current component lifecycle stage in system."
+            },
+            {
+                "key": "manufacturing-instructions",
+                "term": "Manufacturing Instructions",
+                "synonyms": [
+                    "Work Instructions",
+                    "Production Instructions",
+                    "Process Sheets"
+                ],
+                "description": "Documents containing detailed instructions for manufacturing operations, including equipment setup, processing parameters, quality control, and safety procedures."
             },
             {
                 "key": "mcad",
@@ -1126,6 +1156,16 @@
                     "Free software"
                 ],
                 "description": "Software whose source code is available for study, modification and distribution."
+            },
+            {
+                "key": "process-sheet",
+                "term": "Process Sheet",
+                "synonyms": [
+                    "Process Chart",
+                    "Operation Sheet",
+                    "Route Sheet"
+                ],
+                "description": "Document containing a detailed description of the technological process for manufacturing a part or assembling a unit, including operations, equipment, tools, tooling, and time standards."
             },
             {
                 "key": "pdm",
@@ -1674,6 +1714,14 @@
                     "3D Modeling Software"
                 ],
                 "description": "Software for creating and editing three-dimensional graphics."
+            },
+            {
+                "key": "ktu",
+                "term": "КТУ",
+                "synonyms": [
+                    "Construction-Technological Instruction"
+                ],
+                "description": "Documents in the Russian documentation system (ESKD) containing instructions for technological preparation of production, processing, assembly, and product control. Defines operation sequence, equipment, tools, and processing parameters."
             }
         ],
         "search_placeholder": "Search terms...",
