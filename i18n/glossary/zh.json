@@ -405,6 +405,27 @@
                 "description": "管理企业人员的系统，包括招聘、培训和员工发展。"
             },
             {
+                "key": "ifc",
+                "term": "IFC",
+                "synonyms": [
+                    "工业基础类",
+                    "IFC格式",
+                    "ifc文件",
+                    "开放式BIM标准"
+                ],
+                "description": "用于在不同软件应用程序之间交换建筑信息模型（BIM）数据的开放中性文件格式。由buildingSMART International开发并维护。"
+            },
+            {
+                "key": "ifc-frag",
+                "term": "IFC片段",
+                "synonyms": [
+                    ".frag IFC文件",
+                    "IFC部分文件",
+                    "IFC模型片段"
+                ],
+                "description": "包含部分或分段IFC模型数据的.frag扩展名文件。用于增量更新、提取数据子集或仅交换BIM模型的更改部分。"
+            },
+            {
                 "key": "iges",
                 "term": "IGES",
                 "synonyms": [
@@ -744,6 +765,16 @@
                 "description": "用于创建和编辑三维图形的软件。"
             },
             {
+                "key": "ktu",
+                "term": "КТУ",
+                "synonyms": [
+                    "构造工艺指示",
+                    "工艺指示",
+                    "俄罗斯工艺文档"
+                ],
+                "description": "俄罗斯设计文档系统（ESKD）中的构造工艺指示文件，用于生产技术准备。定义操作顺序、设备、工具和加工参数。与中国工艺卡类似但基于不同标准体系。"
+            },
+            {
                 "key": "triangulation",
                 "term": "三角化",
                 "synonyms": [
@@ -904,6 +935,16 @@
                 "description": "旨在优化制造业运营活动、成本管理和增长刺激的战略性财务规划和分析。"
             },
             {
+                "key": "manufacturing-instructions",
+                "term": "制造指示",
+                "synonyms": [
+                    "作业指导书",
+                    "生产指示",
+                    "工艺卡"
+                ],
+                "description": "包含制造操作详细指示的文件，包括设备设置、加工参数、质量控制和安全程序。在中文实践中通常称为作业指导书或工艺卡。"
+            },
+            {
                 "key": "functional-tolerancing-annotation",
                 "term": "功能公差与标注",
                 "synonyms": [
@@ -1044,6 +1085,16 @@
                 "term": "客户端-服务器架构",
                 "synonyms": [],
                 "description": "客户端从集中式服务器请求服务的网络架构。"
+            },
+            {
+                "key": "process-sheet",
+                "term": "工艺卡",
+                "synonyms": [
+                    "工艺图表",
+                    "工序卡",
+                    "路线卡"
+                ],
+                "description": "包含零件制造或单元装配工艺过程详细说明的文件，包括工序、设备、工具、工艺装备和时间定额。"
             },
             {
                 "key": "workbench",
