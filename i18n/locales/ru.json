@@ -198,6 +198,11 @@
                 "url": "https://gitlab.com/cadbase",
                 "title": "Исходный код CADBase",
                 "icon": "fab fa-lg fa-gitlab"
+            },
+            {
+                "url": "https://hachyderm.io/@cadbase",
+                "title": "Профиль Mastodon",
+                "icon": "fab fa-lg fa-mastodon"
             }
         ],
         "available_languages": [
