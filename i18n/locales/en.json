@@ -8,8 +8,6 @@
         "base_url": "https://cadbase.rs/en/",
         "og_image": "images/og/og-image.webp",
         "og_type": "website",
-        "twitter_site": "@cadbase_rs",
-        "twitter_creator": "@cadbase_rs",
         "keywords": "CAD, 3D modeling, engineering collaboration, FreeCAD, Blender"
     },
     "assets": {

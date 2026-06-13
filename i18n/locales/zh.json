@@ -8,8 +8,6 @@
         "base_url": "https://cadbase.org/zh/",
         "og_image": "images/og/og-image.webp",
         "og_type": "website",
-        "twitter_site": "@cadbase_rs",
-        "twitter_creator": "@cadbase_rs",
         "keywords": "CAD, 三维建模, 工程协作, FreeCAD, Blender, 开源"
     },
     "assets": {

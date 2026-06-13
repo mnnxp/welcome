@@ -21,15 +21,6 @@
     <meta property="og:site_name" content="{{ meta.site_name }}">
     <meta property="og:locale" content="{% if lang_code == 'en' %}en_US{% elif lang_code == 'ru' %}ru_RU{% elif lang_code == 'zh' %}zh_CN{% endif %}">
     {% block article_meta %}{% endblock %}
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="{{ meta.twitter_site }}">
-    <meta name="twitter:creator" content="{{ meta.twitter_creator }}">
-    <meta name="twitter:title" content="{% block twitter_title %}{{ meta.title }}{% endblock %}">
-    <meta name="twitter:description" content="{% block twitter_description %}{{ meta.description }}{% endblock %}">
-    <meta name="twitter:image" content="{{ meta.root_url }}{% block twitter_image %}{{ meta.og_image }}{% endblock %}">
-    <meta name="twitter:image:width" content="1200">
-    <meta name="twitter:image:height" content="630">
     <!-- Additional Meta Tags -->
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ meta.base_url }}{% if page_name != 'index' %}{{ page_name }}/{% endif %}">
@@ -48,7 +39,7 @@
                 "sameAs": [
                     "https://gitlab.com/cadbase",
                     "https://www.youtube.com/@cadbaseplatform",
-                    "https://twitter.com/cadbase_rs"
+                    "https://hachyderm.io/@cadbase"
                 ]
             },
             {
