@@ -1745,7 +1745,7 @@
             },
             {
                 "key": "lifecycle-status",
-                "term": "Статус ЖЦ",
+                "term": "Стадия ЖЦ",
                 "synonyms": [
                     "Lifecycle Status",
                     "Lifecycle Stage",
