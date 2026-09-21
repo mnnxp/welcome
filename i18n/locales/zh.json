@@ -356,33 +356,6 @@
                 "tags": ["CADBase集成", "Blender插件", "云存储", "版本控制", "三维建模"]
             },
             {
-                "page_name": "self-hosting",
-                "title": "CADBase平台自托管部署",
-                "excerpt": "使用Docker和Kubernetes在自有基础设施上部署CADBase的完整指南。",
-                "meta": {
-                    "title": "",
-                    "description": "",
-                    "og_image": "",
-                    "og_type": "article",
-                    "author": "",
-                    "keywords": ""
-                },
-                "url": "overviews/self-hosting/",
-                "published": {
-                    "date_iso": "2026-10-10",
-                    "date": "2026年10月10日"
-                },
-                "image": {
-                    "path": "",
-                    "alt": ""
-                },
-                "content": "",
-                "conclusion": "",
-                "next": false,
-                "reference_materials": [],
-                "tags": ["自托管", "Docker", "Kubernetes", "S3", "部署", "基础设施"]
-            },
-            {
                 "page_name": "silent-crisis",
                 "title": "解决生态系统兼容性危机的环境",
                 "excerpt": "分析全球CAD系统兼容性问题及通过开放平台的解决方案",
@@ -413,6 +386,33 @@
                     "Nanosoft BIM标准2025：BIM项目实施最佳实践集。"
                 ],
                 "tags": ["CAD兼容性", "供应商锁定", "BIM", "数字化转型", "API", "工程数据", "CDE", "全球"]
+            },
+            {
+                "page_name": "self-hosting",
+                "title": "CADBase平台自托管部署",
+                "excerpt": "使用Docker和Kubernetes在自有基础设施上部署CADBase的完整指南。",
+                "meta": {
+                    "title": "CADBase 自托管部署 | 使用 Docker 与 Kubernetes",
+                    "description": "在自有基础设施上部署 CADBase 的完整指南。Docker Compose、Kubernetes、PostgreSQL、S3 存储、SSL 及企业级配置。",
+                    "og_image": "images/og/og_cdbs_deploy_concept.webp",
+                    "og_type": "article",
+                    "author": "CADBase 团队",
+                    "keywords": "CADBase, 自托管, Docker, Kubernetes, PostgreSQL, S3, 部署, 企业, SSL, 基础设施"
+                },
+                "url": "overviews/self-hosting/",
+                "published": {
+                    "date_iso": "2026-09-19",
+                    "date": "2026年9月19日"
+                },
+                "image": {
+                    "path": "images/overviews/ow_cdbs_deploy_concept.webp",
+                    "alt": "CADBase 部署：服务交互图"
+                },
+                "content": "<h2>CADBase 的用途与架构</h2><p><strong>CADBase</strong> 是一个开源平台，用于存储工程数据、进行版本管理以及在浏览器中可视化 3D 模型。它通过 API 与 CAD 系统及其他软件集成。</p><p>本指南介绍如何用一条命令启动整个技术栈（数据库、API 后端、后台处理器），并实现密钥隔离和环境专属配置。</p><p>平台基于三层实体模型构建。<strong>组件</strong> —— 包含通用元数据的产品卡片。<strong>修改</strong> —— 组件的具体版本（参数、设计文档）。<strong>文件集</strong> —— 某个修改项下针对特定工具的独立文件组。</p><p>技术栈：后端 —— Rust（Actix-web、Tokio），前端 —— Rust + WASM（Yew），3D 内核 —— OCCT 与 Three.js（WebGPU/WebGL），基础设施 —— Docker Compose / Kubernetes、PostgreSQL 以及兼容 S3 的存储。</p><hr><h2>开始前的准备</h2><ul><li><strong>操作系统</strong>：Linux（Ubuntu、Debian、Red OS 或其他 LTS 发行版）。</li><li><strong>硬件</strong>：4 核 vCPU、8 GB 内存、30 GB 磁盘（用于构建，约 15 分钟）。</li><li><strong>工具</strong>：<code>curl</code>、<code>git</code>、<code>docker</code>（含 <code>docker-compose</code>）以及 <code>openssl</code>。</li><li><strong>存储</strong>：兼容 S3（Garage、Ceph、SeaweedFS）—— 需要存储桶访问凭据。</li></ul><h2>一条命令安装</h2><pre class=\"notification is-light is-primary\"><code>curl --proto '=https' --tlsv1.2 -sSLf https://codeberg.org/mnnxp/cdbs-installer/raw/branch/master/cdbs_start.sh | bash</code></pre><h3>将会发生什么</h3><ol><li><strong>环境检查</strong>：脚本会查找系统中的 <code>git</code>、<code>docker</code>、<code>openssl</code> 和 <code>curl</code>。如果缺少某些工具，它会提示通过您操作系统的包管理器（<code>apt</code>、<code>dnf</code> 或 <code>yum</code>）安装。</li><li><strong>配置</strong>：脚本会创建 <code>cdbs</code> 目录和包含默认值的 <code>setup.config</code> 文件，然后暂停 —— 请编辑参数（S3、端口、密码）并按 <code>Enter</code> 继续。</li><li><strong>克隆与构建</strong>：与仓库同步、构建容器、准备数据库。</li><li><strong>SSL 证书</strong>：脚本会询问是生成自签名证书还是使用您自己的证书。若选择后者，请将 <code>server.crt</code> 和 <code>server.key</code> 放入 <code>./ssl/</code> 目录。</li></ol><p>如需快速本地测试，请在脚本的两次提示中均按 <code>Enter</code>（配置后的暂停与 SSL 选择）：接受默认的 S3 占位配置并生成自签名 SSL 证书。</p><p><em>注意：平台启动后如需修改 S3、端口或密码，无需重新安装。更新 <code>setup.config</code> 后再次执行安装命令即可。</em></p><h2>验证部署</h2><ul><li><strong>Web 界面</strong>：<a href=\"https://localhost:8080/\">https://localhost:8080/</a></li><li><strong>GraphQL API Playground</strong>：<a href=\"http://localhost:3000/\">http://localhost:3000/</a></li></ul><hr><h2>企业环境</h2><p>在企业 IT 基础设施中部署需要修改 <code>setup.config</code>。</p><h3>连接外部数据库</h3><p>使用安全且具备容错能力的 PostgreSQL 集群替代本地容器。访问 —— 通过 <code>POSTGRES_USER</code>、<code>POSTGRES_PASSWORD</code> 和 <code>POSTGRES_DB</code>。</p><h3>连接企业 S3 存储</h3><p>可启用 Presigned URLs —— 具有时限访问权限、不暴露 S3 密钥的签名链接。连接 —— 通过 <code>S3_ENDPOINT</code>、<code>S3_REGION</code>、<code>S3_APPLICATION_KEY_ID</code>、<code>S3_APPLICATION_KEY</code> 和 <code>S3_BUCKET</code> 变量。</p><h3>流量加密（HTTPS/TLS）</h3><p>为保护网络入口处的机密工程数据，建议部署反向代理（Nginx、Traefik），在 80/443 端口终止 SSL 证书并将流量转发到 <code>cdbs-back</code> 和 <code>cdbs-app</code> 容器。</p><hr><h2>速查表</h2><p>所有命令均在 <code>cdbs</code> 根目录（即 <code>docker-compose.yml</code> 所在目录）下执行。</p><p><strong>查看容器列表与状态</strong>：</p><pre><code>docker compose ps</code></pre><p>所有容器（<code>cdbs-db</code>、<code>cdbs-back</code>、<code>cdbs-proc</code>、<code>cdbs-app</code>）应处于 <code>Started</code> 或 <code>Healthy</code> 状态。</p><p><strong>重启平台</strong></p><pre><code>docker compose restart</code></pre><p><strong>停止平台（保留数据）</strong></p><pre><code>docker compose down</code></pre><p><strong>彻底删除技术栈（清理磁盘）</strong></p><pre><code>docker compose down -v</code></pre><p><em>警告：将连同所有数据完全删除平台 —— 包括 PostgreSQL 数据库和本地 Docker 卷。</em></p><p><strong>查看日志</strong></p><ul><li><p>Web 应用：</p><pre><code>docker compose logs -f cdbs-app</code></pre></li><li><p>API 服务：</p><pre><code>docker compose logs -f cdbs-back</code></pre></li><li><p>后台处理器：</p><pre><code>docker compose logs -f cdbs-proc</code></pre></li><li><p>数据库：</p><pre><code>docker compose logs -f cdbs-db</code></pre></li></ul>",
+                "conclusion": "在自有基础设施上部署 CADBase —— 完全掌控数据与扩展。",
+                "next": false,
+                "reference_materials": [],
+                "tags": ["自托管", "Docker", "Kubernetes", "S3", "部署", "基础设施", "企业"]
             }
         ],
         "cta": {

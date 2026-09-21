@@ -356,33 +356,6 @@
                 "tags": ["Интеграция CADBase", "Дополнение Blender", "Облачное хранилище", "Контроль версий", "3D моделирование"]
             },
             {
-                "page_name": "self-hosting",
-                "title": "Самостоятельный хостинг платформы CADBase",
-                "excerpt": "Полное руководство по развертыванию CADBase на вашей собственной инфраструктуре с использованием Docker и Kubernetes.",
-                "meta": {
-                    "title": "",
-                    "description": "",
-                    "og_image": "",
-                    "og_type": "article",
-                    "author": "",
-                    "keywords": ""
-                },
-                "url": "overviews/self-hosting/",
-                "published": {
-                    "date_iso": "2026-10-10",
-                    "date": "10 октября, 2026 года"
-                },
-                "image": {
-                    "path": "",
-                    "alt": ""
-                },
-                "content": "",
-                "conclusion": "",
-                "next": false,
-                "reference_materials": [],
-                "tags": ["Самостоятельный хостинг", "Docker", "Kubernetes", "S3", "Развертывание", "Инфраструктура"]
-            },
-            {
                 "page_name": "silent-crisis",
                 "title": "Среда преодоления кризиса совместимости сред",
                 "excerpt": "От проприетарных стен к открытым мостам: как CADBase решает проблему вендорской разобщенности.",
@@ -412,6 +385,33 @@
                     "BIM-стандарт Нанософт 2025: Свод лучших практик для внедрения BIM-проектов."
                 ],
                 "tags": ["Среда общих данных", "Вендоры", "BIM", "Цифровая трансформация", "API"]
+            },
+            {
+                "page_name": "self-hosting",
+                "title": "Самостоятельный хостинг платформы CADBase",
+                "excerpt": "Полное руководство по развертыванию CADBase на вашей собственной инфраструктуре с использованием Docker и Kubernetes.",
+                "meta": {
+                    "title": "Self-Hosting CADBase | Развёртывание через Docker и Kubernetes",
+                    "description": "Полное руководство по развёртыванию CADBase на собственной инфраструктуре. Docker Compose, Kubernetes, PostgreSQL, S3-хранилище, SSL и Enterprise-настройка.",
+                    "og_image": "images/og/og_cdbs_deploy_concept.webp",
+                    "og_type": "article",
+                    "author": "Команда CADBase",
+                    "keywords": "CADBase, self-hosting, Docker, Kubernetes, PostgreSQL, S3, развёртывание, предприятие, SSL, инфраструктура"
+                },
+                "url": "overviews/self-hosting/",
+                "published": {
+                    "date_iso": "2026-09-19",
+                    "date": "19 сентября, 2026 года"
+                },
+                "image": {
+                    "path": "images/overviews/ow_cdbs_deploy_concept.webp",
+                    "alt": "Развёртывание CADBase: схема взаимодействия сервисов"
+                },
+                "content": "<h2>Назначение и архитектура CADBase</h2><p><strong>CADBase</strong> — платформа с открытым исходным кодом для хранения инженерных данных, версионирования и визуализации 3D-моделей в браузере. Интегрируется с САПР и другим ПО через API.</p><p>Это руководство описывает запуск всего стека (БД, API-бэкенд, фоновый обработчик) одной командой, с изоляцией секретов и конфигурацией под конкретное окружение.</p><p>В основе платформы — трёхуровневая модель сущностей. <strong>Компонент</strong> — карточка изделия с общими метаданными. <strong>Модификация</strong> — конкретное исполнение компонента (параметры, конструкторская документация). <strong>Набор файлов</strong> — изолированная группа файлов для работы с конкретным инструментом в рамках модификации.</p><p>Технологический стек: бэкенд — Rust (Actix-web, Tokio), фронтенд — Rust + WASM (Yew), 3D-ядро — OCCT и Three.js (WebGPU/WebGL), инфраструктура — Docker Compose / Kubernetes, PostgreSQL и S3-совместимое хранилище.</p><hr><h2>Что нужно для старта</h2><ul><li><strong>ОС</strong>: Linux (Ubuntu, Debian, Red OS или другие LTS-дистрибутивы).</li><li><strong>Железо</strong>: 4 vCPU, 8 ГБ ОЗУ, 30 ГБ диск (для сборки, ~15 мин).</li><li><strong>Утилиты</strong>: <code>curl</code>, <code>git</code>, <code>docker</code> (с <code>docker-compose</code>) и <code>openssl</code>.</li><li><strong>Хранилище</strong>: S3-совместимое (Garage, Ceph, SeaweedFS) — нужны доступы к бакету.</li></ul><h2>Установка одной командой</h2><pre class=\"notification is-light is-primary\"><code>curl --proto '=https' --tlsv1.2 -sSLf https://codeberg.org/mnnxp/cdbs-installer/raw/branch/master/cdbs_start.sh | bash</code></pre><h3>Что произойдёт</h3><ol><li><strong>Проверка окружения</strong>: скрипт найдёт в системе <code>git</code>, <code>docker</code>, <code>openssl</code> и <code>curl</code>. Если чего-то не хватает, он сам предложит установить утилиты через менеджер пакетов вашей ОС (<code>apt</code>, <code>dnf</code> или <code>yum</code>).</li><li><strong>Конфигурация</strong>: скрипт создаст папку <code>cdbs</code> и файл <code>setup.config</code> с настройками по умолчанию, затем встанет на паузу — отредактируйте параметры (S3, порты, пароли) и нажмите <code>Enter</code> для продолжения.</li><li><strong>Клонирование и сборка</strong>: синхронизация с репозиториями, сборка контейнеров, подготовка БД.</li><li><strong>SSL-сертификаты</strong>: скрипт спросит — сгенерировать самоподписанные или использовать свои. Во втором случае положите <code>server.crt</code> и <code>server.key</code> в папку <code>./ssl/</code>.</li></ol><p>Для быстрого локального теста нажмите <code>Enter</code> на обоих запросах скрипта (пауза после конфигурации и выбор SSL): примите дефолтные S3-заглушки и сгенерируйте самоподписанный SSL.</p><p><em>Примечание: для изменения S3, портов или паролей после запуска платформы переустановка не нужна. Обновите <code>setup.config</code> и снова выполните команду установки.</em></p><h2>Проверка работоспособности</h2><ul><li><strong>Веб-интерфейс</strong>: <a href=\"https://localhost:8080/\">https://localhost:8080/</a></li><li><strong>GraphQL API Playground</strong>: <a href=\"http://localhost:3000/\">http://localhost:3000/</a></li></ul><hr><h2>Enterprise-окружение</h2><p>Для развёртывания в ИТ-инфраструктуре предприятий потребуется изменить <code>setup.config</code>.</p><h3>Подключение к внешней СУБД</h3><p>Вместо локального контейнера используется защищённый отказоустойчивый кластер PostgreSQL. Доступ — через <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code> и <code>POSTGRES_DB</code>.</p><h3>Подключение к корпоративному S3-хранилищу</h3><p>Позволяет использовать Presigned URLs — подписанные ссылки с ограниченным временем доступа, не раскрывающие ключи S3. Подключение — через переменные <code>S3_ENDPOINT</code>, <code>S3_REGION</code>, <code>S3_APPLICATION_KEY_ID</code>, <code>S3_APPLICATION_KEY</code> и <code>S3_BUCKET</code>.</p><h3>Шифрование трафика (HTTPS/TLS)</h3><p>Для защиты конфиденциальных инженерных данных на входе в сеть рекомендуется развернуть Reverse Proxy (Nginx, Traefik), который будет завершать SSL-сертификаты на портах 80/443 и пробрасывать трафик внутрь контейнеров <code>cdbs-back</code> и <code>cdbs-app</code>.</p><hr><h2>Памятка</h2><p>Все команды выполняются из корня <code>cdbs</code>, где лежит <code>docker-compose.yml</code>.</p><p><strong>Посмотрите список и статус контейнеров</strong>:</p><pre><code>docker compose ps</code></pre><p>Все контейнеры (<code>cdbs-db</code>, <code>cdbs-back</code>, <code>cdbs-proc</code>, <code>cdbs-app</code>) должны быть в статусе <code>Started</code> или <code>Healthy</code>.</p><p><strong>Перезапуск платформы</strong></p><pre><code>docker compose restart</code></pre><p><strong>Остановка платформы (с сохранением данных)</strong></p><pre><code>docker compose down</code></pre><p><strong>Полное удаление стека (очистка дисков)</strong></p><pre><code>docker compose down -v</code></pre><p><em>Внимание: полностью удалит платформу со всеми данными — БД PostgreSQL и локальные Docker-тома (volumes).</em></p><p><strong>Просмотр логов</strong></p><ul><li><p>Веб-приложение:</p><pre><code>docker compose logs -f cdbs-app</code></pre></li><li><p>Сервер с API:</p><pre><code>docker compose logs -f cdbs-back</code></pre></li><li><p>Фоновый обработчик:</p><pre><code>docker compose logs -f cdbs-proc</code></pre></li><li><p>База данных:</p><pre><code>docker compose logs -f cdbs-db</code></pre></li></ul>",
+                "conclusion": "Разверните CADBase на своей инфраструктуре — полный контроль над данными и масштабированием.",
+                "next": false,
+                "reference_materials": [],
+                "tags": ["Самостоятельный хостинг", "Docker", "Kubernetes", "S3", "Развертывание", "Инфраструктура"]
             }
         ],
         "cta": {

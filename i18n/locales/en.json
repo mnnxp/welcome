@@ -356,33 +356,6 @@
                 "tags": ["Integration", "Blender", "Add-on", "Cloud Storage", "Version Control", "Blender Cloud"]
             },
             {
-                "page_name": "self-hosting",
-                "title": "Self-Hosting CADBase Platform",
-                "excerpt": "Complete guide to deploying CADBase on your own infrastructure with Docker and Kubernetes.",
-                "meta": {
-                    "title": "",
-                    "description": "",
-                    "og_image": "",
-                    "og_type": "article",
-                    "author": "",
-                    "keywords": ""
-                },
-                "url": "overviews/self-hosting/",
-                "published": {
-                    "date_iso": "2026-10-10",
-                    "date": "October 10, 2026"
-                },
-                "image": {
-                    "path": "",
-                    "alt": ""
-                },
-                "content": "",
-                "conclusion": "",
-                "next": false,
-                "reference_materials": [],
-                "tags": ["Self-Hosting", "Docker", "Kubernetes", "S3", "Deployment", "Infrastructure", "Enterprise"]
-            },
-            {
                 "page_name": "silent-crisis",
                 "title": "The Environment for Overcoming the Ecosystem Compatibility Crisis",
                 "excerpt": "Global analysis of CAD system compatibility issues and the open platform solution",
@@ -412,6 +385,33 @@
                     "Nanosoft BIM Standard 2025: Set of best practices for BIM project implementation."
                 ],
                 "tags": ["CAD compatibility", "Vendor Lock-in", "BIM", "Digital Transformation", "API", "CDE"]
+            },
+            {
+                "page_name": "self-hosting",
+                "title": "Self-Hosting CADBase Platform",
+                "excerpt": "Complete guide to deploying CADBase on your own infrastructure with Docker and Kubernetes.",
+                "meta": {
+                    "title": "Self-Hosting CADBase | Deploy with Docker and Kubernetes",
+                    "description": "Complete guide to deploying CADBase on your own infrastructure. Docker Compose, Kubernetes, PostgreSQL, S3 storage, SSL and enterprise setup.",
+                    "og_image": "images/og/og_cdbs_deploy_concept.webp",
+                    "og_type": "article",
+                    "author": "CADBase Team",
+                    "keywords": "CADBase, self-hosting, Docker, Kubernetes, PostgreSQL, S3, deployment, enterprise, SSL, infrastructure"
+                },
+                "url": "overviews/self-hosting/",
+                "published": {
+                    "date_iso": "2026-09-19",
+                    "date": "September 19, 2026"
+                },
+                "image": {
+                    "path": "images/overviews/ow_cdbs_deploy_concept.webp",
+                    "alt": "CADBase deployment: service interaction diagram"
+                },
+                "content": "<h2>Purpose and Architecture of CADBase</h2><p><strong>CADBase</strong> is an open-source platform for storing engineering data, versioning, and visualizing 3D models in the browser. It integrates with CAD systems and other software via API.</p><p>This guide covers bringing up the entire stack (DB, API backend, background processor) with a single command, secrets isolation, and environment-specific configuration.</p><p>The platform is built on a three-level entity model. <strong>Component</strong> — a product card with shared metadata. <strong>Modification</strong> — a specific variant of the component (parameters, engineering documentation). <strong>File set</strong> — an isolated group of files for a specific tool within a modification.</p><p>Technology stack: backend — Rust (Actix-web, Tokio), frontend — Rust + WASM (Yew), 3D core — OCCT and Three.js (WebGPU/WebGL), infrastructure — Docker Compose / Kubernetes, PostgreSQL and S3-compatible storage.</p><hr><h2>Prerequisites</h2><ul><li><strong>OS</strong>: Linux (Ubuntu, Debian, Red OS, or other LTS distributions).</li><li><strong>Hardware</strong>: 4 vCPUs, 8 GB RAM, 30 GB disk (for the build, ~15 min).</li><li><strong>Utilities</strong>: <code>curl</code>, <code>git</code>, <code>docker</code> (with <code>docker-compose</code>), and <code>openssl</code>.</li><li><strong>Storage</strong>: S3-compatible (Garage, Ceph, SeaweedFS) — bucket access credentials required.</li></ul><h2>One-command installation</h2><pre class=\"notification is-light is-primary\"><code>curl --proto '=https' --tlsv1.2 -sSLf https://gitlab.com/cadbase/cdbs-installer/-/raw/master/cdbs_start.sh | bash</code></pre><h3>What happens</h3><ol><li><strong>Environment check</strong>: the script looks for <code>git</code>, <code>docker</code>, <code>openssl</code>, and <code>curl</code>. If something is missing, it will offer to install the utilities via your OS package manager (<code>apt</code>, <code>dnf</code>, or <code>yum</code>).</li><li><strong>Configuration</strong>: the script creates the <code>cdbs</code> folder and a <code>setup.config</code> file with defaults, then pauses — edit the parameters (S3, ports, passwords) and press <code>Enter</code> to continue.</li><li><strong>Cloning and build</strong>: syncing with repositories, building containers, preparing the database.</li><li><strong>SSL certificates</strong>: the script will ask whether to generate self-signed certificates or use your own. In the latter case, place <code>server.crt</code> and <code>server.key</code> into the <code>./ssl/</code> folder.</li></ol><p>For a quick local test, press <code>Enter</code> on both prompts (the pause after configuration and the SSL choice): accept the default S3 stubs and generate a self-signed SSL certificate.</p><p><em>Note: to change S3, ports, or passwords after the platform is running, no reinstall is needed. Update <code>setup.config</code> and run the install command again.</em></p><h2>Verifying the deployment</h2><ul><li><strong>Web UI</strong>: <a href=\"https://localhost:8080/\">https://localhost:8080/</a></li><li><strong>GraphQL API Playground</strong>: <a href=\"http://localhost:3000/\">http://localhost:3000/</a></li></ul><hr><h2>Enterprise environment</h2><p>Deploying into an enterprise IT infrastructure requires changes to <code>setup.config</code>.</p><h3>Connecting to an external DBMS</h3><p>Instead of a local container, a secure fault-tolerant PostgreSQL cluster is used. Access — via <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code>, and <code>POSTGRES_DB</code>.</p><h3>Connecting to corporate S3 storage</h3><p>Enables Presigned URLs — signed links with limited-time access that do not expose S3 keys. Connection — via the <code>S3_ENDPOINT</code>, <code>S3_REGION</code>, <code>S3_APPLICATION_KEY_ID</code>, <code>S3_APPLICATION_KEY</code>, and <code>S3_BUCKET</code> variables.</p><h3>Traffic encryption (HTTPS/TLS)</h3><p>To protect confidential engineering data at the network edge, it is recommended to deploy a Reverse Proxy (Nginx, Traefik) that terminates SSL certificates on ports 80/443 and forwards traffic to the <code>cdbs-back</code> and <code>cdbs-app</code> containers.</p><hr><h2>Cheat sheet</h2><p>All commands are run from the <code>cdbs</code> root, where <code>docker-compose.yml</code> resides.</p><p><strong>View container list and status</strong>:</p><pre><code>docker compose ps</code></pre><p>All containers (<code>cdbs-db</code>, <code>cdbs-back</code>, <code>cdbs-proc</code>, <code>cdbs-app</code>) should be in <code>Started</code> or <code>Healthy</code> state.</p><p><strong>Restart the platform</strong></p><pre><code>docker compose restart</code></pre><p><strong>Stop the platform (keeping data)</strong></p><pre><code>docker compose down</code></pre><p><strong>Remove the stack completely (disk cleanup)</strong></p><pre><code>docker compose down -v</code></pre><p><em>Warning: this fully removes the platform with all data — the PostgreSQL database and local Docker volumes.</em></p><p><strong>View logs</strong></p><ul><li><p>Web app:</p><pre><code>docker compose logs -f cdbs-app</code></pre></li><li><p>API server:</p><pre><code>docker compose logs -f cdbs-back</code></pre></li><li><p>Background processor:</p><pre><code>docker compose logs -f cdbs-proc</code></pre></li><li><p>Database:</p><pre><code>docker compose logs -f cdbs-db</code></pre></li></ul>",
+                "conclusion": "Deploy CADBase on your own infrastructure — full control over data and scaling.",
+                "next": false,
+                "reference_materials": [],
+                "tags": ["Self-Hosting", "Docker", "Kubernetes", "S3", "Deployment", "Infrastructure", "Enterprise"]
             }
         ],
         "cta": {
